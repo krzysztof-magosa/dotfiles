@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: foreach
+# --
+foreach (\$$1 as \$${2:item}) {
+    $3
+}
+

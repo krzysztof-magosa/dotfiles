@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: while
+# --
+while ($1) {
+   $1
+}
+

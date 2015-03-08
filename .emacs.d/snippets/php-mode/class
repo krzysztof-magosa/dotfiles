@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: class
+# --
+class $1
+{
+    public function ${2:__construct}($3)
+    {
+        $4
+    }
+}
