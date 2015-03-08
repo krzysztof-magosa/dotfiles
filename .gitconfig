@@ -1,0 +1,15 @@
+[alias]
+	pr = pull --rebase
+	tags = tag -l
+	branches = branch -a
+	remotes = remote -v
+
+[core]
+	excludesfile = ~/.gitignore
+
+[push]
+	default = current
+
+[include]
+	path = ~/.gitconfig-local
+	
