@@ -1,4 +1,6 @@
 alias tigs="tig status"
+alias mkdir="mkdir -p"
+alias e='$EDITOR'
 
 # Show external IP
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
