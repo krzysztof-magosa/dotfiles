@@ -5,7 +5,7 @@
 	remotes = remote -v
 
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.gitexclude
 
 [push]
 	default = current
