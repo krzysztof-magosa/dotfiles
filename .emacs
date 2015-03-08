@@ -38,11 +38,11 @@
 (use-package yasnippet
   :ensure t
   :defer t
-  :commands yas/minor-mode-on
+  :commands yas-global-mode
   :init
   (progn
     (setq yas-snippet-dirs "~/.emacs.d/snippets")
-    (add-hook 'php-mode-hook 'yas/minor-mode-on))) ; just for php
+    (add-hook 'php-mode-hook 'yas-global-mode))) ; just for php
 
 ; php
 (use-package php-mode
