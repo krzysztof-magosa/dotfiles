@@ -140,8 +140,7 @@
   :config
   (progn
     (define-key git-rebase-mode-map (kbd "<ESC> <up>") 'git-rebase-move-line-up)
-    (define-key git-rebase-mode-map (kbd "<ESC> <down>") 'git-rebase-move-line-down)
-  ))
+    (define-key git-rebase-mode-map (kbd "<ESC> <down>") 'git-rebase-move-line-down)))
 
 ; it must be here on the bottom, because of bug with cl lib
 (use-package fiplr
