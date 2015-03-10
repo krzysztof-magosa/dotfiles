@@ -142,6 +142,9 @@
     (define-key git-rebase-mode-map (kbd "<ESC> <up>") 'git-rebase-move-line-up)
     (define-key git-rebase-mode-map (kbd "<ESC> <down>") 'git-rebase-move-line-down)))
 
+(use-package yaml-mode
+  :ensure t)
+
 ; it must be here on the bottom, because of bug with cl lib
 (use-package fiplr
   :ensure t
