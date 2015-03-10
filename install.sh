@@ -6,7 +6,7 @@ function make_symlinks()
     path=$(pwd)
 
     for name in .* ; do
-        if [[ ! "$name" =~ ~$ && "$name" != "." && "$name" != ".." ]] ; then
+        if [[ ! "$name" =~ ~$ && "$name" != "." && "$name" != ".." && "$name" != ".git" ]] ; then
             echo "Linking $name..."
             ln -sf "$path/$name" ~/
         fi
