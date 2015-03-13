@@ -51,7 +51,10 @@
   :commands php-mode
   :config
   (progn
-    (add-hook 'php-mode-hook 'php-enable-psr2-coding-style)))
+    (add-hook 'php-mode-hook 'php-enable-psr2-coding-style))
+  :init
+  (progn
+    (add-to-list 'auto-mode-alist '("\\.php$" . php-mode))))
 
 (use-package apache-mode
   :ensure t
