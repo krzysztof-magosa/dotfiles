@@ -14,25 +14,29 @@
 (use-package molokai-theme
   :ensure t)
 
-; auto complete
-(use-package auto-complete
+; auto complete related stuff
+(use-package company
   :ensure t
+  :defer t
   :config
   (progn
-    (require 'auto-complete-config)
-    (ac-config-default)))
+    (setq company-idle-delay 0)
+    (add-to-list 'company-backends 'company-jedi)
+    (add-to-list 'company-backends 'company-c-headers))
+  :init
+  (progn
+    (add-hook 'after-init-hook 'global-company-mode)))
 
-; auto complete for c/c++ headers
-(use-package auto-complete-c-headers
+(use-package company-jedi
   :ensure t
+  :defer t)
+
+(use-package company-c-headers
+  :ensure t
+  :defer t
   :config
   (progn
-    (defun my:ac-c-header-init ()
-      (add-to-list 'ac-sources 'ac-source-c-headers)
-      (add-to-list 'achead:include-directories '"/usr/include"))
-
-    (add-hook 'c-mode-hook 'my:ac-c-header-init)
-    (add-hook 'c++-mode-hook 'my:ac-c-header-init)))
+    (add-to-list 'company-c-headers-path-system '"/usr/include")))
 
 ; snippets
 (use-package yasnippet
@@ -98,17 +102,12 @@
 
 (use-package semantic
   :ensure t
+  :defer t
   :init
   (progn
     (add-hook 'c-mode-common-hook 'semantic-mode))
   :config
   (progn
-    (defun my:add-semantic-to-autocomplete()
-      (add-to-list 'ac-sources 'ac-source-semantic))
-
-    (semantic-mode 1)
-    (add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
-
     ; reparse opened buffers
     (global-semantic-idle-scheduler-mode 1)
     (global-semanticdb-minor-mode 1)))
