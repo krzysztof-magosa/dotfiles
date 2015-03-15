@@ -22,7 +22,8 @@
   (progn
     (setq company-idle-delay 0)
     (add-to-list 'company-backends 'company-jedi)
-    (add-to-list 'company-backends 'company-c-headers))
+    (add-to-list 'company-backends 'company-c-headers)
+    (add-to-list 'company-backends 'company-irony))
   :init
   (progn
     (add-hook 'after-init-hook 'global-company-mode)))
@@ -37,6 +38,10 @@
   :config
   (progn
     (add-to-list 'company-c-headers-path-system '"/usr/include")))
+
+(use-package company-irony
+  :ensure t
+  :defer t)
 
 ; snippets
 (use-package yasnippet
