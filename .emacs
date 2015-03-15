@@ -20,7 +20,7 @@
   :defer t
   :config
   (progn
-    (setq company-idle-delay 0)
+    (setq company-idle-delay 0.2)
     (add-to-list 'company-backends 'company-jedi)
     (add-to-list 'company-backends 'company-c-headers)
     (add-to-list 'company-backends 'company-irony))
