@@ -148,6 +148,13 @@
 (use-package yaml-mode
   :ensure t)
 
+(use-package elpy
+  :ensure t
+  :defer t
+  :init
+  (progn
+    (add-hook 'python-mode-hook 'elpy-mode)))
+
 ; it must be here on the bottom, because of bug with cl lib
 (use-package fiplr
   :ensure t
