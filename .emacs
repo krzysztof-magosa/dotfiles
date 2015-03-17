@@ -121,11 +121,7 @@
 (use-package web-mode
   :ensure t
   :defer t
-  :commands web-mode
-  :init
-  (progn
-    (add-to-list 'auto-mode-alist '("\\.phtml$" . web-mode))
-    (add-to-list 'auto-mode-alist '("\\.html$" . web-mode)))
+  :mode "\\.\\(phtml\\|html\\)$"
   :config
   (progn
     (setq web-mode-markup-indent-offset 2)
