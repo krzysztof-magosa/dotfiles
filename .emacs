@@ -146,7 +146,9 @@
     (define-key git-rebase-mode-map (kbd "<ESC> <down>") 'git-rebase-move-line-down)))
 
 (use-package yaml-mode
-  :ensure t)
+  :defer t
+  :ensure t
+  :mode "\\.yaml$")
 
 (use-package elpy
   :ensure t
