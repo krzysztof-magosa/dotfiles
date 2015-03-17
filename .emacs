@@ -58,7 +58,7 @@
   :ensure t
   :defer t
   :commands php-mode
-  :mode "\\.php$"
+  :mode "\\.php\\'"
   :config
   (progn
     (add-hook 'php-mode-hook 'php-enable-psr2-coding-style)))
@@ -71,7 +71,7 @@
   :ensure t
   :defer t
   :commands markdown-mode
-  :mode "\\.md$")
+  :mode "\\.md\\'")
 
 ; check php coding style
 (use-package flymake-phpcs
@@ -121,7 +121,7 @@
 (use-package web-mode
   :ensure t
   :defer t
-  :mode "\\.\\(phtml\\|html\\)$"
+  :mode "\\.\\(phtml\\|html\\)\\'"
   :config
   (progn
     (setq web-mode-markup-indent-offset 2)
@@ -144,7 +144,7 @@
 (use-package yaml-mode
   :defer t
   :ensure t
-  :mode "\\.yaml$")
+  :mode "\\.yaml\\'")
 
 (use-package elpy
   :ensure t
