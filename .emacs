@@ -58,12 +58,10 @@
   :ensure t
   :defer t
   :commands php-mode
+  :mode "\\.php$"
   :config
   (progn
-    (add-hook 'php-mode-hook 'php-enable-psr2-coding-style))
-  :init
-  (progn
-    (add-to-list 'auto-mode-alist '("\\.php$" . php-mode))))
+    (add-hook 'php-mode-hook 'php-enable-psr2-coding-style)))
 
 (use-package apache-mode
   :ensure t
