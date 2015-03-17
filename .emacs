@@ -73,9 +73,7 @@
   :ensure t
   :defer t
   :commands markdown-mode
-  :init
-  (progn
-    (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))))
+  :mode "\\.md$")
 
 ; check php coding style
 (use-package flymake-phpcs
