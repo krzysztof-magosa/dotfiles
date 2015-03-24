@@ -14,7 +14,7 @@
     (add-to-list 'company-backends 'company-irony))
   :init
   (progn
-    (add-hook 'after-init-hook 'global-company-mode)))
+    (add-hook 'prog-mode-hook 'company-mode)))
 
 (use-package company-jedi
   :ensure t
