@@ -83,6 +83,13 @@
   (progn
     (add-hook 'php-mode-hook 'flymake-php-load)))
 
+(use-package flymake-python-pyflakes
+  :ensure t
+  :defer t
+  :init
+  (progn
+    (add-hook 'python-mode-hook 'flymake-python-pyflakes-load)))
+
 ; edit symbol in multiple places in the same time
 (use-package iedit
   :ensure t
