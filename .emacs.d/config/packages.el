@@ -163,6 +163,11 @@
   :ensure t
   :mode "\\.yaml\\'")
 
+(use-package json-mode
+  :defer t
+  :ensure t
+  :mode "\\.json\\'")
+
 (use-package elpy
   :ensure t
   :defer t
