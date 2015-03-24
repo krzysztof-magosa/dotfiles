@@ -153,6 +153,11 @@
     (define-key git-rebase-mode-map (kbd "<ESC> <up>") 'git-rebase-move-line-up)
     (define-key git-rebase-mode-map (kbd "<ESC> <down>") 'git-rebase-move-line-down)))
 
+(use-package sass-mode
+  :defer t
+  :ensure t
+  :mode "\\.sass\\'")
+
 (use-package yaml-mode
   :defer t
   :ensure t
