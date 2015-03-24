@@ -165,6 +165,9 @@
   (progn
     (add-hook 'python-mode-hook 'elpy-mode)))
 
+(use-package osx-clipboard
+  :ensure t)
+
 ; it must be here on the bottom, because of bug with cl lib
 (use-package fiplr
   :ensure t
