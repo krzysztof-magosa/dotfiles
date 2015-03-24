@@ -2,6 +2,16 @@
 (use-package molokai-theme
   :ensure t)
 
+(use-package highlight-current-line
+  :ensure t
+  :defer t
+  :config
+  (progn
+    (set-face-background 'highlight-current-line-face "#333333"))
+  :init
+  (progn
+    (add-hook 'prog-mode-hook 'highlight-current-line-minor-mode)))
+
 ; auto complete related stuff
 (use-package company
   :ensure t
