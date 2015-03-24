@@ -31,6 +31,16 @@
   :ensure t
   :defer t)
 
+(use-package company-quickhelp
+  :ensure t
+  :defer t
+  :commands company-quickhelp-mode
+  :disabled t
+  :init
+  (progn
+    (setq company-quickhelp-idle-delay 0.2)
+    (add-hook 'after-init-hook 'company-quickhelp-mode)))
+
 ; snippets
 (use-package yasnippet
   :ensure t
