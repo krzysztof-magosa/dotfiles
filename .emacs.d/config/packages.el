@@ -178,6 +178,11 @@
   :ensure t
   :mode "\\.json\\'")
 
+(use-package cmake-mode
+  :defer t
+  :ensure t
+  :mode "CMakeLists.txt\\'\\|\\.cmake\\'")
+
 (use-package git-gutter
   :ensure t
   :defer t
