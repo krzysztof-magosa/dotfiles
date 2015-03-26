@@ -19,12 +19,17 @@
   :config
   (progn
     (setq company-idle-delay 0.2)
+    (add-to-list 'company-backends 'company-go)
     (add-to-list 'company-backends 'company-jedi)
     (add-to-list 'company-backends 'company-c-headers)
     (add-to-list 'company-backends 'company-irony))
   :init
   (progn
     (add-hook 'prog-mode-hook 'company-mode)))
+
+(use-package company-go
+  :ensure t
+  :defer t)
 
 (use-package company-jedi
   :ensure t
@@ -182,6 +187,11 @@
   :defer t
   :ensure t
   :mode "CMakeLists.txt\\'\\|\\.cmake\\'")
+
+(use-package go-mode
+  :defer t
+  :ensure t
+  :mode "\\.go\\'")
 
 (use-package git-gutter
   :ensure t
