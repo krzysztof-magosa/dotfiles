@@ -90,8 +90,7 @@
 (use-package markdown-mode
   :ensure t
   :defer t
-  :commands markdown-mode
-  :mode "\\.md\\'")
+  :commands markdown-mode)
 
 ; check php coding style
 (use-package flymake-phpcs
@@ -211,6 +210,12 @@
   :init
   (progn
     (add-hook 'python-mode-hook 'elpy-mode)))
+
+(use-package polymode
+  :ensure t
+  :defer t
+  :commands poly-markdown-mode
+  :mode ("\\.md\\'" . poly-markdown-mode))
 
 (use-package osx-clipboard
   :ensure t)
