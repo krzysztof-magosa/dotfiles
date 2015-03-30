@@ -170,7 +170,10 @@
 (use-package scss-mode
   :defer t
   :ensure t
-  :mode "\\.sass\\'")
+  :mode "\\.sass\\'"
+  :config
+  (progn
+    (setq css-indent-offset 2)))
 
 (use-package yaml-mode
   :defer t
