@@ -231,7 +231,8 @@
   :defer t
   :init
   (progn
-    (add-hook 'prog-mode-hook 'projectile-mode))
+    (add-hook 'prog-mode-hook 'projectile-mode)
+    (add-hook 'dired-mode-hook 'projectile-mode))
   :config
   (progn
     (setq projectile-project-root-files '(".project-root"))
