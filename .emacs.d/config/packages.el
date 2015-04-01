@@ -223,6 +223,9 @@
 (use-package osx-clipboard
   :ensure t)
 
+(use-package ggtags
+  :ensure t)
+
 (use-package projectile
   :ensure t
   :defer t
