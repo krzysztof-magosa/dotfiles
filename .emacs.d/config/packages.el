@@ -225,7 +225,10 @@
   :mode ("\\.md\\'" . poly-markdown-mode))
 
 (use-package osx-clipboard
-  :ensure t)
+  :ensure t
+  :init
+  (progn
+    (osx-clipboard-mode)))
 
 (use-package ggtags
   :ensure t)
