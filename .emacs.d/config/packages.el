@@ -159,13 +159,16 @@
     (setq web-mode-code-indent-offset 2)))
 
 (use-package gitconfig-mode
-  :ensure t)
+  :ensure t
+  :defer t)
 
 (use-package gitignore-mode
-  :ensure t)
+  :ensure t
+  :defer t)
 
 (use-package git-rebase-mode
   :ensure t
+  :defer t
   :config
   (progn
     (define-key git-rebase-mode-map (kbd "<ESC> <up>") 'git-rebase-move-line-up)
@@ -231,7 +234,8 @@
     (osx-clipboard-mode)))
 
 (use-package ggtags
-  :ensure t)
+  :ensure t
+  :defer t)
 
 (use-package projectile
   :ensure t
@@ -250,6 +254,7 @@
 ; it must be here on the bottom, because of bug with cl lib
 (use-package fiplr
   :ensure t
+  :defer t
   :bind("C-c o" . fiplr-find-file)
   :config
   (progn
