@@ -40,7 +40,8 @@
   :defer t
   :config
   (progn
-    (add-to-list 'company-c-headers-path-system '"/usr/include")))
+    (add-to-list 'company-c-headers-path-system '"/usr/include")
+    (add-to-list 'company-c-headers-path-system '"/usr/include/c++/4.2.1")))
 
 (use-package company-irony
   :ensure t
