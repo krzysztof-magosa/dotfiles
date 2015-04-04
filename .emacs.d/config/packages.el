@@ -72,6 +72,8 @@
   :init
   (progn
     (setq yas-snippet-dirs "~/.emacs.d/snippets")
+    (add-hook 'c-mode-hook 'yas-global-mode)
+    (add-hook 'c++-mode-hook 'yas-global-mode)
     (add-hook 'php-mode-hook 'yas-global-mode))) ; just for php
 
 ; php
