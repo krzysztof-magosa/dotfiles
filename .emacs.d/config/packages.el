@@ -64,6 +64,14 @@
   (progn
     (add-hook 'after-init-hook 'company-statistics-mode)))
 
+(use-package irony
+  :ensure t
+  :defer t
+  :commands irony-mode
+  :init
+  (progn
+    (add-hook 'c++-mode-hook 'irony-mode)))
+
 ; snippets
 (use-package yasnippet
   :ensure t
