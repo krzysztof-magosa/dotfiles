@@ -21,8 +21,8 @@
     (setq company-idle-delay 0.2)
     (add-to-list 'company-backends 'company-go)
     (add-to-list 'company-backends 'company-jedi)
-    (add-to-list 'company-backends 'company-c-headers)
-    (add-to-list 'company-backends 'company-irony))
+    (add-to-list 'company-backends 'company-irony)
+    (add-to-list 'company-backends 'company-c-headers))
   :init
   (progn
     (add-hook 'prog-mode-hook 'company-mode)))
