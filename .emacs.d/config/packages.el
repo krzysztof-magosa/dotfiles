@@ -107,34 +107,15 @@
   :defer t
   :commands markdown-mode)
 
-; check php coding style
-(use-package flymake-phpcs
+(use-package flycheck
   :ensure t
   :defer t
-  :commands flymake-phpcs-load
+  :init
+  (progn
+    (add-hook 'prog-mode-hook 'flycheck-mode))
   :config
   (progn
-    (setq flymake-phpcs-standard "PSR2")
-    (setq flymake-phpcs-show-rule t))
-  :init
-  (progn
-    (add-hook 'php-mode-hook 'flymake-phpcs-load)))
-
-; check php syntax
-(use-package flymake-php
-  :ensure t
-  :defer t
-  :commands flymake-php-load
-  :init
-  (progn
-    (add-hook 'php-mode-hook 'flymake-php-load)))
-
-(use-package flymake-python-pyflakes
-  :ensure t
-  :defer t
-  :init
-  (progn
-    (add-hook 'python-mode-hook 'flymake-python-pyflakes-load)))
+    (setq flycheck-phpcs-standard "PSR2")))
 
 ; edit symbol in multiple places in the same time
 (use-package iedit
