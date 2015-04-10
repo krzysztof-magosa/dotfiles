@@ -21,3 +21,8 @@
 ; when splitting screen try to put new window on bottom
 (setq split-height-threshold 0)
 (setq split-width-threshold 0)
+
+(when (eq system-type 'darwin)
+  (when (file-exists-p "/opt/local/bin/gls")
+    (setq insert-directory-program "/opt/local/bin/gls")
+    (setq dired-listing-switches "-aBhl --group-directories-first")))
