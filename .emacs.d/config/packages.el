@@ -92,7 +92,7 @@
   :mode "\\.php\\'"
   :config
   (progn
-    (add-hook 'php-mode-hook 'php-enable-psr2-coding-style)))
+    (add-hook 'php-mode-hook 'php-enable-symfony2-coding-style)))
 
 (use-package apache-mode
   :ensure t
