@@ -1,0 +1,24 @@
+# -*- mode: snippet -*-
+# name: is_prime
+# key: is_prime
+# --
+bool is_prime(long x)
+{
+    if (x <= 3) {
+        return (x >= 2);
+    }
+
+    if ((x % 2 == 0) || (x % 3) == 0) {
+        return false;
+    }
+    
+    for (int i = 5; i <= std::sqrt(x); i+=6) {
+        if ((x % i == 0) || (x % (i + 2) == 0)) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+$1
