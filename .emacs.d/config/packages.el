@@ -50,8 +50,8 @@
 (use-package company-quickhelp
   :ensure t
   :defer t
-  :commands company-quickhelp-mode
   :disabled t
+  :commands company-quickhelp-mode
   :init
   (progn
     (setq company-quickhelp-idle-delay 0.2)
@@ -205,6 +205,17 @@
   (progn
     (git-gutter:linum-setup)
     (setq git-gutter:update-interval 2)))
+
+(use-package pyvenv
+  :ensure t
+  :defer t
+  :config
+  (progn
+    (when (file-accessible-directory-p "~/.python-env/py3.4")
+      (pyvenv-activate "~/.python-env/py3.4")))
+  :init
+  (progn
+    (add-hook 'python-mode-hook 'pyvenv-mode)))
 
 (use-package elpy
   :ensure t
