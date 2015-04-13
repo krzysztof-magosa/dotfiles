@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: explode
+# key: explode
+# --
+std::vector<std::string> explode(std::string input, const char delimiter)
+{
+    std::istringstream ss(input);
+    std::vector<std::string> result;
+    std::string token;
+
+    while (std::getline(ss, token, delimiter)) {
+        result.push_back(token);
+    }
+
+    return result;
+}
+
+$1
