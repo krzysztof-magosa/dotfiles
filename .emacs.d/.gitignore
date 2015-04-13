@@ -6,3 +6,4 @@ semanticdb
 company-statistics-cache.el
 projectile-bookmarks.eld
 snippets/*-mode/.yas-compiled-snippets.el
+irony/bin/irony-server
