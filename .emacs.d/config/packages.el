@@ -184,6 +184,14 @@
   :ensure t
   :mode "\\.json\\'")
 
+(use-package js2-mode
+  :defer t
+  :ensure t
+  :mode "\\.js\\'"
+  :init
+  (progn
+    (setq-default js2-basic-offset 2)))
+
 (use-package cmake-mode
   :defer t
   :ensure t
