@@ -4,6 +4,7 @@ alias e='$EDITOR'
 
 if [ -d ~/.dotvm ] ; then
    alias vm="(cd ~/.dotvm && vagrant ssh)"
+   alias vmup="(cd ~/.dotvm && vagrant up)"
 fi
 
 # Show external IP
