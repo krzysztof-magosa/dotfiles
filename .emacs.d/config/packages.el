@@ -143,7 +143,9 @@
 (use-package web-mode
   :ensure t
   :defer t
-  :mode "\\.\\(phtml\\|html\\)\\'"
+  :mode "\\.blade\\.php\\'"
+  :mode "\\.phtml\\'"
+  :mode "\\.html\\'"
   :config
   (progn
     (setq web-mode-markup-indent-offset 2)
