@@ -1,5 +1,9 @@
-; molokai theme
-(use-package molokai-theme
+; flatland-theme
+; ujelly-theme
+; molokai-theme
+; twilight-bright-theme
+; material-theme
+(use-package flatland-theme
   :ensure t)
 
 (use-package highlight-current-line
