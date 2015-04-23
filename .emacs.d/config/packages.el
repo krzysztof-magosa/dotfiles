@@ -208,6 +208,10 @@
   :ensure t
   :mode "\\.go\\'")
 
+(use-package password-generator
+  :ensure t
+  :defer t)
+
 (use-package git-gutter
   :ensure t
   :defer t
