@@ -9,3 +9,4 @@ snippets/*-mode/.yas-compiled-snippets.el
 irony/bin/irony-server
 SessionDesktop.el
 ido.last
+eshell/*
