@@ -1,6 +1,7 @@
 alias tigs="tig status"
 alias mkdir="mkdir -p"
 alias e='$EDITOR'
+alias n="cd ~/.notes"
 
 if [ -d ~/.dotvm ] ; then
    alias vm="(cd ~/.dotvm && vagrant ssh)"
