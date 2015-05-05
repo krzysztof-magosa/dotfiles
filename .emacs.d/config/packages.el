@@ -3,7 +3,8 @@
 ; molokai-theme
 ; twilight-bright-theme
 ; material-theme
-(use-package flatland-theme
+; flatland-theme
+(use-package material-theme
   :ensure t)
 
 (use-package highlight-current-line
