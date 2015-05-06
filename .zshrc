@@ -7,3 +7,5 @@ ZSH_CUSTOM=$HOME/.zsh-custom
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+RPROMPT=""
