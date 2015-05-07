@@ -273,6 +273,12 @@
     (setq projectile-project-root-files-bottom-up '(".project-root"))
     (setq projectile-enable-idle-timer t)))
 
+(use-package sh-script
+  :ensure t
+  :defer t
+  :commands sh-mode
+  :mode ("\\.zsh\\'" . sh-mode))
+
 ; it must be here on the bottom, because of bug with cl lib
 (use-package fiplr
   :ensure t
