@@ -8,6 +8,10 @@ if [ -d ~/.dotvm ] ; then
    alias vmup="(cd ~/.dotvm && vagrant up)"
 fi
 
+# Go to repos dir
+is_osx && alias vr="cd /Volumes/Repos"
+is_linux && alias vr="cd /repos"
+
 # Show external IP
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
