@@ -145,6 +145,10 @@
   :defer t
   :bind("C-c g" . helm-git-grep))
 
+(use-package helm-projectile
+  :ensure t
+  :defer t)
+
 (use-package web-mode
   :ensure t
   :defer t
@@ -271,6 +275,7 @@
     (setq projectile-project-root-files '(".project-root"))
     (setq projectile-project-root-files-top-down-recurring '(".project-root"))
     (setq projectile-project-root-files-bottom-up '(".project-root"))
+    (setq projectile-completion-system 'helm)
     (setq projectile-enable-idle-timer t)))
 
 (use-package sh-script
