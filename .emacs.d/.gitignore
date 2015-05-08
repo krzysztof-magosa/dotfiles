@@ -10,3 +10,4 @@ irony/bin/irony-server
 SessionDesktop.el
 ido.last
 eshell/*
+projectile.cache
