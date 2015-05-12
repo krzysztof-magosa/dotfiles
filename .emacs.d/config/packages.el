@@ -21,6 +21,7 @@
 (use-package company
   :ensure t
   :defer t
+  :bind ("M-/" . company-complete-common)
   :config
   (progn
     (setq company-idle-delay 0.2)
