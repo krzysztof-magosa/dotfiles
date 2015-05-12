@@ -28,7 +28,8 @@
     (add-to-list 'company-backends 'company-go)
     (add-to-list 'company-backends 'company-jedi)
     (add-to-list 'company-backends 'company-irony)
-    (add-to-list 'company-backends 'company-c-headers))
+    (add-to-list 'company-backends 'company-c-headers)
+    (add-to-list 'company-backends 'company-emacs-eclim))
   :init
   (progn
     (add-hook 'prog-mode-hook 'company-mode)))
@@ -263,6 +264,20 @@
 (use-package ggtags
   :ensure t
   :defer t)
+
+(use-package emacs-eclim
+  :ensure t
+  :defer t
+  :init
+  (progn
+    (autoload 'company-emacs-eclim "company-emacs-eclim" "" t nil)
+    (setq eclim-eclipse-dirs '("~/eclipse"))
+    (setq eclim-executable "~/eclipse/eclim")
+    (add-hook 'java-mode-hook 'eclim-mode))
+  :config
+  (progn
+    (require 'eclimd)
+    (require 'company-emacs-eclim)))
 
 (use-package projectile
   :ensure t
