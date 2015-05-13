@@ -8,7 +8,10 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-(require 'use-package)
+(eval-when-compile
+  (require 'use-package))
+
+(require 'bind-key)
 
 (load "~/.emacs.d/config/packages")
 (load "~/.emacs.d/config/keyboard")
