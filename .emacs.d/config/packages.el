@@ -301,6 +301,10 @@
   :commands sh-mode
   :mode ("\\.zsh\\'" . sh-mode))
 
+(use-package puppet-mode
+  :ensure t
+  :defer t)
+
 ; it must be here on the bottom, because of bug with cl lib
 (use-package fiplr
   :ensure t
