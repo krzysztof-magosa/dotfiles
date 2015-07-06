@@ -295,6 +295,13 @@
     (setq projectile-completion-system 'helm)
     (setq projectile-enable-idle-timer t)))
 
+(use-package highlight-indentation
+  :ensure t
+  :defer t
+  :init
+  (progn
+    (add-hook 'prog-mode-hook 'highlight-indentation-mode)))
+
 (use-package sh-script
   :ensure t
   :defer t
