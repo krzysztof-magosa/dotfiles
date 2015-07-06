@@ -22,6 +22,9 @@
 (setq split-height-threshold 0)
 (setq split-width-threshold 0)
 
+; highlight trailing whitespace
+(setq-default show-trailing-whitespace t)
+
 (when (eq system-type 'darwin)
   (when (file-exists-p "/opt/local/bin/gls")
     (setq insert-directory-program "/opt/local/bin/gls")
