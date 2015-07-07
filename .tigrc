@@ -12,3 +12,5 @@ bind main <Ctrl-r> !tig-rebase.sh reword %(commit)
 
 # Abort current rebase
 bind main <Ctrl-x> !tig-rebase.sh abort
+
+set vertical-split = no
