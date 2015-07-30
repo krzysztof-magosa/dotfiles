@@ -176,13 +176,13 @@
   :ensure t
   :defer t)
 
-(use-package git-rebase-mode
-  :ensure t
-  :defer t
-  :config
-  (progn
-    (define-key git-rebase-mode-map (kbd "<ESC> <up>") 'git-rebase-move-line-up)
-    (define-key git-rebase-mode-map (kbd "<ESC> <down>") 'git-rebase-move-line-down)))
+;(use-package git-rebase-mode
+;  :ensure t
+;  :defer t
+;  :config
+;  (progn
+;    (define-key git-rebase-mode-map (kbd "<ESC> <up>") 'git-rebase-move-line-up)
+;    (define-key git-rebase-mode-map (kbd "<ESC> <down>") 'git-rebase-move-line-down)))
 
 (use-package scss-mode
   :defer t
