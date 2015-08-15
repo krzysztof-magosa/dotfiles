@@ -1,4 +1,4 @@
-if [ -f ~/eclipse/eclimd ] ; then
+if [ -f ~/eclipse/eclimd ] && [ "$ECLIMD" != "false" ] ; then
     ps auxw | grep "[o]rg.eclim.application" > /dev/null
 
     if [ $? = 1 ] ; then
