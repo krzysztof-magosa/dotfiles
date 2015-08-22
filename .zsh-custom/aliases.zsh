@@ -12,9 +12,8 @@ if  [ -f ~/.ssh/id_rsa.pub ] ; then
    is_osx && alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo 'Public key has been copied to clipboard.'"
 fi
 
-# Go to repos dir
-is_osx && alias vr="cd /Volumes/Repos"
-is_linux && alias vr="cd /repos"
+# Go to projects repos dir
+[ -d ~/projects ] && alias p="cd ~/projects"
 
 # Show external IP
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
