@@ -323,6 +323,13 @@
   :ensure t
   :defer t)
 
+(use-package org
+  :ensure t
+  :defer t
+  :config
+  (progn
+    (setq-default org-startup-folded "showeverything")))
+
 ; it must be here on the bottom, because of bug with cl lib
 (use-package fiplr
   :ensure t
