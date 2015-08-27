@@ -91,7 +91,7 @@
   :commands yas-global-mode
   :init
   (progn
-    (setq yas-snippet-dirs "~/.emacs.d/snippets")
+    (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
     (add-hook 'c-mode-hook 'yas-global-mode)
     (add-hook 'c++-mode-hook 'yas-global-mode)
     (add-hook 'sh-mode-hook 'yas-global-mode)
