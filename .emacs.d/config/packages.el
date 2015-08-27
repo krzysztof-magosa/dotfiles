@@ -127,7 +127,8 @@
     (add-hook 'prog-mode-hook 'flycheck-mode))
   :config
   (progn
-    (setq flycheck-phpcs-standard "PSR2")))
+    (setq flycheck-phpcs-standard "PSR2")
+    (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))))
 
 ; edit symbol in multiple places in the same time
 (use-package iedit
