@@ -23,7 +23,7 @@
 |M-C-s|Regex search|
 |M-%|Find and replace|
 |M-s o|Show occurrences|
-|C-M-\|Indent selection|
+|C-M-\\|Indent selection|
 |C-x o|Go to other window|
 |C-x 0|Close current window|
 |C-x 1|Close other windows|
