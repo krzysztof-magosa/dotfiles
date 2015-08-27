@@ -15,6 +15,7 @@ fi
 
 # Go to projects repos dir
 [ -d ~/projects ] && alias p="cd ~/projects"
+[ -f "${ORGMODE_DIR}/todo.org" ] && alias todo="emacs ${ORGMODE_DIR}/todo.org"
 
 # Show external IP
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
