@@ -29,11 +29,16 @@
     (add-to-list 'company-backends 'company-jedi)
     (add-to-list 'company-backends 'company-irony)
     (add-to-list 'company-backends 'company-c-headers)
+    (add-to-list 'company-backends 'company-ansible)
 ;;    (add-to-list 'company-backends 'company-emacs-eclim)
     (add-to-list 'company-backends 'company-inf-ruby))
   :init
   (progn
     (add-hook 'prog-mode-hook 'company-mode)))
+
+(use-package company-ansible
+  :ensure t
+  :defer t)
 
 (use-package company-go
   :ensure t
