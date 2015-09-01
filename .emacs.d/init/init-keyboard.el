@@ -10,3 +10,5 @@
 (define-key global-map (kbd "C-<down>") 'windmove-down)
 (define-key global-map (kbd "C-<left>") 'windmove-left)
 (define-key global-map (kbd "C-<right>") 'windmove-right)
+
+(provide 'init-keyboard)

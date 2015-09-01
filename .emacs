@@ -11,9 +11,16 @@
 (eval-when-compile
   (require 'use-package))
 
+(add-to-list 'load-path (expand-file-name "init" user-emacs-directory))
+
+(require 'init-options)
 (require 'bind-key)
-
-(load "~/.emacs.d/config/packages")
-(load "~/.emacs.d/config/keyboard")
-(load "~/.emacs.d/config/options")
-
+(require 'init-company)
+(require 'init-git)
+(require 'init-helm)
+(require 'init-osx)
+(require 'init-modes)
+(require 'init-mgmt)
+(require 'init-other)
+(require 'init-keyboard)
+(require 'init-appearance)
