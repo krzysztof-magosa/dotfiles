@@ -2,6 +2,11 @@ export EDITOR="emacs"
 export VISUAL="emacs"
 export LANG="en_GB.UTF-8"
 export ECLIMD="false"
-
-export PATH="$HOME/bin:$HOME/.dotfiles/.bin/tig-rebase:$HOME/.bin/:/opt/local/bin:/opt/local/lib/php/pear/bin:$PATH"
 export ORGMODE_DIR="$HOME/OneDrive/OrgMode"
+
+# user bin
+export PATH="$PATH:$HOME/bin"
+
+# homebrew path
+export PATH="$PATH:/usr/local/bin"
+export PATH="$PATH:/usr/local/sbin"
