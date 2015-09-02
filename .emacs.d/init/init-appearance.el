@@ -4,8 +4,13 @@
 ; twilight-bright-theme
 ; material-theme
 ; flatland-theme
-(use-package material-theme
-  :ensure t)
+(use-package moe-theme
+  :ensure t
+  :config
+  (progn
+    (load-theme 'moe-dark t)
+    (moe-theme-set-color 'blue)
+    (powerline-moe-theme)))
 
 (use-package highlight-current-line
   :ensure t
