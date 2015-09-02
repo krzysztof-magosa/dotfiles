@@ -24,4 +24,10 @@
   (progn
     (add-hook 'prog-mode-hook 'highlight-indentation-mode)))
 
+(use-package powerline
+  :ensure t
+  :init
+  (progn
+    (powerline-default-theme)))
+
 (provide 'init-appearance)
