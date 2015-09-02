@@ -11,3 +11,4 @@ SessionDesktop.el
 ido.last
 eshell/*
 projectile.cache
+helm-adaptive-history
