@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: template
+# key: template
+# --
+#! /usr/bin/env ruby
+
+# Copyright (c) 2015 $1
