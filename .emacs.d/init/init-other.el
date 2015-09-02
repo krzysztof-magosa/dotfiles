@@ -17,8 +17,8 @@
     (add-hook 'c-mode-hook 'yas-global-mode)
     (add-hook 'c++-mode-hook 'yas-global-mode)
     (add-hook 'sh-mode-hook 'yas-global-mode)
+    (add-hook 'ruby-mode-hook 'yas-global-mode)
     (add-hook 'php-mode-hook 'yas-global-mode))) ; just for php
-
 
 (use-package flycheck
   :ensure t
