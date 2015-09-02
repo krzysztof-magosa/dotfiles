@@ -5,7 +5,7 @@
 (menu-bar-mode -1)
 
 ; be more interactive ;)
-(ido-mode 1)
+;(ido-mode 1)
 
 ; show line number
 (global-linum-mode 1)
