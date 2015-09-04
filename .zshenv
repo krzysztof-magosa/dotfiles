@@ -10,3 +10,5 @@ export PATH="/usr/local/sbin:$PATH"
 # user bin
 export PATH="$PATH:$HOME/bin"
 
+# add tig-rebase to path
+export PATH="$PATH:$HOME/.bin/tig-rebase"
