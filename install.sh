@@ -10,6 +10,8 @@ function make_symlinks()
         [ "$name" == "." ] && continue
         [ "$name" == ".." ] && continue
         [ "$name" == ".git" ] && continue
+        [ "$name" == ".gitignore" ] && continue
+        [ "$name" == ".gitmodules" ] && continue
 
         echo "Linking $name..."
         ln -sf "$path/$name" ~/
