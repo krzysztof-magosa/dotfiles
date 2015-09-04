@@ -20,7 +20,7 @@
     (set-face-background 'highlight-current-line-face "#2a2a2a"))
   :init
   (progn
-    (add-hook 'prog-mode-hook 'highlight-current-line-minor-mode)))
+    (add-hook 'find-file-hook 'highlight-current-line-minor-mode)))
 
 (use-package highlight-indentation
   :ensure t
