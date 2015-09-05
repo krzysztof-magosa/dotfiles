@@ -104,6 +104,13 @@
   (progn
     (add-hook 'python-mode-hook 'elpy-mode)))
 
+(use-package rainbow-delimiters
+  :ensure t
+  :defer t
+  :init
+  (progn
+    (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)))
+
 ;;(use-package emacs-eclim
 ;;  :ensure t
 ;;  :defer t
