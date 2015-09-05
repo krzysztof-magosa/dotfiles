@@ -111,6 +111,13 @@
   (progn
     (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)))
 
+(use-package move-text
+  :ensure t
+  :defer t
+  :bind (
+         ("<ESC> <up>" . move-text-up)
+         ("<ESC> <down>" . move-text-down)))
+
 ;;(use-package emacs-eclim
 ;;  :ensure t
 ;;  :defer t
