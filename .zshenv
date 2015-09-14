@@ -19,8 +19,3 @@ if [ -d /opt/ansible ] ; then
     export PYTHONPATH="/opt/ansible/lib:$PYTHONPATH"
     export MANPATH="/opt/ansible/docs/man:$MANPATH"
 fi
-
-# local ruby gems bin
-if which ruby >/dev/null && which gem >/dev/null; then
-    PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
-fi
