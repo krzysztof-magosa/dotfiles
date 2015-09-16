@@ -12,8 +12,8 @@
     (add-to-list 'company-backends 'company-c-headers)
     (add-to-list 'company-backends 'company-ansible)
 ;;    (add-to-list 'company-backends 'company-emacs-eclim)
-    (add-to-list 'company-backends 'company-inf-ruby)
-    (add-to-list 'company-backends 'company-yasnippet))
+    (add-to-list 'company-backends 'company-inf-ruby))
+;;    (add-to-list 'company-backends 'company-yasnippet))
   :init
   (progn
     (add-hook 'prog-mode-hook 'company-mode)))
