@@ -19,3 +19,7 @@ if [ -d /opt/ansible ] ; then
     export PYTHONPATH="/opt/ansible/lib:$PYTHONPATH"
     export MANPATH="/opt/ansible/docs/man:$MANPATH"
 fi
+
+if [ -d $HOME/.rbenv/bin ] ; then
+    export PATH="$PATH:$HOME/.rbenv/bin"
+fi
