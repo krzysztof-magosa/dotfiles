@@ -20,6 +20,12 @@
 |M-w|Copy|
 |C-y|Paste|
 |C-s|Search|
+|C-v|Page down|
+|M-v|Page up|
+|M-<|Go to top|
+|M->|Go to bottom|
+|C-a|Home|
+|C-e|End|
 |M-C-s|Regex search|
 |M-%|Find and replace|
 |M-s o|Show occurrences|
