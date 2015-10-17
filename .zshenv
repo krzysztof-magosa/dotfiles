@@ -13,6 +13,9 @@ export PATH="$PATH:$HOME/bin"
 # add tig-rebase to path
 export PATH="$PATH:$HOME/.bin/tig-rebase"
 
+# ggtags/global configuration label
+export GTAGSLABEL="default"
+
 # add ansible to variables
 if [ -d /opt/ansible ] ; then
     export PATH="$PATH:/opt/ansible/bin"
