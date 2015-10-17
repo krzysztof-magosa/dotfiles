@@ -54,6 +54,9 @@
 |C-<arrow>|Go to other window by direction|
 |C-c j|Jump to line|
 |C-c ;|Multi cursor edit|
+|C-c C-c|Comment/uncomment region|
+|C-c 1|Show flycheck errors in Helm|
+|C-h f|Describe function|
 
 ## Useful commands
 |Command|Action|
