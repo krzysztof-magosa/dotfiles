@@ -57,6 +57,7 @@
 |C-c C-c|Comment/uncomment region|
 |C-c 1|Show flycheck errors in Helm|
 |C-h f|Describe function|
+|M-.|Go to tag on cursor|
 
 ## Useful commands
 |Command|Action|
