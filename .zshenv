@@ -13,15 +13,11 @@ export PATH="$PATH:$HOME/bin"
 # add tig-rebase to path
 export PATH="$PATH:$HOME/.bin/tig-rebase"
 
+# local python base
+export PATH="$PATH:$HOME/Library/Python/2.7/bin"
+
 # ggtags/global configuration label
 export GTAGSLABEL="default"
-
-# add ansible to variables
-if [ -d /opt/ansible ] ; then
-    export PATH="$PATH:/opt/ansible/bin"
-    export PYTHONPATH="/opt/ansible/lib:$PYTHONPATH"
-    export MANPATH="/opt/ansible/docs/man:$MANPATH"
-fi
 
 if [ -d $HOME/.rbenv/bin ] ; then
     export PATH="$PATH:$HOME/.rbenv/bin"
