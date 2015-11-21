@@ -4,8 +4,8 @@ export LANG="en_GB.UTF-8"
 export ECLIMD="false"
 export ORGMODE_DIR="$HOME/OneDrive/OrgMode"
 
-# brew sbin
-export PATH="/usr/local/sbin:$PATH"
+# homebrew path
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 
 # user bin
 export PATH="$PATH:$HOME/bin"
