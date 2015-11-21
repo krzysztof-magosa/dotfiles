@@ -1,6 +1,3 @@
-[submodule ".bin/tig-rebase"]
-	path = .bin/tig-rebase
-	url = https://github.com/Nattfarinn/tig-rebase.git
 [submodule ".emacs.d"]
 	path = .emacs.d
 	url = git@github.com:krzysztof-magosa/emacs.d.git
