@@ -8,6 +8,7 @@ ZSH_CUSTOM=$HOME/.zsh-custom
 plugins=(git)
 
 setopt NO_CHECK_JOBS
+setopt NO_SHARE_HISTORY
 
 source $ZSH/oh-my-zsh.sh
 
