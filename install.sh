@@ -18,8 +18,20 @@ function make_symlinks()
     done
 }
 
+function template_gitconfig()
+{
+    if [ ! -f ~/.gitconfig-local ] ; then
+        cd "$(dirname "${BASH_SOURCE}")"
+        path=$(pwd)
+        cat $path/gitconfig-local.template > ~/.gitconfig-local
+
+        echo "Remember to fill ~/.gitconfig-local with your details."
+    fi
+}
+
 if [ "$1" = "--force" ] ; then
     make_symlinks
+    template_gitconfig
 else
     echo "All files/directories beggining with . in this repository"
     echo "will be symlinked to your home directory, existing symlinks"
@@ -28,7 +40,7 @@ else
     select yn in "yes" "no";
     do
         case $yn in
-            yes) make_symlinks; break;;
+            yes) make_symlinks; template_gitconfig; break;;
             no) exit;;
         esac
     done
