@@ -4354,9 +4354,13 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>269 168 606 456 0 0 1280 777 </string>
+	<string>269 313 606 456 0 0 1280 777 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>330 299 620 392 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 221 820 548 0 0 1280 777 </string>
+	<string>41 0 1239 777 0 0 1280 777 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>152 50 820 548 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -4546,9 +4550,9 @@
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
-			<false/>
+			<true/>
 			<key>Blur Radius</key>
-			<real>7.1725406646728516</real>
+			<real>22.703069510826698</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -5074,7 +5078,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.0</real>
+			<real>0.07235114644970414</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -5097,6 +5101,10 @@
 			<string>~/projects</string>
 		</dict>
 	</array>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
+	<key>NoSyncSilenceAnnoyingBellAutomatically</key>
+	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>479073375.72787201</real>
 	<key>NoSyncTimeOfLastPromo</key>
@@ -5169,7 +5177,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-03-07T19:55:17Z</date>
+	<date>2016-04-18T20:39:24Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -5215,6 +5223,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20160206</string>
+	<string>2.9.20160313</string>
 </dict>
 </plist>
