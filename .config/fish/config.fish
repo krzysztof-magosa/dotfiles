@@ -10,6 +10,8 @@ abbr l='ls -lpAGh'
 abbr e='emacs'
 abbr akamai="curl -H 'Pragma: akamai-x-cache-on, akamai-x-cache-remote-on, akamai-x-check-cacheable, akamai-x-get-cache-key, akamai-x-get-extracted-values, akamai-x-get-nonces, akamai-x-get-ssl-client-session-id, akamai-x-get-true-cache-key, akamai-x-serial-no' -IXGET"
 abbr pubkey='cat ~/.ssh/id_rsa.pub | pbcopy | echo "Public key has been copied to clipboard."'
+abbr n='emacs "~/Library/Mobile Documents/com~apple~CloudDocs/notes.txt"'
+
 set -g fisher_home ~/.local/share/fisherman
 set -g fisher_config ~/.config/fisherman
 source $fisher_home/config.fish
