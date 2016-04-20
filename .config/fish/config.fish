@@ -12,6 +12,15 @@ abbr akamai="curl -H 'Pragma: akamai-x-cache-on, akamai-x-cache-remote-on, akama
 abbr pubkey='cat ~/.ssh/id_rsa.pub | pbcopy | echo "Public key has been copied to clipboard."'
 abbr n='emacs "~/Library/Mobile Documents/com~apple~CloudDocs/notes.txt"'
 
+set -g theme_display_vagrant no
+set -g theme_display_hg no
+set -g theme_display_vi no
+set -g theme_title_display_process no
+set -g theme_display_virtualenv no
+set -g theme_date_format "+%A, %d %B, %H:%M"
+
+set -g default_user km
+
 set -g fisher_home ~/.local/share/fisherman
 set -g fisher_config ~/.config/fisherman
 source $fisher_home/config.fish
