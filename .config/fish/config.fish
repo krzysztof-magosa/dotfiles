@@ -2,6 +2,9 @@ set -xg EDITOR emacs
 set -xe fish_greeting
 set -xg fish_user_paths /opt/homebrew/bin /opt/homebrew/sbin ~/Library/Python/2.7/bin ~/bin
 
+set -x LC_ALL en_GB.UTF-8
+set -x LC_CTYPE en_GB.UTF-8
+
 abbr tigs='tig status'
 abbr g='git'
 abbr p='cd ~/projects'
