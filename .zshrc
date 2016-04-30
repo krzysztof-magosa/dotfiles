@@ -1,15 +1,13 @@
-export ZSH=$HOME/.oh-my-zsh
+ZSH="$HOME/.zsh"
 
-ZSH_THEME="agnoster"
-DEFAULT_USER="km"
-#HIST_STAMPS="dd.mm.yyyy"
-ZSH_CUSTOM=$HOME/.zsh-custom
+if [ ! -d $ZSH/antigen ] ; then
+    git clone https://github.com/zsh-users/antigen.git $ZSH/antigen
+fi
 
-plugins=(git)
+source $ZSH/antigen/antigen.zsh
 
-setopt NO_CHECK_JOBS
-setopt NO_SHARE_HISTORY
+for file in $ZSH/conf.d/*.zsh ; do
+    source $file
+done
 
-source $ZSH/oh-my-zsh.sh
-
-#RPROMPT=""
+antigen apply
