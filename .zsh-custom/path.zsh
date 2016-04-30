@@ -1,9 +1,0 @@
-path=(
-    /opt/homebrew/bin
-    /opt/homebrew/sbin
-    ~/bin
-    ~/.bin/tig-rebase
-    ~/Library/Python/2.7/bin
-    ~/.rbenv/bi
-    $path
-)
