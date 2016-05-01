@@ -1,48 +1,41 @@
 # oh-my-zsh stuff
-antigen use oh-my-zsh
-antigen bundle git
-antigen bundle pip
-antigen bundle brew
-antigen bundle brew-cask
-antigen bundle copydir
-antigen bundle copyfile
-antigen bundle cp # cpv
-antigen bundle virtualenv
-antigen bundle vagrant
-antigen bundle sudo # esc-esc
-antigen bundle rbenv
-antigen bundle python
-antigen bundle forklift # fl <enter>
-antigen bundle history # hs/hsi
-#antigen bundle osx
-#antigen bundle common-aliases
-#antigen bundle autoenv
+zplug "robbyrussell/oh-my-zsh", use:"lib/*.zsh", nice:14
+zplug "plugins/git", from:oh-my-zsh, nice:10
+zplug "plugins/pip", from:oh-my-zsh
+zplug "plugins/brew", from:oh-my-zsh
+zplug "plugins/brew-cask", from:oh-my-zsh, nice:10
+zplug "plugins/copydir", from:oh-my-zsh
+zplug "plugins/copyfile", from:oh-my-zsh
+zplug "plugins/cp", from:oh-my-zsh # cpv
+zplug "plugins/virtualenv", from:oh-my-zsh
+zplug "plugins/vagrant", from:oh-my-zsh
+zplug "plugins/sudo", from:oh-my-zsh # esc-esc
+zplug "plugins/rbenv", from:oh-my-zsh
+zplug "plugins/python", from:oh-my-zsh
+zplug "plugins/forklift", from:oh-my-zsh # fl <enter>
+zplug "plugins/history", from:oh-my-zsh # hs/hsi
+zplug "plugins/osx", from:oh-my-zsh
+
+# theme
+zplug "oskarkrawczyk/honukai-iterm-zsh", nice:15 # after oh-my-zsh lib
+#zplug "themes/candy", from:oh-my-zsh
+#zplug "caiogondim/bullet-train-oh-my-zsh-theme"
+#antigen theme Remiii/remiii.zsh-theme remiii
 
 # other stuff
-#antigen bundle marzocchi/zsh-notify
-#antigen bundle Tarrasch/zsh-bd
-antigen bundle fcambus/ansiweather
-antigen bundle unixorn/autoupdate-antigen.zshplugin
-antigen bundle mollifier/cd-gitroot
-#antigen bundle bcho/Watson.zsh
-antigen bundle voronkovich/gitignore.plugin.zsh # gi <lang>
-antigen bundle peterhurford/git-it-on.zsh # gitit
-antigen bundle Seinh/git-prune # gprune
+zplug "fcambus/ansiweather"
+zplug "unixorn/autoupdate-antigen.zshplugin"
+zplug "mollifier/cd-gitroot"
+zplug "voronkovich/gitignore.plugin.zsh", nice:10 # gi <lang>
+zplug "peterhurford/git-it-on.zsh" # gitit
+zplug "Seinh/git-prune" # gprune
 
-antigen bundle b4b4r07/enhancd # cd <enter>
+zplug "b4b4r07/enhancd" # cd <enter>
 export ENHANCD_DISABLE_DOT=1
 export ENHANCD_DISABLE_HYPHEN=1
 
 # zsh-users stuff
-antigen bundle zsh-users/zsh-history-substring-search
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-syntax-highlighting # it must be last one
-
-#antigen theme prikhi/molokai-powerline-zsh molokai-powerline
-#antigen theme Remiii/remiii.zsh-theme remiii
-
-#antigen theme agnoster
-#export DEFAULT_USER="km"
-
-antigen theme candy
+zplug "zsh-users/zsh-history-substring-search"
+zplug "zsh-users/zsh-completions", nice:10
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-syntax-highlighting", nice:19 # it must be last one

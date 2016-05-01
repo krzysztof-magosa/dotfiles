@@ -1,13 +1,20 @@
 DOT_ZSH="$HOME/.zsh"
 
-if [ ! -d $DOT_ZSH/antigen ] ; then
-    git clone https://github.com/zsh-users/antigen.git $DOT_ZSH/antigen
+if [ ! -d $DOT_ZSH/zplug ] ; then
+    git clone https://github.com/b4b4r07/zplug.git $DOT_ZSH/zplug
 fi
 
-source $DOT_ZSH/antigen/antigen.zsh
+source $DOT_ZSH/zplug/init.zsh
 
 for file in $DOT_ZSH/conf.d/*.zsh ; do
     source $file
 done
 
-antigen apply
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+zplug load --verbose
