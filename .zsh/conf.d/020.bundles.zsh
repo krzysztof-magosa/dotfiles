@@ -30,7 +30,7 @@ zplug "voronkovich/gitignore.plugin.zsh", nice:10 # gi <lang>
 zplug "peterhurford/git-it-on.zsh" # gitit
 zplug "Seinh/git-prune" # gprune
 
-zplug "b4b4r07/enhancd" # cd <enter>
+zplug "b4b4r07/enhancd", use:"enhancd.sh" # cd <enter>
 export ENHANCD_DISABLE_DOT=1
 export ENHANCD_DISABLE_HYPHEN=1
 
