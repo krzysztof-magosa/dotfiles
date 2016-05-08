@@ -24,7 +24,6 @@ zplug "themes/candy", from:oh-my-zsh, nice:15
 
 # other stuff
 zplug "fcambus/ansiweather"
-zplug "unixorn/autoupdate-antigen.zshplugin"
 zplug "mollifier/cd-gitroot"
 zplug "voronkovich/gitignore.plugin.zsh", nice:10 # gi <lang>
 zplug "peterhurford/git-it-on.zsh" # gitit
