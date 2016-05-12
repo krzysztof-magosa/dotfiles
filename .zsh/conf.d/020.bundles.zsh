@@ -17,10 +17,7 @@ zplug "plugins/history", from:oh-my-zsh # hs/hsi
 zplug "plugins/osx", from:oh-my-zsh
 
 # theme
-#zplug "oskarkrawczyk/honukai-iterm-zsh", nice:15 # after oh-my-zsh lib
 zplug "themes/candy", from:oh-my-zsh, nice:15
-#zplug "caiogondim/bullet-train-oh-my-zsh-theme"
-#antigen theme Remiii/remiii.zsh-theme remiii
 
 # other stuff
 zplug "fcambus/ansiweather"
