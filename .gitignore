@@ -2,3 +2,4 @@
 /.zsh/antigen
 /.zsh/zplug
 /.zsh/.last-update
+/.zsh/dns.d/*
