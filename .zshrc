@@ -1,4 +1,21 @@
 DOT_ZSH="$HOME/.zsh"
+CONF_FILES=($DOT_ZSH/conf.d/*.zsh)
+LAST_UPDATE="$DOT_ZSH/.last-update"
+
+function is_update_needed() {
+    if [ ! -f $LAST_UPDATE ] ; then
+        touch $LAST_UPDATE
+        return 0
+    fi
+
+    for file in $CONF_FILES ; do
+        if [ $file -nt $LAST_UPDATE ] ; then
+            return 0
+        fi
+    done
+
+    return 1
+}
 
 if [ ! -d $DOT_ZSH/zplug ] ; then
     git clone https://github.com/b4b4r07/zplug.git $DOT_ZSH/zplug
@@ -6,12 +23,15 @@ fi
 
 source $DOT_ZSH/zplug/init.zsh
 
-for file in $DOT_ZSH/conf.d/*.zsh ; do
+for file in $CONF_FILES ; do
     source $file
 done
 
-if [ ! -d ~/.zplug/repos ] ; then
+if is_update_needed ; then
+    echo "Configuration files have been changed, installing missing plugins..."
     zplug install
+    zplug clear
+    touch $LAST_UPDATE
 fi
 
 zplug load --verbose
