@@ -16,17 +16,14 @@ zplug "plugins/forklift", from:oh-my-zsh # fl <enter>
 zplug "plugins/history", from:oh-my-zsh # hs/hsi
 zplug "plugins/osx", from:oh-my-zsh
 
-# theme
-zplug "themes/candy", from:oh-my-zsh, nice:15
-
-# other stuff
+# various stuff
 zplug "fcambus/ansiweather"
 zplug "mollifier/cd-gitroot"
 zplug "voronkovich/gitignore.plugin.zsh", nice:10 # gi <lang>
 zplug "peterhurford/git-it-on.zsh" # gitit
 zplug "Seinh/git-prune" # gprune
 zplug "supercrabtree/k" # k
-
+zplug "junegunn/fzf", use:"shell/*.zsh", nice:18 # fuzzy search, ctrl+t, ctrl+r, alt+c
 zplug "b4b4r07/enhancd", use:"enhancd.sh" # cd <enter>
 export ENHANCD_DISABLE_DOT=1
 export ENHANCD_DISABLE_HYPHEN=1
@@ -37,4 +34,5 @@ zplug "zsh-users/zsh-completions", nice:10
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-syntax-highlighting", nice:19 # it must be last one
 
-zplug "junegunn/fzf", use:"shell/*.zsh", nice:18 # fuzzy search, ctrl+t, ctrl+r, alt+c
+# theme
+zplug "themes/candy", from:oh-my-zsh, nice:15
