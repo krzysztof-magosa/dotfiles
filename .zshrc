@@ -10,11 +10,8 @@ for file in $DOT_ZSH/conf.d/*.zsh ; do
     source $file
 done
 
-if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
+if [ ! -d ~/.zplug/repos ] ; then
+    zplug install
 fi
 
 zplug load --verbose
