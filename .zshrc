@@ -28,9 +28,12 @@ for file in $CONF_FILES ; do
 done
 
 if is_update_needed ; then
-    echo "Configuration files have been changed, installing missing plugins..."
-    zplug install
-    zplug clear
+    if ! zplug check ; then
+        echo "Configuration files have been changed, installing missing plugins..."
+        zplug install
+        zplug clear
+    fi
+
     touch $LAST_UPDATE
 fi
 
