@@ -39,3 +39,5 @@ zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-completions", nice:10
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-syntax-highlighting", nice:19 # it must be last one
+
+zplug "junegunn/fzf", use:"shell/*.zsh", nice:18 # fuzzy search, ctrl+t, ctrl+r, alt+c
