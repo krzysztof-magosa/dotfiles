@@ -2,4 +2,7 @@
 .project-root
 *~
 TAGS
+GPATH
+GRTAGS
+GTAGS
 \#*\#
