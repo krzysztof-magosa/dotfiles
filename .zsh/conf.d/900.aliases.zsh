@@ -1,6 +1,7 @@
 alias today='git log --since="today 00:00:00" --author="$(git config user.email)" --format=oneline | egrep "\w+ \w+-\d+" | cut -d" " -f 2-'
 alias yesterday='git log --since="yesterday 00:00:00" --before="today 00:00:00" --author="$(git config user.email)" --format=oneline | egrep "\w+ \w+-\d+" | cut -d" " -f 2-'
 
+alias mc="mc -u"
 alias tigs="tig status"
 alias mkdir="mkdir -p"
 alias e='$EDITOR'
