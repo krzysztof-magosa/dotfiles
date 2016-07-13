@@ -14,7 +14,7 @@ zplug "plugins/rbenv", from:oh-my-zsh
 zplug "plugins/python", from:oh-my-zsh
 zplug "plugins/forklift", from:oh-my-zsh # fl <enter>
 zplug "plugins/history", from:oh-my-zsh # hs/hsi
-zplug "plugins/osx", from:oh-my-zsh
+zplug "plugins/osx", from:oh-my-zsh, nice:10
 
 # various stuff
 zplug "fcambus/ansiweather"
