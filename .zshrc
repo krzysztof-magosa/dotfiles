@@ -1,5 +1,7 @@
 DOT_ZSH="$HOME/.zsh"
 CONF_FILES=($DOT_ZSH/conf.d/*.zsh)
+LOCAL_FILES=($DOT_ZSH/local.d/*.zsh)
+BUNDLES_FILES=($DOT_ZSH/bundles.zsh)
 LAST_UPDATE="$DOT_ZSH/.last-update"
 
 function is_update_needed() {
@@ -8,7 +10,7 @@ function is_update_needed() {
         return 0
     fi
 
-    for file in $CONF_FILES ; do
+    for file in $BUNDLES_FILES ; do
         if [ $file -nt $LAST_UPDATE ] ; then
             return 0
         fi
@@ -22,10 +24,7 @@ if [ ! -d $DOT_ZSH/zplug ] ; then
 fi
 
 source $DOT_ZSH/zplug/init.zsh
-
-for file in $CONF_FILES ; do
-    source $file
-done
+source $DOT_ZSH/bundles.zsh
 
 if is_update_needed ; then
     if ! zplug check ; then
@@ -38,3 +37,11 @@ if is_update_needed ; then
 fi
 
 zplug load --verbose
+
+for file in $CONF_FILES ; do
+    source $file
+done
+
+for file in $LOCAL_FILES ; do
+    source $file
+done
