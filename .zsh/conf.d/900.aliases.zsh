@@ -4,7 +4,7 @@ alias yesterday='git log --since="yesterday 00:00:00" --before="today 00:00:00" 
 alias mc="mc -u"
 alias tigs="tig status"
 alias mkdir="mkdir -p"
-alias e='emacsclient -a "" -c'
+alias e='emacsclient -a "" -c -nw'
 alias e.='e .'
 alias n="e '$ICLOUD_DIR/notes.txt'"
 alias nn="mkdir '$ICLOUD_DIR/Notes' ; cd '$ICLOUD_DIR/Notes'"
