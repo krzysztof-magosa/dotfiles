@@ -6,6 +6,7 @@
 
 [core]
 	excludesfile = ~/.gitexclude
+	editor = emacs -nw
 
 [push]
 	default = current
