@@ -13,6 +13,7 @@ tab-color() {
 
 tab-reset() {
     echo -ne "\033]6;1;bg;*;default\a"
+    trap - INT EXIT
 }
 
 color-ssh() {
