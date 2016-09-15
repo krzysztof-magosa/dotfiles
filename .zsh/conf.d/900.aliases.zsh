@@ -19,6 +19,10 @@ if  [ -f ~/.ssh/id_rsa.pub ] ; then
    is_osx && alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo 'Public key has been copied to clipboard.'"
 fi
 
+if type "htop" >/dev/null ; then
+    alias top="htop"
+fi
+
 # Go to projects repos dir
 [ -d ~/projects ] && alias p="cd ~/projects"
 [ -f "${ORGMODE_DIR}/todo.org" ] && alias todo="emacs ${ORGMODE_DIR}/todo.org"
