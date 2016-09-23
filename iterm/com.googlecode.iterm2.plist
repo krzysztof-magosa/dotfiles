@@ -4661,7 +4661,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Desktop</string>
+	<string>~/Documents</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 459}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -4695,15 +4695,19 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>769 110 445 370 0 0 1280 777 </string>
+	<string>929 110 445 422 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>269 313 606 456 0 0 1280 777 </string>
+	<string>328 412 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>350 288 620 392 0 0 1280 777 </string>
+	<string>410 380 620 392 0 0 1440 877 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 151 606 456 0 0 1440 877 </string>
+	<key>NSWindow Frame SharedPreferences</key>
+	<string>262 194 796 473 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>41 0 1239 777 0 0 1280 777 </string>
+	<string>0 218 1138 656 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>152 50 820 548 0 0 1280 777 </string>
+	<string>183 87 730 523 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_3AD86558-9DA6-44A1-BB19-BC100D03EDD0</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_3AD86558-9DA6-44A1-BB19-BC100D03EDD0_selection</key>
@@ -5695,6 +5699,8 @@
 			<false/>
 			<key>Use Canonical Parser</key>
 			<false/>
+			<key>Use Cursor Guide</key>
+			<false/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Vertical Spacing</key>
@@ -5707,22 +5713,20 @@
 			<string>~/projects</string>
 		</dict>
 	</array>
-	<key>NoSyncInstallationId</key>
-	<string>F5069B58-45CB-4AFA-887E-6E58923AFB1E</string>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<key>NoSyncConfirmBeta</key>
 	<true/>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>0</integer>
+	<key>NoSyncInstallationId</key>
+	<string>3DD8C02B-F961-46D8-8C4C-4246E22B8234</string>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
 	<key>NoSyncSilenceAnnoyingBellAutomatically</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>479073375.72787201</real>
+	<real>486636130.17867601</real>
 	<key>NoSyncTimeOfLastPromo</key>
-	<real>478980265.00918502</real>
+	<real>481982529.91336298</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>479073435.41591102</real>
+	<real>486483896.03816497</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -5771,7 +5775,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/km/.dotfiles/iterm</string>
+	<string>~/.dotfiles/iterm</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -5785,11 +5789,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing3.xml?shard=93</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=41</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-04-30T19:16:44Z</date>
+	<date>2016-09-21T10:52:46Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -5804,6 +5808,8 @@
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
 	<integer>6</integer>
+	<key>TabStyle</key>
+	<integer>1</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>ThreeFingerEmulates</key>
@@ -5835,7 +5841,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20160426</string>
+	<string>3.0.10</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
