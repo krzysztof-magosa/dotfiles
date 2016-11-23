@@ -10,6 +10,7 @@
 
 [push]
 	default = current
+	recurseSubmodules = on-demand
 
 [include]
 	path = ~/.gitconfig-local
