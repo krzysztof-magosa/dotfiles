@@ -1,5 +1,5 @@
 # oh-my-zsh stuff
-#zplug "robbyrussell/oh-my-zsh", use:"lib/*.zsh"
+zplug "robbyrussell/oh-my-zsh", use:"lib/*.zsh"
 zplug "plugins/git", from:oh-my-zsh, defer:2
 zplug "plugins/pip", from:oh-my-zsh
 zplug "plugins/brew", from:oh-my-zsh
