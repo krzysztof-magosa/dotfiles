@@ -1,9 +1,9 @@
 # oh-my-zsh stuff
-zplug "robbyrussell/oh-my-zsh", use:"lib/*.zsh", nice:14
-zplug "plugins/git", from:oh-my-zsh, nice:10
+#zplug "robbyrussell/oh-my-zsh", use:"lib/*.zsh"
+zplug "plugins/git", from:oh-my-zsh, defer:2
 zplug "plugins/pip", from:oh-my-zsh
 zplug "plugins/brew", from:oh-my-zsh
-zplug "plugins/brew-cask", from:oh-my-zsh, nice:10
+zplug "plugins/brew-cask", from:oh-my-zsh, defer:2
 zplug "plugins/copydir", from:oh-my-zsh
 zplug "plugins/copyfile", from:oh-my-zsh
 zplug "plugins/cp", from:oh-my-zsh # cpv
@@ -14,25 +14,25 @@ zplug "plugins/rbenv", from:oh-my-zsh
 zplug "plugins/python", from:oh-my-zsh
 zplug "plugins/forklift", from:oh-my-zsh # fl <enter>
 zplug "plugins/history", from:oh-my-zsh # hs/hsi
-zplug "plugins/osx", from:oh-my-zsh, nice:10
+zplug "plugins/osx", from:oh-my-zsh, defer:2
 
 # various stuff
 zplug "fcambus/ansiweather"
 zplug "mollifier/cd-gitroot"
-zplug "voronkovich/gitignore.plugin.zsh", nice:10 # gi <lang>
+zplug "voronkovich/gitignore.plugin.zsh", defer:2 # gi <lang>
 zplug "peterhurford/git-it-on.zsh" # gitit
 zplug "Seinh/git-prune" # gprune
 zplug "supercrabtree/k" # k
-zplug "junegunn/fzf", use:"shell/*.zsh", nice:18 # fuzzy search, ctrl+t, ctrl+r, alt+c
+zplug "junegunn/fzf", use:"shell/*.zsh", defer:2 # fuzzy search, ctrl+t, ctrl+r, alt+c
 zplug "b4b4r07/enhancd", use:"enhancd.sh" # cd <enter>
 export ENHANCD_DISABLE_DOT=1
 export ENHANCD_DISABLE_HYPHEN=1
 
 # zsh-users stuff
 zplug "zsh-users/zsh-history-substring-search"
-zplug "zsh-users/zsh-completions", nice:10
+zplug "zsh-users/zsh-completions", defer:2
 zplug "zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-syntax-highlighting", nice:19 # it must be last one
+zplug "zsh-users/zsh-syntax-highlighting", defer:3 # it must be last one
 
 # theme
-zplug "themes/candy", from:oh-my-zsh, nice:15
+zplug "themes/candy", from:oh-my-zsh, defer:3
