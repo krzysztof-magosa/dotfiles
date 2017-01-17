@@ -32,4 +32,5 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-syntax-highlighting", defer:3 # it must be last one
 
 # theme
-zplug "themes/candy", from:oh-my-zsh, defer:3
+zplug mafredri/zsh-async, from:github
+zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
