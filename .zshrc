@@ -36,7 +36,7 @@ if is_update_needed ; then
     touch $LAST_UPDATE
 fi
 
-zplug load --verbose
+zplug load
 
 for file in $CONF_FILES ; do
     source $file
