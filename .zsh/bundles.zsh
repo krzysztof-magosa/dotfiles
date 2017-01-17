@@ -24,9 +24,6 @@ zplug "peterhurford/git-it-on.zsh" # gitit
 zplug "Seinh/git-prune" # gprune
 zplug "supercrabtree/k" # k
 zplug "junegunn/fzf", use:"shell/*.zsh", defer:2 # fuzzy search, ctrl+t, ctrl+r, alt+c
-zplug "b4b4r07/enhancd", use:"enhancd.sh" # cd <enter>
-export ENHANCD_DISABLE_DOT=1
-export ENHANCD_DISABLE_HYPHEN=1
 
 # zsh-users stuff
 zplug "zsh-users/zsh-history-substring-search"
