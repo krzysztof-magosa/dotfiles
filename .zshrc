@@ -1,6 +1,6 @@
 DOT_ZSH="$HOME/.zsh"
-CONF_FILES=($DOT_ZSH/conf.d/*.zsh)
-LOCAL_FILES=($DOT_ZSH/local.d/*.zsh)
+CONF_FILES=($DOT_ZSH/conf.d/*.zsh(N))
+LOCAL_FILES=($DOT_ZSH/local.d/*.zsh(N))
 BUNDLES_FILES=($DOT_ZSH/bundles.zsh)
 LAST_UPDATE="$DOT_ZSH/.last-update"
 
