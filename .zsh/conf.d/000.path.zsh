@@ -5,6 +5,7 @@ path=(
     /opt/homebrew/bin
     /opt/homebrew/sbin
     ~/.python/bin
+    ~/.npm/bin
     ~/.go/bin
     ~/bin
     ~/bin/haxor/bin
