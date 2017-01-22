@@ -10,8 +10,6 @@ path=(
     ~/bin
     ~/bin/haxor/bin
     ~/.bin/tig-rebase
-    ~/.rbenv/bi
-    $(ruby -rubygems -e 'puts Gem.user_dir')/bin
     ~/Library/Python/2.7/bin
     $path
 )
