@@ -14,3 +14,6 @@ bind main <Ctrl-r> !tig-rebase.sh reword %(commit)
 bind main <Ctrl-x> !tig-rebase.sh abort
 
 set vertical-split = no
+
+# Highlight words in diff
+set diff-highlight = true
