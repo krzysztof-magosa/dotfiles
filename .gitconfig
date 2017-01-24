@@ -5,7 +5,7 @@
 	remotes = remote -v
 	pushf = push --force-with-lease
 	f = fetch
-        p = pull --rebase
+	p = !git pull --rebase && git submodule update --recursive --init
 
 [core]
 	excludesfile = ~/.gitexclude
@@ -14,7 +14,7 @@
 
 [pull]
 	rebase = true
-	
+	recurseSubmodules = on-demand
 [push]
 	default = current
 	recurseSubmodules = on-demand
@@ -22,3 +22,9 @@
 [include]
 	path = ~/.gitconfig-local
 	
+[color]
+	ui = auto
+[diff]
+	mnemonicprefix = true
+[branch]
+	autosetupmerge = true
