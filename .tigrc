@@ -13,6 +13,9 @@ bind main <Ctrl-r> !tig-rebase.sh reword %(commit)
 # Abort current rebase
 bind main <Ctrl-x> !tig-rebase.sh abort
 
+# Deleting files in status view
+bind status D !@?rm %(file)
+
 set vertical-split = no
 
 # Highlight words in diff
