@@ -6,6 +6,8 @@
 	pushf = push --force-with-lease
 	f = fetch
 	p = !git pull --rebase && git submodule update --recursive --init
+	su = submodule update --recursive
+	co = checkout
 
 [core]
 	excludesfile = ~/.gitexclude
