@@ -1,6 +1,6 @@
 export ZSH="$HOME/.omz"
 export ZSH_CUSTOM="$HOME/.zsh"
-export ZSH_THEME="kphoen"
+export ZSH_THEME="pure"
 
 plugins=(
     git
