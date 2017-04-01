@@ -24,7 +24,3 @@ set -g theme_display_virtualenv no
 set -g theme_date_format "+%A, %d %B, %H:%M"
 
 set -g default_user km
-
-set -g fisher_home ~/.local/share/fisherman
-set -g fisher_config ~/.config/fisherman
-
