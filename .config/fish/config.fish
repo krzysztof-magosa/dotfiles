@@ -27,4 +27,4 @@ set -g default_user km
 
 set -g fisher_home ~/.local/share/fisherman
 set -g fisher_config ~/.config/fisherman
-source $fisher_home/config.fish
+
