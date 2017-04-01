@@ -10,6 +10,6 @@ path=(
     ~/bin
     ~/bin/haxor/bin
     ~/.bin/tig-rebase
-    ~/Library/Python/2.7/bin
     $path
 )
+
