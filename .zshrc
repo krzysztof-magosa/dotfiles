@@ -18,6 +18,7 @@ plugins=(
     history
     osx
     history-substring-search
+    zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
