@@ -10,6 +10,7 @@ path=(
     ~/bin
     ~/bin/haxor/bin
     ~/.bin/tig-rebase
+    ~/.bin
     $path
 )
 
