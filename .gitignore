@@ -4,3 +4,5 @@
 /.zsh/.last-update
 /.zsh/dns.d/*
 /.config/mc/ini
+/.config/fisherman/*
+!/.config/fisherman/fishfile
