@@ -2,3 +2,4 @@
 /.zsh/dns.d/*
 /.config/mc/ini
 /.config/asciinema/config
+/.config/fish/functions/fish_prompt.fish
