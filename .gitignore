@@ -1,5 +1,7 @@
 /.zsh/zplug
 /.zsh/dns.d/*
+/.zsh/hosts/*
+!/.zsh/hosts/.gitkeep
 /.config/mc/ini
 /.config/asciinema/config
 /.config/fish/functions/fish_prompt.fish
