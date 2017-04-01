@@ -6,3 +6,4 @@
 /.config/mc/ini
 /.config/fisherman/*
 !/.config/fisherman/fishfile
+/.config/asciinema/config
