@@ -14,7 +14,7 @@ bind main <Ctrl-r> !tig-rebase.sh reword %(commit)
 bind main <Ctrl-x> !tig-rebase.sh abort
 
 # Deleting files in status view
-bind status D !@?rm %(file)
+bind status D !@?rm -rf %(file)
 
 set vertical-split = no
 
