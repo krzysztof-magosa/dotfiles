@@ -1,6 +1,7 @@
 /.zsh/zplug
 /.zsh/dns.d/*
 /.zsh/hosts/*
+/.zsh/999.local.zsh
 !/.zsh/hosts/.gitkeep
 /.config/mc/ini
 /.config/asciinema/config
