@@ -4916,7 +4916,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>264 409 796 473 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 69 1513 959 0 0 1680 1028 </string>
+	<string>2 73 1675 951 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>212 101 910 523 0 0 1680 1028 </string>
 	<key>NeverWarnAboutShortLivedSessions_3AD86558-9DA6-44A1-BB19-BC100D03EDD0</key>
@@ -5161,13 +5161,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.077523812651634216</real>
+				<real>0.096446171402931213</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.077522493898868561</real>
+				<real>0.088409736752510071</real>
 				<key>Red Component</key>
-				<real>0.077524803578853607</real>
+				<real>0.073191449046134949</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -6075,7 +6075,7 @@
 	<key>iTerm Version</key>
 	<string>3.0.13</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
 	<false/>
 </dict>
