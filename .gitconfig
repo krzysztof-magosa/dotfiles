@@ -12,7 +12,7 @@
 
 [core]
 	excludesfile = ~/.gitexclude
-	editor = emacsclient -a "" -c -nw
+	editor = emacsclient -a '' -nw
 	pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
 
 [pull]
