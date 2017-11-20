@@ -5216,7 +5216,7 @@
 	<key>IRMemory</key>
 	<integer>4</integer>
 	<key>JobName</key>
-	<true/>
+	<false/>
 	<key>LeftCommand</key>
 	<integer>7</integer>
 	<key>LeftOption</key>
@@ -5228,7 +5228,7 @@
 	<key>NSNavLastRootDirectory</key>
 	<string>~/Desktop</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 448}</string>
+	<string>{712, 459}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -5244,7 +5244,7 @@
 	gAKACoAN0xAJChEVGVdOUy5rZXlzoxITFIADgASABaMWFxiABoAHgAiACVpJZGVudGlm
 	aWVyVVdpZHRoVkhpZGRlblEwI0BowAAAAAAACNIhIiMkWiRjbGFzc25hbWVYJGNsYXNz
 	ZXNcTlNEaWN0aW9uYXJ5oiMlWE5TT2JqZWN00xAJCicrGaMSExSAA4AEgAWjLC0YgAuA
-	DIAIgAlRMSNAdKGdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
+	DIAIgAlRMSNAdKAAAAAAANIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
 	TlNLZXllZEFyY2hpdmVy0Tg5VUFycmF5gAEACAARABoAIwAtADIANwBGAEwAUQBcAGMA
 	ZgBoAGoAbABzAHsAfwCBAIMAhQCJAIsAjQCPAJEAnACiAKkAqwC0ALUAugDFAM4A2wDe
 	AOcA7gDyAPQA9gD4APwA/gEAAQIBBAEGAQ8BFAEjAScBLwFBAUQBSgAAAAAAAAIBAAAA
@@ -5260,24 +5260,27 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1169 113 445 285 0 0 1680 1028 </string>
-	<key>NSWindow Frame ProfilesPanel</key>
-	<string>342 330 735 382 0 0 1680 1028 </string>
+	<string>769 110 445 370 0 0 1280 777 </string>
+	<key>NSWindow Frame Preferences</key>
+	<string>269 313 606 456 0 0 1280 777 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 494 620 392 0 0 1680 1028 </string>
+	<string>330 301 620 392 0 0 1280 778 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>198 105 606 456 0 0 1680 1028 </string>
+	<string>269 139 606 456 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>568 177 796 473 0 0 1680 1028 </string>
+	<string>477 237 770 429 0 0 1280 778 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
-	<string>-1023 858 592 584 -1080 -456 1080 1898 </string>
+	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>165 200 820 552 0 0 1680 1028 </string>
+	<string>53 193 820 552 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>2 94 1675 930 0 0 1680 1028 </string>
-	<key>NSWindow Frame iTerm Window 2</key>
-	<string>233 78 820 573 0 0 1680 1028 </string>
+	<string>152 118 820 552 0 0 1280 778 </string>
 	<key>NeverWarnAboutShortLivedSessions_1DAC3AE9-5BC1-4054-8336-E66FD7D30F5E</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_1DAC3AE9-5BC1-4054-8336-E66FD7D30F5E_selection</key>
@@ -6299,24 +6302,28 @@
 			<string>~/projects</string>
 		</dict>
 	</array>
-	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
+	<key>NoSyncConfirmBeta</key>
 	<true/>
 	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
 	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>AB15FEBB-64E3-4098-B76D-CFDACBCE6CAD</string>
-	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
-	<true/>
+	<string>F5069B58-45CB-4AFA-887E-6E58923AFB1E</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
+	<key>NoSyncSilenceAnnoyingBellAutomatically</key>
+	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>506372117.61956197</real>
+	<real>479073375.72787201</real>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>478980265.00918502</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>479073435.41591102</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -6367,7 +6374,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>~/.dotfiles/iterm/</string>
+	<string>~/.dotfiles/iterm</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -6381,13 +6388,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=56</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=93</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-11-19T15:37:03Z</date>
-	<key>SUSendProfileInfo</key>
-	<false/>
+	<date>2017-11-20T22:39:55Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -6402,6 +6407,8 @@
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.10000000000000001</real>
+	<key>StretchTabsToFillBar</key>
+	<true/>
 	<key>SwitchTabModifier</key>
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
@@ -6417,7 +6424,7 @@
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1500564224</real>
+	<real>1499030272</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -6433,7 +6440,7 @@
 	<key>Window Arrangements</key>
 	<dict/>
 	<key>WindowNumber</key>
-	<true/>
+	<false/>
 	<key>WindowStyle</key>
 	<integer>0</integer>
 	<key>WordCharacters</key>
