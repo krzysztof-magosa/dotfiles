@@ -45,6 +45,11 @@ syntax on
 colorscheme janah
 set cursorline
 set number
+set relativenumber
+set ruler
+set hlsearch
+set incsearch
+set ignorecase
 let g:airline_powerline_fonts = 1
 let g:airline_theme='powerlineish'
 
