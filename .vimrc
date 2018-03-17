@@ -15,11 +15,9 @@ Plugin 'editorconfig/editorconfig-vim'        " Support for .editorconfig files
 Plugin 'NLKNguyen/papercolor-theme'           " ColorScheme similar to Material Theme
 Plugin 'vim-airline/vim-airline'              " Status bar (Core)
 Plugin 'vim-airline/vim-airline-themes'       " Status bar (Themes)
-Plugin 'Shougo/denite.nvim'
 Plugin 'airblade/vim-gitgutter'               " Mark git changes in rail
 Plugin 'vim-syntastic/syntastic'              " Syntax checker
 Plugin 'sheerun/vim-polyglot'                 " Support for many languages
-Plugin 'hecal3/vim-leader-guide'
 Plugin 'mhinz/vim-startify'                   " Startup page
 Plugin 'Raimondi/delimitMate'                 " Close parens etc.
 Plugin 'tpope/vim-commentary'                 " (Un)Comment code
@@ -27,7 +25,6 @@ Plugin 'scrooloose/nerdtree'                  " File explorer
 Plugin 'tpope/vim-fugitive'                   " Git utilities
 Plugin 'Yggdroot/indentLine'                  " Show indentations
 Plugin 'terryma/vim-multiple-cursors'         " Multiple cursors, like in Sublime
-Plugin 'ervandew/supertab'
 Plugin 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespaces
 Plugin 'wincent/command-t'                    " Navigation through project files
 
