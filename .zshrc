@@ -15,7 +15,6 @@ plugins=(
     cp
     virtualenv
     vagrant
-    sudo
     python
     forklift
     history
@@ -23,6 +22,10 @@ plugins=(
     history-substring-search
     zsh-autosuggestions
     async
+    vi-mode
 )
+
+# https://www.johnhawthorn.com/2012/09/vi-escape-delays/
+export KEYTIMEOUT=5
 
 source $ZSH/oh-my-zsh.sh
