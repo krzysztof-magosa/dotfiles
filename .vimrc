@@ -53,6 +53,9 @@ let g:airline_theme='powerlineish'
 set splitbelow
 set splitright
 
+" Temporary files (swap etc.)
+set directory=~/.vim/tmp
+
 " Indentation
 set tabstop=2
 set shiftwidth=2
