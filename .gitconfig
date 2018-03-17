@@ -12,8 +12,8 @@
 
 [core]
 	excludesfile = ~/.gitexclude
-	editor = emacsclient -a '' -nw
 	pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+	editor = vim
 
 [pull]
 	rebase = true
