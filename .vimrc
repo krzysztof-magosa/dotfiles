@@ -8,28 +8,28 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'tpope/vim-sensible'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-Plugin 'editorconfig/editorconfig-vim'
-Bundle 'NLKNguyen/papercolor-theme'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-sensible'                   " Default reasonable settings
+Plugin 'junegunn/fzf'                         " Fuzzy Search (Engine)
+Plugin 'junegunn/fzf.vim'                     " Fuzzy Search (Plugin)
+Plugin 'editorconfig/editorconfig-vim'        " Support for .editorconfig files
+Plugin 'NLKNguyen/papercolor-theme'           " ColorScheme similar to Material Theme
+Plugin 'vim-airline/vim-airline'              " Status bar (Core)
+Plugin 'vim-airline/vim-airline-themes'       " Status bar (Themes)
 Plugin 'Shougo/denite.nvim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'sheerun/vim-polyglot'
+Plugin 'airblade/vim-gitgutter'               " Mark git changes in rail
+Plugin 'vim-syntastic/syntastic'              " Syntax checker
+Plugin 'sheerun/vim-polyglot'                 " Support for many languages
 Plugin 'hecal3/vim-leader-guide'
-Plugin 'mhinz/vim-startify'
-Plugin 'Raimondi/delimitMate'
-Plugin 'tpope/vim-commentary'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-fugitive'
-Plugin 'Yggdroot/indentLine'
-Plugin 'terryma/vim-multiple-cursors'
+Plugin 'mhinz/vim-startify'                   " Startup page
+Plugin 'Raimondi/delimitMate'                 " Close parens etc.
+Plugin 'tpope/vim-commentary'                 " (Un)Comment code
+Plugin 'scrooloose/nerdtree'                  " File explorer
+Plugin 'tpope/vim-fugitive'                   " Git utilities
+Plugin 'Yggdroot/indentLine'                  " Show indentations
+Plugin 'terryma/vim-multiple-cursors'         " Multiple cursors, like in Sublime
 Plugin 'ervandew/supertab'
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'wincent/command-t'
+Plugin 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespaces
+Plugin 'wincent/command-t'                    " Navigation through project files
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
