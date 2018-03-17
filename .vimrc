@@ -12,7 +12,7 @@ Plugin 'tpope/vim-sensible'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'mhinz/vim-janah'
+Bundle 'NLKNguyen/papercolor-theme'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Shougo/denite.nvim'
@@ -37,7 +37,8 @@ filetype plugin indent on    " required
 
 " Appearance
 syntax on
-colorscheme janah
+set background=dark
+colorscheme PaperColor
 set cursorline
 set number
 set relativenumber
