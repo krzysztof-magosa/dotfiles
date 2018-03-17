@@ -12,7 +12,6 @@ Plugin 'tpope/vim-sensible'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'editorconfig/editorconfig-vim'
-"Plugin 'joshdick/onedark.vim'
 Plugin 'mhinz/vim-janah'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -29,8 +28,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'Yggdroot/indentLine'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'ervandew/supertab'
-Plugin 'valloric/youcompleteme'
-Plugin 'thaerkh/vim-workspace'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'wincent/command-t'
 
@@ -40,7 +37,6 @@ filetype plugin indent on    " required
 
 " Appearance
 syntax on
-"colorscheme onedark
 colorscheme janah
 set cursorline
 set number
