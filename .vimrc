@@ -36,6 +36,10 @@ filetype plugin indent on    " required
 syntax on
 set background=dark
 colorscheme PaperColor
+let g:airline_powerline_fonts = 1
+let g:airline_theme='powerlineish'
+
+" Various options
 set cursorline
 set number
 set relativenumber
@@ -43,8 +47,6 @@ set ruler
 set hlsearch
 set incsearch
 set ignorecase
-let g:airline_powerline_fonts = 1
-let g:airline_theme='powerlineish'
 
 " Split more naturally
 set splitbelow
@@ -70,6 +72,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_yaml_checkers = ['yamllint']
 
+" Custom key bindings
 map <leader>g :Ag<CR>
 
 " Remember line in file
