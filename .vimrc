@@ -48,6 +48,13 @@ set ignorecase
 let g:airline_powerline_fonts = 1
 let g:airline_theme='powerlineish'
 
+" Indentation
+set tabstop=2
+set shiftwidth=2
+set softtabstop=0
+set expandtab
+set smarttab
+
 " Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
