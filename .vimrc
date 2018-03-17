@@ -49,6 +49,10 @@ set ignorecase
 let g:airline_powerline_fonts = 1
 let g:airline_theme='powerlineish'
 
+" Split more naturally
+set splitbelow
+set splitright
+
 " Indentation
 set tabstop=2
 set shiftwidth=2
