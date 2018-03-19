@@ -39,6 +39,11 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='papercolor'
 
+" Better whitespace
+let g:better_whitespace_enabled = 1
+let g:strip_whitespace_on_save = 1
+let g:strip_whitelines_at_eof = 1
+
 " Various options
 set lazyredraw
 set cursorline
