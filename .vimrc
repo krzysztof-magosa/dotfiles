@@ -60,6 +60,7 @@ set showcmd                                   " Show incomplete commands
 set list listchars=tab:»·,trail:·,nbsp:·      " Display whitespaces
 set history=1000                              " Bigger list of used commands
 set virtualedit=onemore                       " Allow cursor to go beyond last character
+set undofile                                  " Allow to undo even after vim restart
 
 " Split more naturally
 set splitbelow
@@ -69,6 +70,11 @@ set splitright
 set directory=~/.vim/tmp
 if !isdirectory(&directory)
   call mkdir(&directory, "p")
+endif
+
+set undodir=~/.vim/undo-dir
+if !isdirectory(&undodir)
+  call mkdir(&undodir, "p")
 endif
 
 " Indentation
