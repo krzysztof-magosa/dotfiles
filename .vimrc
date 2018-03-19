@@ -54,6 +54,9 @@ set splitright
 
 " Temporary files (swap etc.)
 set directory=~/.vim/tmp
+if !isdirectory(&directory)
+  call mkdir(&directory, "p")
+endif
 
 " Indentation
 set tabstop=2
