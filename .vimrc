@@ -45,17 +45,17 @@ let g:strip_whitespace_on_save = 1
 let g:strip_whitelines_at_eof = 1
 
 " Various options
-set lazyredraw
-set cursorline
-set number
-set relativenumber
-set ruler
-set hlsearch
-set incsearch
-set ignorecase
-set wildmenu
-set showcmd
-set list listchars=tab:»·,trail:·,nbsp:·
+set lazyredraw                                " Do not refresh screen during macros/scripts
+set cursorline                                " Highlight current line
+set number                                    " Line numbers
+set relativenumber                            " Line numbers to be relative
+set ruler                                     " Show cursor position
+set hlsearch                                  " Highlight searches
+set incsearch                                 " Incremental search
+set ignorecase                                " Ignore case during search
+set wildmenu                                  " Command line autcompletion as menu
+set showcmd                                   " Show incomplete commands
+set list listchars=tab:»·,trail:·,nbsp:·      " Display whitespaces
 
 " Split more naturally
 set splitbelow
