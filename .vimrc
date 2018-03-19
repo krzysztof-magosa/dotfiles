@@ -74,6 +74,8 @@ let g:syntastic_yaml_checkers = ['yamllint']
 
 " Custom key bindings
 map <leader>g :Ag<CR>
+vmap <leader>y :w !pbcopy<CR><CR>
+nmap <leader>p :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 
 " Remember line in file
 if has("autocmd")
