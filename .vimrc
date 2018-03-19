@@ -53,6 +53,7 @@ set ruler
 set hlsearch
 set incsearch
 set ignorecase
+set list listchars=tab:»·,trail:·,nbsp:·
 
 " Split more naturally
 set splitbelow
