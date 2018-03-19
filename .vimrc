@@ -71,6 +71,7 @@ set shiftwidth=2
 set softtabstop=0
 set expandtab
 set smarttab
+set shiftround
 
 " Syntastic
 set statusline+=%#warningmsg#
