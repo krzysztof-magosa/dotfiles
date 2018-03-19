@@ -21,7 +21,6 @@ Plugin 'sheerun/vim-polyglot'                 " Support for many languages
 Plugin 'mhinz/vim-startify'                   " Startup page
 Plugin 'Raimondi/delimitMate'                 " Close parens etc.
 Plugin 'tpope/vim-commentary'                 " (Un)Comment code
-Plugin 'scrooloose/nerdtree'                  " File explorer
 Plugin 'tpope/vim-fugitive'                   " Git utilities
 Plugin 'Yggdroot/indentLine'                  " Show indentations
 Plugin 'terryma/vim-multiple-cursors'         " Multiple cursors, like in Sublime
