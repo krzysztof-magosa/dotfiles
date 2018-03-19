@@ -54,6 +54,7 @@ set hlsearch
 set incsearch
 set ignorecase
 set wildmenu
+set showcmd
 set list listchars=tab:»·,trail:·,nbsp:·
 
 " Split more naturally
