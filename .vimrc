@@ -55,6 +55,7 @@ set incsearch                                 " Incremental search
 set ignorecase                                " Ignore case during search
 set smartcase                                 " Be case sensitive when needed
 set wildmenu                                  " Command line autcompletion as menu
+set wildmode=list:longest                     " Better wildmenu
 set showcmd                                   " Show incomplete commands
 set list listchars=tab:»·,trail:·,nbsp:·      " Display whitespaces
 
