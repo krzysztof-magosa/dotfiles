@@ -39,6 +39,7 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='powerlineish'
 
 " Various options
+set lazyredraw
 set cursorline
 set number
 set relativenumber
