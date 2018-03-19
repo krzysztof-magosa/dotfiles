@@ -8,7 +8,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'tpope/vim-sensible'                   " Default reasonable settings
 Plugin 'junegunn/fzf'                         " Fuzzy Search (Engine)
 Plugin 'junegunn/fzf.vim'                     " Fuzzy Search (Plugin)
 Plugin 'editorconfig/editorconfig-vim'        " Support for .editorconfig files
