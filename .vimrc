@@ -58,6 +58,7 @@ set wildmenu                                  " Command line autcompletion as me
 set wildmode=list:longest                     " Better wildmenu
 set showcmd                                   " Show incomplete commands
 set list listchars=tab:»·,trail:·,nbsp:·      " Display whitespaces
+set history=1000                              " Bigger list of used commands
 
 " Split more naturally
 set splitbelow
