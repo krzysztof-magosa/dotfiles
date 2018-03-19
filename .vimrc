@@ -73,6 +73,7 @@ set softtabstop=0
 set expandtab
 set smarttab
 set shiftround
+set autoindent
 
 " Syntastic
 set statusline+=%#warningmsg#
