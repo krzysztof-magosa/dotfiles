@@ -21,7 +21,7 @@ Plugin 'mhinz/vim-startify'                   " Startup page
 Plugin 'Raimondi/delimitMate'                 " Close parens etc.
 Plugin 'tpope/vim-commentary'                 " (Un)Comment code
 Plugin 'tpope/vim-fugitive'                   " Git utilities
-Plugin 'Yggdroot/indentLine'                  " Show indentations
+Plugin 'nathanaelkane/vim-indent-guides'      " Show indentations
 Plugin 'terryma/vim-multiple-cursors'         " Multiple cursors, like in Sublime
 Plugin 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespaces
 Plugin 'wincent/command-t'                    " Navigation through project files
@@ -85,6 +85,7 @@ set expandtab
 set smarttab
 set shiftround
 set autoindent
+let g:indent_guides_enable_on_vim_startup = 1
 
 " Syntastic
 set statusline+=%#warningmsg#
