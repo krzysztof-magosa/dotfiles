@@ -88,6 +88,11 @@ set autoindent
 let g:indent_guides_enable_on_vim_startup = 1
 
 " Syntastic
+function! FindConfig(prefix, what, where)
+  let cfg = findfile(a:what, escape(a:where, ' ') . ';')
+  return cfg !=# '' ? ' ' . a:prefix . ' ' . shellescape(cfg) : ''
+endfunction
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -96,6 +101,9 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_yaml_checkers = ['yamllint']
+autocmd FileType yaml let b:syntastic_yaml_yamllint_args =
+      \ get(g:, 'syntastic_syntastic_yaml_yamllint_args', '') .
+      \ FindConfig('-c', '.yamllint', expand('<afile>:p:h', 1))
 
 " Custom key bindings
 map <leader>g :Ag<CR>
