@@ -24,7 +24,7 @@ Plugin 'tpope/vim-fugitive'                   " Git utilities
 Plugin 'nathanaelkane/vim-indent-guides'      " Show indentations
 Plugin 'terryma/vim-multiple-cursors'         " Multiple cursors, like in Sublime
 Plugin 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespaces
-Plugin 'wincent/command-t'                    " Navigation through project files
+Plugin 'kien/ctrlp.vim'                       " Navigation through files in project
 Plugin 'EESchneider/vim-rebase-mode'          " Git rebase helper
 
 " All of your Plugins must be added before the following line
