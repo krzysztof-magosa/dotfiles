@@ -102,6 +102,9 @@ map <leader>g :Ag<CR>
 vmap <leader>y :w !pbcopy<CR><CR>
 nmap <leader>p :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 
+" Actions for specific files
+autocmd BufEnter,BufNew */ansible/hosts/* set filetype=dosini
+
 " Remember line in file
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
