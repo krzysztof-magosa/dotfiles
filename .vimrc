@@ -25,6 +25,7 @@ Plugin 'nathanaelkane/vim-indent-guides'      " Show indentations
 Plugin 'terryma/vim-multiple-cursors'         " Multiple cursors, like in Sublime
 Plugin 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespaces
 Plugin 'EESchneider/vim-rebase-mode'          " Git rebase helper
+Plugin 'b4b4r07/vim-ansible-vault'            " Ansible Vault support
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -99,11 +100,16 @@ let g:syntastic_yaml_checkers = ['yamllint']
 " Custom key bindings
 map <leader>g :Ag<CR>
 map <Leader>f :FZF<CR>
+map <Leader>d :AnsibleVaultDecrypt<CR>
+map <Leader>e :AnsibleVaultEncrypt<CR>
 vmap <leader>y :w !pbcopy<CR><CR>
 nmap <leader>p :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 
 " Actions for specific files
 autocmd BufEnter,BufNew */ansible/hosts/* set filetype=dosini
+
+" Ansible Vault
+let g:ansible_vault_password_file = $ANSIBLE_VAULT_PASSWORD_FILE
 
 " Remember line in file
 if has("autocmd")
