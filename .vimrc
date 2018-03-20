@@ -16,7 +16,6 @@ Plugin 'vim-airline/vim-airline'              " Status bar (Core)
 Plugin 'vim-airline/vim-airline-themes'       " Status bar (Themes)
 Plugin 'airblade/vim-gitgutter'               " Mark git changes in rail
 Plugin 'vim-syntastic/syntastic'              " Syntax checker
-Plugin 'sheerun/vim-polyglot'                 " Support for many languages
 Plugin 'mhinz/vim-startify'                   " Startup page
 Plugin 'Raimondi/delimitMate'                 " Close parens etc.
 Plugin 'tpope/vim-commentary'                 " (Un)Comment code
