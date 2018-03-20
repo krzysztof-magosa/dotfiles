@@ -24,7 +24,6 @@ Plugin 'tpope/vim-fugitive'                   " Git utilities
 Plugin 'nathanaelkane/vim-indent-guides'      " Show indentations
 Plugin 'terryma/vim-multiple-cursors'         " Multiple cursors, like in Sublime
 Plugin 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespaces
-Plugin 'kien/ctrlp.vim'                       " Navigation through files in project
 Plugin 'EESchneider/vim-rebase-mode'          " Git rebase helper
 
 " All of your Plugins must be added before the following line
@@ -99,6 +98,7 @@ let g:syntastic_yaml_checkers = ['yamllint']
 
 " Custom key bindings
 map <leader>g :Ag<CR>
+map <Leader>f :FZF<CR>
 vmap <leader>y :w !pbcopy<CR><CR>
 nmap <leader>p :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 
