@@ -107,6 +107,7 @@ map <leader>g :Ag<CR>
 map <Leader>f :FZF<CR>
 map <Leader>d :AnsibleVaultDecrypt<CR>
 map <Leader>e :AnsibleVaultEncrypt<CR>
+nmap <Leader>b :Buffers<CR>
 vmap <leader>y :w !pbcopy<CR><CR>
 nmap <leader>p :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 
