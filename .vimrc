@@ -17,7 +17,6 @@ Plugin 'vim-airline/vim-airline-themes'       " Status bar (Themes)
 Plugin 'airblade/vim-gitgutter'               " Mark git changes in rail
 Plugin 'vim-syntastic/syntastic'              " Syntax checker
 Plugin 'lepture/vim-jinja'                    " Support for jinja files
-Plugin 'mhinz/vim-startify'                   " Startup page
 Plugin 'Raimondi/delimitMate'                 " Close parens etc.
 Plugin 'tpope/vim-commentary'                 " (Un)Comment code
 Plugin 'tpope/vim-fugitive'                   " Git utilities
