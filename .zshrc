@@ -7,22 +7,22 @@ export HIST_STAMPS="dd.mm.yyyy"
 
 plugins=(
     git
-    pip
-    brew
-    brew-cask
-    copydir
-    copyfile
-    cp
-    virtualenv
-    vagrant
-    python
-    forklift
+#    pip
+#    brew
+#    brew-cask
+#    copydir
+#    copyfile
+#    cp
+#    virtualenv
+#    vagrant
+#    python
+#    forklift
     history
     osx
     history-substring-search
     zsh-autosuggestions
     async
-    vi-mode
+#    vi-mode
 )
 
 # https://www.johnhawthorn.com/2012/09/vi-escape-delays/
