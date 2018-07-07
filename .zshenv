@@ -1,9 +1,9 @@
 # macOS calls path helper which overrides our PATH settings.
 setopt no_global_rcs
 
-export EDITOR="emacs"
-export VISUAL="emacs"
 export LANG="en_GB.UTF-8"
+export EDITOR="vim"
+export VISUAL="vim"
 # ggtags/global configuration label
 export GTAGSLABEL="default"
 
