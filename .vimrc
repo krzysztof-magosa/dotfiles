@@ -25,6 +25,7 @@ Plugin 'terryma/vim-multiple-cursors'         " Multiple cursors, like in Sublim
 Plugin 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespaces
 Plugin 'EESchneider/vim-rebase-mode'          " Git rebase helper
 Plugin 'b4b4r07/vim-ansible-vault'            " Ansible Vault support
+Plugin 'pbrisbin/vim-mkdir'                   " Create missing dirs on save
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
