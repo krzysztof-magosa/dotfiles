@@ -62,6 +62,7 @@ set list listchars=tab:»·,trail:·,nbsp:·      " Display whitespaces
 set history=1000                              " Bigger list of used commands
 set virtualedit=onemore                       " Allow cursor to go beyond last character
 set undofile                                  " Allow to undo even after vim restart
+set hidden                                    " Allow opening another buffers before save
 
 " Split more naturally
 set splitbelow
