@@ -120,3 +120,5 @@ let g:ansible_vault_password_file = $ANSIBLE_VAULT_PASSWORD_FILE
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+nnoremap <expr> Q getline(".") =~ "<!--" ? ':norm ^5x$F d$' : ':norm I<!-- A -->' 
