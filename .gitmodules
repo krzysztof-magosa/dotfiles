@@ -7,6 +7,3 @@
 [submodule ".zsh/plugins/async"]
 	path = .zsh/plugins/async
 	url = https://github.com/mafredri/zsh-async.git
-[submodule "zsh-themes/pure"]
-	path = zsh-themes/pure
-	url = https://github.com/sindresorhus/pure.git
