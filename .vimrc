@@ -41,7 +41,7 @@ set background=dark
 colorscheme PaperColor
 
 let g:lightline = {
-  \ 'colorscheme': 'material_vim',
+  \ 'colorscheme': 'powerline',
   \ 'active': {
   \   'left': [ [ 'mode', 'paste' ], [ 'gitbranch' ],
   \             [ 'readonly', 'filename', 'modified'] ],
