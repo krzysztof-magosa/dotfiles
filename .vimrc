@@ -12,9 +12,8 @@ Plugin 'junegunn/fzf'                         " Fuzzy Search (Engine)
 Plugin 'junegunn/fzf.vim'                     " Fuzzy Search (Plugin)
 Plugin 'editorconfig/editorconfig-vim'        " Support for .editorconfig files
 Plugin 'kaicataldo/material.vim'              " Material Design Theme
-Plugin 'vim-airline/vim-airline'              " Status bar (Core)
-Plugin 'vim-airline/vim-airline-themes'       " Status bar (Themes)
 Plugin 'airblade/vim-gitgutter'               " Mark git changes in rail
+Plugin 'itchyny/lightline.vim'                " Light Line
 Plugin 'vim-syntastic/syntastic'              " Syntax checker
 Plugin 'lepture/vim-jinja'                    " Support for jinja files
 Plugin 'Raimondi/delimitMate'                 " Close parens etc.
@@ -35,11 +34,12 @@ filetype plugin indent on    " required
 " Appearance
 syntax on
 set background=dark
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='papercolor'
 let g:material_theme_style = 'dark'
 colorscheme material
+
+" let g:lightline = {
+"   \ 'colorscheme': 'material_vim',
+"   \ }
 
 " Better whitespace
 let g:better_whitespace_enabled = 1
