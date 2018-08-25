@@ -11,7 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'junegunn/fzf'                         " Fuzzy Search (Engine)
 Plugin 'junegunn/fzf.vim'                     " Fuzzy Search (Plugin)
 Plugin 'editorconfig/editorconfig-vim'        " Support for .editorconfig files
-Plugin 'NLKNguyen/papercolor-theme'           " ColorScheme similar to Material Theme
+Plugin 'kaicataldo/material.vim'              " Material Design Theme
 Plugin 'vim-airline/vim-airline'              " Status bar (Core)
 Plugin 'vim-airline/vim-airline-themes'       " Status bar (Themes)
 Plugin 'airblade/vim-gitgutter'               " Mark git changes in rail
@@ -35,10 +35,11 @@ filetype plugin indent on    " required
 " Appearance
 syntax on
 set background=dark
-colorscheme PaperColor
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='papercolor'
+let g:material_theme_style = 'dark'
+colorscheme material
 
 " Better whitespace
 let g:better_whitespace_enabled = 1
