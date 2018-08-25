@@ -11,7 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'junegunn/fzf'                         " Fuzzy Search (Engine)
 Plugin 'junegunn/fzf.vim'                     " Fuzzy Search (Plugin)
 Plugin 'editorconfig/editorconfig-vim'        " Support for .editorconfig files
-Plugin 'kaicataldo/material.vim'              " Material Design Theme
+Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'airblade/vim-gitgutter'               " Mark git changes in rail
 Plugin 'itchyny/lightline.vim'                " Light Line
 Plugin 'vim-syntastic/syntastic'              " Syntax checker
@@ -38,8 +38,7 @@ endif
 
 syntax on
 set background=dark
-let g:material_theme_style = 'dark'
-colorscheme material
+colorscheme PaperColor
 
 let g:lightline = {
   \ 'colorscheme': 'material_vim',
