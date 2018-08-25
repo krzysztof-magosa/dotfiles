@@ -32,6 +32,10 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " Appearance
+if !has('gui_running')
+  set t_Co=256
+endif
+
 syntax on
 set background=dark
 let g:material_theme_style = 'dark'
