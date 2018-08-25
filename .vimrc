@@ -41,9 +41,23 @@ set background=dark
 let g:material_theme_style = 'dark'
 colorscheme material
 
-" let g:lightline = {
-"   \ 'colorscheme': 'material_vim',
-"   \ }
+let g:lightline = {
+  \ 'colorscheme': 'material_vim',
+  \ 'active': {
+  \   'left': [ [ 'mode', 'paste' ], [ 'gitbranch' ],
+  \             [ 'readonly', 'filename', 'modified'] ],
+  \   'right': [ [ 'syntastic', 'lineinfo' ], [ 'percent' ], [ 'fileformat', 'fileencoding', 'filetype' ] ]
+  \ },
+  \ 'component_function': {
+  \   'gitbranch': 'fugitive#head'
+  \ },
+  \ 'component_expand': {
+  \   'syntastic': 'SyntasticStatuslineFlag'
+  \ },
+  \ 'component_type': {
+  \   'syntastic': 'error'
+  \ }
+  \ }
 
 " Better whitespace
 let g:better_whitespace_enabled = 1
