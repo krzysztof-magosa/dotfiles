@@ -65,6 +65,7 @@ set virtualedit=onemore                       " Allow cursor to go beyond last c
 set undofile                                  " Allow to undo even after vim restart
 set hidden                                    " Allow opening another buffers before save
 set timeoutlen=1000 ttimeoutlen=0             " Resolve problem with slow ESC
+set laststatus=2                              " Always show status line
 
 " Split more naturally
 set splitbelow
