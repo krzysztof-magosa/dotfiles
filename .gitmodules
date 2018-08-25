@@ -7,3 +7,6 @@
 [submodule ".zsh/plugins/async"]
 	path = .zsh/plugins/async
 	url = https://github.com/mafredri/zsh-async.git
+[submodule "iterm/material-iterm"]
+	path = iterm/material-iterm
+	url = https://github.com/stoeffel/material-iterm.git
