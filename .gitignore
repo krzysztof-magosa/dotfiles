@@ -8,3 +8,4 @@
 /.config/fish/functions/fish_prompt.fish
 /.vim/bundle/*
 !/.vim/bundle/Vundle.vim
+/.vim/undo-dir/*
