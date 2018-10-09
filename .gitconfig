@@ -9,6 +9,7 @@
 	p = !git pull --rebase && git submodule update --recursive --init
 	su = submodule update --recursive
 	co = checkout
+  rwm = !sh -c 'git fetch && git rebase origin/master'
 
 [core]
 	excludesfile = ~/.gitexclude
@@ -24,7 +25,7 @@
 
 [include]
 	path = ~/.gitconfig-local
-	
+
 [color]
 	ui = auto
 [diff]

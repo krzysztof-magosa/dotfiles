@@ -1,12 +1,14 @@
 alias today='git log --since="today 00:00:00" --author="$(git config user.email)" --format=oneline | egrep "\w+ \w+-\d+" | cut -d" " -f 2-'
 alias yesterday='git log --since="yesterday 00:00:00" --before="today 00:00:00" --author="$(git config user.email)" --format=oneline | egrep "\w+ \w+-\d+" | cut -d" " -f 2-'
 
+alias v="vim"
+alias v.="vim ."
+alias g="git"
+
 alias cd..="cd .."
 alias mc="mc -u"
 alias tigs="tig status"
 alias mkdir="mkdir -p"
-alias e='echo "Use vim"'
-alias e.='echo "Use vim"'
 alias emacs='echo "Use vim"'
 alias akamai="curl -H 'Pragma: akamai-x-cache-on, akamai-x-cache-remote-on, akamai-x-check-cacheable, akamai-x-get-cache-key, akamai-x-get-extracted-values, akamai-x-get-nonces, akamai-x-get-ssl-client-session-id, akamai-x-get-true-cache-key, akamai-x-serial-no' -IXGET "
 alias avv="ansible-vault view"

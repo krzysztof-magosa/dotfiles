@@ -1,12 +1,15 @@
-export ZSH="$HOME/.omz"
-export ZSH_CUSTOM="$HOME/.zsh"
-export ZSH_THEME="refined"
+export ZSH="${ZDOTDIR:-$HOME}/.omz"
+export ZSH_CUSTOM="${ZDOTDIR:-$HOME}/.zsh"
+export ZSH_THEME="powerlevel9k/powerlevel9k" # "refined"
 
 export DISABLE_AUTO_UPDATE="true"
 export HIST_STAMPS="dd.mm.yyyy"
 
+export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode)
+
 plugins=(
-    git
+#    git
 #    pip
 #    brew
 #    brew-cask
@@ -18,11 +21,11 @@ plugins=(
 #    python
 #    forklift
     history
-    osx
-    history-substring-search
+#osx
+#    history-substring-search
     zsh-autosuggestions
     async
-#    vi-mode
+    vi-mode
 )
 
 # https://www.johnhawthorn.com/2012/09/vi-escape-delays/
