@@ -11,8 +11,8 @@ export GOPATH=~/.go
 
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 export PATH="/opt/homebrew/share/git-core/contrib/diff-highlight:$PATH"
-export PATH="~/bin:$PATH"
-export PATH="~/.bin:$PATH"
 export PATH="$HOME/Library/Python/2.7/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
