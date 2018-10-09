@@ -1,33 +1,36 @@
 [alias]
-	pr = pull --rebase
-	tags = tag -l
-	branches = branch -a
-	remotes = remote -v
-	pu = push
-	pushf = push --force-with-lease
-	f = fetch
-	p = !git pull --rebase && git submodule update --recursive --init
-	su = submodule update --recursive
-	co = checkout
+  pr = pull --rebase
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
+  pu = push
+  pushf = push --force-with-lease
+  f = fetch
+  p = !git pull --rebase && git submodule update --recursive --init
+  su = submodule update --recursive
+  co = checkout
 
 [core]
-	excludesfile = ~/.gitexclude
-	pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
-	editor = vim
+  excludesfile = ~/.gitexclude
+  pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+  editor = vim
 
 [pull]
-	rebase = true
-	recurseSubmodules = on-demand
+  rebase = true
+  recurseSubmodules = on-demand
+
 [push]
-	default = current
-	recurseSubmodules = on-demand
+  default = current
+  recurseSubmodules = on-demand
 
 [include]
-	path = ~/.gitconfig-local
-	
+  path = ~/.gitconfig-local
+
 [color]
-	ui = auto
+  ui = auto
+
 [diff]
-	mnemonicprefix = true
+  mnemonicprefix = true
+
 [branch]
-	autosetupmerge = true
+  autosetupmerge = true
