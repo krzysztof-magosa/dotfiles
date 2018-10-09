@@ -1,0 +1,124 @@
+- hosts:
+    - localhost
+  connection: local
+  tasks:
+    - name: Install casks
+      homebrew_cask:
+        name:
+          - google-chrome
+          - spotify
+          - iterm2
+          - spectacle
+          - virtualbox
+    - name: Install brews
+      homebrew:
+        name:
+          - coreutils
+          - midnight-commander
+          - mtr
+          - tree
+          - wget
+          - tig
+          - jq
+          - fzf
+          - global
+          - ncftp
+          - ag
+          - tmux
+          - git
+    - name: Add github to known hosts
+      known_hosts:
+        name: github.com
+        key: "github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ=="
+    - name: Clone dotfiles
+      git:
+        repo: git@github.com:krzysztof-magosa/dotfiles.git
+        dest: "{{ lookup('env', 'HOME') }}/projects/dotfiles"
+    - name: Install dotfiles
+      shell: "{{ lookup('env', 'HOME') }}/projects/dotfiles/install.sh --force"
+    - name: Short delay until repeat
+      osx_defaults:
+        key: InitialKeyRepeat
+        value: 15
+        type: integer
+    - name: Fast key repeat
+      osx_defaults:
+        key: KeyRepeat
+        value: 2
+        type: integer
+    - name: Disable automatic correction of spelling
+      osx_defaults:
+        key: NSAutomaticSpellingCorrectionEnabled
+        value: 0
+        type: integer
+    - name: Disable smart quotes
+      osx_defaults:
+        key: NSAutomaticQuoteSubstitutionEnabled
+        value: 0
+        type: integer
+    - name: Disable smart dashes
+      osx_defaults:
+        key: NSAutomaticDashSubstitutionEnabled
+        value: 0
+        type: integer
+    - name: Show battery percentage
+      osx_defaults:
+        domain: com.apple.menuextra.battery
+        key: ShowPercent
+        value: "YES"
+        type: string
+    - name: Tap to click
+      osx_defaults:
+        domain: com.apple.AppleMultitouchTrackpad
+        key: Clicking
+        value: 1
+        type: integer
+    - name: Show file extensions
+      osx_defaults:
+        key: AppleShowAllExtensions
+        value: 1
+        type: integer
+    - name: Show hidden files
+      osx_defaults:
+        key: AppleShowAllFiles
+        value: 1
+        type: integer
+    - name: Search in current folder
+      osx_defaults:
+        domain: com.apple.finder
+        key: FXDefaultSearchScope
+        value: SCcf
+        type: string
+    - name: Display home directory by default
+      osx_defaults:
+        domain: com.apple.finder
+        key: "{{ item.key }}"
+        value: "{{ item.value }}"
+        type: string
+      with_dict:
+        NewWindowTarget: PfHm
+        NewWindowTargetPath: "file:///Users/{{ lookup('env', 'USER') }}/"
+    - name: Display directories using list view
+      osx_defaults:
+        domain: com.apple.finder
+        key: FXPreferredViewStyle
+        value: Nlsv
+        type: string
+    - name: Set size of dock
+      osx_defaults:
+        domain: com.apple.dock
+        key: tilesize
+        value: 48
+        type: float
+    - name: Do not mess dock with recent apps
+      osx_defaults:
+        domain: com.apple.dock
+        key: show-recents
+        value: 0
+        type: integer
+    - name: Minimise windows to their app icons
+      osx_defaults:
+        domain: com.apple.dock
+        key: minimize-to-application
+        value: true
+        type: boolean
