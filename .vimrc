@@ -124,8 +124,13 @@ autocmd FileType yaml let b:syntastic_yaml_yamllint_args =
       \ get(g:, 'syntastic_syntastic_yaml_yamllint_args', '') .
       \ FindConfig('-c', '.yamllint', expand('<afile>:p:h', 1))
 
+" Custom fzf commands
+autocmd VimEnter * command! -nargs=* AgWithoutIgnore
+      \ call fzf#vim#ag(<q-args>, '-U', 0)
+
 " Custom key bindings
 map <leader>g :Ag<CR>
+map <leader>G :AgWithoutIgnore<CR>
 map <Leader>f :FZF<CR>
 map <Leader>d :AnsibleVaultDecrypt<CR>
 map <Leader>e :AnsibleVaultEncrypt<CR>
