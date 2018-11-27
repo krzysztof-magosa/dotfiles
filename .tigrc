@@ -20,3 +20,5 @@ set vertical-split = no
 
 # Highlight words in diff
 set diff-highlight = true
+
+set main-view = line-number:no,interval=5 id:no date:custom,format=%d/%m/%Y author:full commit-title:yes,graph,refs,overflow=no
