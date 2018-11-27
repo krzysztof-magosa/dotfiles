@@ -26,6 +26,9 @@
           - ag
           - tmux
           - git
+          - grc
+          - telnet
+          - hub
     - name: Add github to known hosts
       known_hosts:
         name: github.com
