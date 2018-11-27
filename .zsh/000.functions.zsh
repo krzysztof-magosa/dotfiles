@@ -8,16 +8,18 @@ function is_linux() {
 
 function ansible_hosts() {
     pattern=$1
-    mode=$2
+    port=$2
+
+    if [ "${port}" != "" ] ; then
+      port_text=", port ${port}"
+    else
+      port_text=""
+    fi
 
     for core in host_vars/$~pattern/core.yml ; do
         host=$(basename $(dirname $core))
         ip=$(grep ansible_host: $core | awk '{print $NF}' | sed 's/"//g' | sed "s/'//g")
 
-        if [ "$mode" = "a" ] ; then
-            echo "$host A $ip"
-        else
-            echo "$host has IP $ip"
-        fi
+        echo "* ${host} [${ip}]${port_text}"
     done
 }
