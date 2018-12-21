@@ -3,6 +3,10 @@
 # (c) 2018 Krzysztof Magosa
 # Send complains to krzysztof@magosa.pl
 
+# SETUP:
+#
+# pip install --user ruamel.yaml
+
 
 import sys
 import subprocess
