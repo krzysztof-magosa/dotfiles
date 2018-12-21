@@ -16,6 +16,8 @@ import ruamel.yaml
 def default_constructor(loader, tag_suffix, node):
     p = subprocess.Popen(["ansible-vault", "decrypt"], stdin=subprocess.PIPE, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
     (stdout, stderr) = p.communicate(node.value)
+    if p.returncode != 0:
+        raise Exception("Problem with decoding: {}".format(stderr))
     return stdout
 
 
