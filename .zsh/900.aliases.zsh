@@ -12,6 +12,8 @@ alias akamai="curl -H 'Pragma: akamai-x-cache-on, akamai-x-cache-remote-on, akam
 alias avv="ansible-vault view"
 alias ave="ansible-vault edit"
 alias hpr="hub pull-request"
+alias vi="nvim"
+alias vim="nvim"
 
 if [ -d ~/.dotvm ] ; then
    alias vm="(cd ~/.dotvm && vagrant ssh)"
