@@ -27,6 +27,8 @@ Plugin 'b4b4r07/vim-ansible-vault'            " Ansible Vault support
 Plugin 'pbrisbin/vim-mkdir'                   " Create missing dirs on save
 Plugin 'kshenoy/vim-signature'                " Vim marks gutter
 Plugin 'apple/swift', {'rtp': 'utils/vim/'}
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'mitsuse/autocomplete-swift'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -64,6 +66,8 @@ let g:better_whitespace_enabled = 1
 let g:strip_whitespace_on_save = 1
 let g:strip_whitelines_at_eof = 1
 
+let g:deoplete#sources#swift#daemon_autostart = 1
+let g:deoplete#enable_at_startup = 1
 " Various options
 set lazyredraw                                " Do not refresh screen during macros/scripts
 set cursorline                                " Highlight current line
