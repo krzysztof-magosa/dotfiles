@@ -10,6 +10,16 @@
           - iterm2
           - spectacle
           - virtualbox
+          - goofy
+          - cheatsheet
+          - GrandPerspective
+          - alfred
+          - sourcekitten
+          - ctags
+          - swiftlint
+          - swiftformat
+          - nodejs
+          - llvm
     - name: Install brews
       homebrew:
         name:
@@ -29,6 +39,7 @@
           - grc
           - telnet
           - hub
+          - cmake
     - name: Add github to known hosts
       known_hosts:
         name: github.com
