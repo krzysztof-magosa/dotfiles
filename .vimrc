@@ -30,6 +30,7 @@ Plugin 'apple/swift', {'rtp': 'utils/vim/'}
 Plugin 'Shougo/deoplete.nvim'
 Plugin 'mitsuse/autocomplete-swift'
 Plugin 'Shougo/neosnippet.vim'
+Plugin 'dylon/vim-antlr'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
