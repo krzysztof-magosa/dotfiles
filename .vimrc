@@ -29,6 +29,7 @@ Plugin 'kshenoy/vim-signature'                " Vim marks gutter
 Plugin 'apple/swift', {'rtp': 'utils/vim/'}
 Plugin 'Shougo/deoplete.nvim'
 Plugin 'mitsuse/autocomplete-swift'
+Plugin 'Shougo/neosnippet.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -150,6 +151,11 @@ map <Leader>e :AnsibleVaultEncrypt<CR>
 nmap <Leader>b :Buffers<CR>
 vmap <leader>y :w !pbcopy<CR><CR>
 nmap <leader>p :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
+
+" Neosnippet
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
 
 " Actions for specific files
 autocmd BufEnter,BufNew */ansible/hosts/* set filetype=dosini
