@@ -19,3 +19,8 @@ export PATH="$HOME/.bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
 
+wrapper=$(which virtualenvwrapper.sh)
+if [ $? -eq 0 ] ; then
+  source ${wrapper}
+fi
+
