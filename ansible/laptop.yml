@@ -19,127 +19,15 @@
         dest: "{{ lookup('env', 'HOME') }}/projects/dotfiles"
     - name: Install dotfiles
       shell: "{{ lookup('env', 'HOME') }}/projects/dotfiles/install.sh --force"
-    - name: Short delay until repeat
+    - name: Set osx defaults
       osx_defaults:
-        key: InitialKeyRepeat
-        value: 15
-        type: integer
-    - name: Fast key repeat
-      osx_defaults:
-        key: KeyRepeat
-        value: 2
-        type: integer
-    - name: Disable automatic correction of spelling
-      osx_defaults:
-        key: NSAutomaticSpellingCorrectionEnabled
-        value: 0
-        type: integer
-    - name: Disable smart quotes
-      osx_defaults:
-        key: NSAutomaticQuoteSubstitutionEnabled
-        value: 0
-        type: integer
-    - name: Disable smart dashes
-      osx_defaults:
-        key: NSAutomaticDashSubstitutionEnabled
-        value: 0
-        type: integer
-    - name: Show battery percentage
-      osx_defaults:
-        domain: com.apple.menuextra.battery
-        key: ShowPercent
-        value: "YES"
-        type: string
-    - name: Tap to click
-      osx_defaults:
-        domain: com.apple.AppleMultitouchTrackpad
-        key: Clicking
-        value: 1
-        type: integer
-    - name: Show file extensions
-      osx_defaults:
-        key: AppleShowAllExtensions
-        value: 1
-        type: integer
-    - name: Show hidden files
-      osx_defaults:
-        key: AppleShowAllFiles
-        value: 1
-        type: integer
-    - name: Search in current folder
-      osx_defaults:
-        domain: com.apple.finder
-        key: FXDefaultSearchScope
-        value: SCcf
-        type: string
-    - name: Display home directory by default
-      osx_defaults:
-        domain: com.apple.finder
+        domain: "{{ item.domain | default(omit) }}"
         key: "{{ item.key }}"
         value: "{{ item.value }}"
-        type: string
-      with_dict:
-        NewWindowTarget: PfHm
-        NewWindowTargetPath: "file:///Users/{{ lookup('env', 'USER') }}/"
-    - name: Display directories using list view
-      osx_defaults:
-        domain: com.apple.finder
-        key: FXPreferredViewStyle
-        value: Nlsv
-        type: string
-    - name: Set size of dock
-      osx_defaults:
-        domain: com.apple.dock
-        key: tilesize
-        value: 48
-        type: float
-    - name: Do not mess dock with recent apps
-      osx_defaults:
-        domain: com.apple.dock
-        key: show-recents
-        value: 0
-        type: integer
-    - name: Minimise windows to their app icons
-      osx_defaults:
-        domain: com.apple.dock
-        key: minimize-to-application
-        value: true
-        type: boolean
-    - name: Disable open/close windows animations
-      osx_defaults:
-        domain: NSGlobalDomain
-        key: NSAutomaticWindowAnimationsEnabled
-        value: false
-        type: boolean
-    - name: Disable quick view opening animation
-      osx_defaults:
-        key: QLPanelAnimationDuration
-        value: 0
-        type: float
-    - name: Disable finder info animations
-      osx_defaults:
-        domain: com.apple.finder
-        key: DisableAllAnimations
-        value: true
-        type: boolean
-    - name: Disable opening from dock animation
-      osx_defaults:
-        domain: com.apple.dock
-        key: launchanim
-        value: false
-        type: boolean
-    - name: Use scale minimise effect
-      osx_defaults:
-        domain: com.apple.dock
-        key: mineffect
-        value: scale
-        type: string
-    - name: Set time format
-      osx_defaults:
-        domain: com.apple.menuextra.clock
-        key: DateFormat
-        value: EEE HH:mm
-        type: string
+        type: "{{ item.type }}"
+      loop: "{{ osx_defaults }}"
+      loop_control:
+        label: "{{ item.name }}"
     - name: Install virtualenvwrapper
       pip:
         name: virtualenvwrapper

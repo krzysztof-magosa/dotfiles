@@ -1,0 +1,124 @@
+osx_defaults:
+  - name: Short delay until repeat
+    key: InitialKeyRepeat
+    value: 15
+    type: integer
+
+  - name: Fast key repeat
+    key: KeyRepeat
+    value: 2
+    type: integer
+
+  - name: Disable automatic correction of spelling
+    key: NSAutomaticSpellingCorrectionEnabled
+    value: 0
+    type: integer
+
+  - name: Disable smart quotes
+    key: NSAutomaticQuoteSubstitutionEnabled
+    value: 0
+    type: integer
+
+  - name: Disable smart dashes
+    key: NSAutomaticDashSubstitutionEnabled
+    value: 0
+    type: integer
+
+  - name: Show battery percentage
+    domain: com.apple.menuextra.battery
+    key: ShowPercent
+    value: "YES"
+    type: string
+
+  - name: Tap to click
+    domain: com.apple.AppleMultitouchTrackpad
+    key: Clicking
+    value: 1
+    type: integer
+
+  - name: Show file extensions
+    key: AppleShowAllExtensions
+    value: 1
+    type: integer
+
+  - name: Show hidden files
+    key: AppleShowAllFiles
+    value: 1
+    type: integer
+
+  - name: Search in current folder
+    domain: com.apple.finder
+    key: FXDefaultSearchScope
+    value: SCcf
+    type: string
+
+  - name: Display home directory by default - 1
+    domain: com.apple.finder
+    key: "NewWindowTarget"
+    value: "PfHm"
+    type: string
+
+  - name: Display home directory by default - 2
+    domain: com.apple.finder
+    key: "NewWindowTargetPath"
+    value: "file:///Users/{{ lookup('env', 'USER') }}/"
+    type: string
+
+  - name: Display directories using list view
+    domain: com.apple.finder
+    key: FXPreferredViewStyle
+    value: Nlsv
+    type: string
+
+  - name: Set size of dock
+    domain: com.apple.dock
+    key: tilesize
+    value: 48
+    type: float
+
+  - name: Do not mess dock with recent apps
+    domain: com.apple.dock
+    key: show-recents
+    value: 0
+    type: integer
+
+  - name: Minimise windows to their app icons
+    domain: com.apple.dock
+    key: minimize-to-application
+    value: true
+    type: boolean
+
+  - name: Disable open/close windows animations
+    domain: NSGlobalDomain
+    key: NSAutomaticWindowAnimationsEnabled
+    value: false
+    type: boolean
+
+  - name: Disable quick view opening animation
+    key: QLPanelAnimationDuration
+    value: 0
+    type: float
+
+  - name: Disable finder info animations
+    domain: com.apple.finder
+    key: DisableAllAnimations
+    value: true
+    type: boolean
+
+  - name: Disable opening from dock animation
+    domain: com.apple.dock
+    key: launchanim
+    value: false
+    type: boolean
+
+  - name: Use scale minimise effect
+    domain: com.apple.dock
+    key: mineffect
+    value: scale
+    type: string
+
+  - name: Set time format
+    domain: com.apple.menuextra.clock
+    key: DateFormat
+    value: EEE HH:mm
+    type: string
