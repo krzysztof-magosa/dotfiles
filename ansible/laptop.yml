@@ -8,25 +8,7 @@
         state: upgraded
     - name: Install brews
       homebrew:
-        name:
-          - coreutils
-          - midnight-commander
-          - mtr
-          - tree
-          - wget
-          - tig
-          - jq
-          - fzf
-          - global
-          - ncftp
-          - ag
-          - tmux
-          - git
-          - grc
-          - telnet
-          - hub
-          - cmake
-          - python3
+        name: "{{ brews }}"
     - name: Add github to known hosts
       known_hosts:
         name: github.com

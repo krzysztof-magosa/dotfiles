@@ -1,0 +1,20 @@
+brews:
+  - coreutils
+  - moreutils
+  - midnight-commander
+  - mtr
+  - tree
+  - wget
+  - tig
+  - jq
+  - fzf
+  - global
+  - ncftp
+  - ag
+  - tmux
+  - git
+  - grc
+  - telnet
+  - hub
+  - cmake
+  - python3
