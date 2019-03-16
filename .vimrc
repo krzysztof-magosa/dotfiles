@@ -66,6 +66,8 @@ let g:lightline = {
 let g:better_whitespace_enabled = 1
 let g:strip_whitespace_on_save = 1
 let g:strip_whitelines_at_eof = 1
+let g:strip_only_modified_lines = 1
+let g:strip_whitespace_confirm = 0
 
 let g:deoplete#sources#swift#daemon_autostart = 1
 let g:deoplete#enable_at_startup = 1
