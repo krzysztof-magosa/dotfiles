@@ -136,6 +136,35 @@
         key: minimize-to-application
         value: true
         type: boolean
+    - name: Disable open/close windows animations
+      osx_defaults:
+        domain: NSGlobalDomain
+        key: NSAutomaticWindowAnimationsEnabled
+        value: false
+        type: boolean
+    - name: Disable quick view opening animation
+      osx_defaults:
+        key: QLPanelAnimationDuration
+        value: 0
+        type: float
+    - name: Disable finder info animations
+      osx_defaults:
+        domain: com.apple.finder
+        key: DisableAllAnimations
+        value: true
+        type: boolean
+    - name: Disable opening from dock animation
+      osx_defaults:
+        domain: com.apple.dock
+        key: launchanim
+        value: false
+        type: boolean
+    - name: Use scale minimise effect
+      osx_defaults:
+        domain: com.apple.dock
+        key: mineffect
+        value: scale
+        type: string
     - name: Install virtualenvwrapper
       pip:
         name: virtualenvwrapper
