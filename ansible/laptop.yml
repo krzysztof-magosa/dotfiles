@@ -165,6 +165,12 @@
         key: mineffect
         value: scale
         type: string
+    - name: Set time format
+      osx_defaults:
+        domain: com.apple.menuextra.clock
+        key: DateFormat
+        value: EEE HH:mm
+        type: string
     - name: Install virtualenvwrapper
       pip:
         name: virtualenvwrapper
