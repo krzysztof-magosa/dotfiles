@@ -4,21 +4,8 @@
   tasks:
     - name: Install casks
       homebrew_cask:
-        name:
-          - google-chrome
-          - spotify
-          - iterm2
-          - spectacle
-          - virtualbox
-          - goofy
-          - GrandPerspective
-          - alfred
-          - sourcekitten
-          - ctags
-          - swiftlint
-          - swiftformat
-          - nodejs
-          - llvm
+        name: "{{ casks }}"
+        state: upgraded
     - name: Install brews
       homebrew:
         name:

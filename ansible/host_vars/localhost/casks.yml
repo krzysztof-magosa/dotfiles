@@ -1,0 +1,15 @@
+casks:
+  - google-chrome
+  - spotify
+  - iterm2
+  - spectacle
+  - virtualbox
+  - goofy
+  - GrandPerspective
+  - alfred
+  - sourcekitten
+  - ctags
+  - swiftlint
+  - swiftformat
+  - nodejs
+  - llvm
