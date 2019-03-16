@@ -27,7 +27,6 @@ Plugin 'b4b4r07/vim-ansible-vault'            " Ansible Vault support
 Plugin 'pbrisbin/vim-mkdir'                   " Create missing dirs on save
 Plugin 'kshenoy/vim-signature'                " Vim marks gutter
 Plugin 'apple/swift', {'rtp': 'utils/vim/'}
-Plugin 'Shougo/deoplete.nvim'
 Plugin 'mitsuse/autocomplete-swift'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'dylon/vim-antlr'
