@@ -6,19 +6,35 @@
       homebrew_cask:
         name: "{{ casks }}"
         state: upgraded
+      tags:
+        - cask
+
     - name: Install brews
       homebrew:
         name: "{{ brews }}"
+        state: latest
+        update_homebrew: true
+      tags:
+        - brew
+
     - name: Add github to known hosts
       known_hosts:
         name: github.com
         key: "github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ=="
+      tags:
+        - known_hosts
+
     - name: Clone dotfiles
       git:
         repo: git@github.com:krzysztof-magosa/dotfiles.git
         dest: "{{ lookup('env', 'HOME') }}/projects/dotfiles"
+      tags:
+        - dotfiles
     - name: Install dotfiles
       shell: "{{ lookup('env', 'HOME') }}/projects/dotfiles/install.sh --force"
+      tags:
+        - dotfiles
+
     - name: Set osx defaults
       osx_defaults:
         domain: "{{ item.domain | default(omit) }}"
@@ -28,7 +44,12 @@
       loop: "{{ osx_defaults }}"
       loop_control:
         label: "{{ item.name }}"
+      tags:
+        - osx_defaults
+
     - name: Install virtualenvwrapper
       pip:
         name: virtualenvwrapper
         extra_args: "--user"
+      tags:
+        - pip
