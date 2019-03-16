@@ -18,3 +18,9 @@ brews:
   - hub
   - cmake
   - python3
+  - sourcekitten
+  - ctags
+  - swiftlint
+  - swiftformat
+  - nodejs
+  - llvm

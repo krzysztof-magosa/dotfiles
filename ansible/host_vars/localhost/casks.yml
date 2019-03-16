@@ -7,9 +7,3 @@ casks:
   - goofy
   - GrandPerspective
   - alfred
-  - sourcekitten
-  - ctags
-  - swiftlint
-  - swiftformat
-  - nodejs
-  - llvm
