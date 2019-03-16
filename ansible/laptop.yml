@@ -39,6 +39,7 @@
           - telnet
           - hub
           - cmake
+          - python3
     - name: Add github to known hosts
       known_hosts:
         name: github.com
@@ -135,3 +136,7 @@
         key: minimize-to-application
         value: true
         type: boolean
+    - name: Install virtualenvwrapper
+      pip:
+        name: virtualenvwrapper
+        extra_args: "--user"
