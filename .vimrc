@@ -98,6 +98,7 @@ set foldmethod=indent                         " Folding by indentation
 set foldnestmax=3                             " Max 3 levels
 set nofoldenable                              " Do not use it by default
 set colorcolumn=100
+set noshowmode                                " Lightline displays mode
 highlight colorcolumn ctermbg=DarkGray
 
 " Split more naturally
