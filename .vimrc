@@ -153,6 +153,8 @@ map <leader>G :AgWithoutIgnore<CR>
 map <Leader>f :FZF<CR>
 map <Leader>d :AnsibleVaultDecrypt<CR>
 map <Leader>e :AnsibleVaultEncrypt<CR>
+map <Esc>[1;9A :m -2<CR>
+map <Esc>[1;9B :m +1<CR>
 nmap <Leader>b :Buffers<CR>
 vmap <leader>y :w !pbcopy<CR><CR>
 nmap <leader>p :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
