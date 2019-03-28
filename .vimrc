@@ -30,6 +30,7 @@ Plugin 'kshenoy/vim-signature'                " Vim marks gutter
 Plugin 'apple/swift', {'rtp': 'utils/vim/'}
 Plugin 'mitsuse/autocomplete-swift'
 Plugin 'Shougo/neosnippet.vim'
+Plugin 'Shougo/neosnippet-snippets'
 Plugin 'dylon/vim-antlr'
 Plugin 'michaeljsmith/vim-indent-object'
 
