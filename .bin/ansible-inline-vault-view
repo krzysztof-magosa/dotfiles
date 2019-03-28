@@ -31,6 +31,7 @@ if __name__ == "__main__":
     ruamel.yaml.add_multi_constructor("!vault", default_constructor, Loader=ruamel.yaml.SafeLoader)
     data = yaml.load(handle)
     yaml.indent(mapping=2, sequence=4, offset=2)
+    yaml.width = 1000
     handle.close()
 
     yaml.dump(data, sys.stdout)
