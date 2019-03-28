@@ -148,7 +148,6 @@ autocmd VimEnter * command! -bang -nargs=* AgOnlyContent
       \ call fzf#vim#ag(<q-args>, {'options': '--delimiter : --nth 4..'}, <bang>0)
 
 " Custom key bindings
-map <leader>g :Ag<CR>
 map <leader>g :AgOnlyContent<CR>
 map <leader>G :AgWithoutIgnore<CR>
 map <Leader>f :FZF<CR>
