@@ -151,10 +151,9 @@ autocmd VimEnter * command! -bang -nargs=* AgOnlyContent
 map <leader>g :AgOnlyContent<CR>
 map <leader>G :AgWithoutIgnore<CR>
 map <Leader>f :FZF<CR>
-map <Leader>d :AnsibleVaultDecrypt<CR>
-map <Leader>e :AnsibleVaultEncrypt<CR>
 map <Esc>[1;9A :m -2<CR>
 map <Esc>[1;9B :m +1<CR>
+
 nmap <Leader>b :Buffers<CR>
 vmap <leader>y :w !pbcopy<CR><CR>
 nmap <leader>p :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
@@ -166,9 +165,6 @@ xmap <C-k>     <Plug>(neosnippet_expand_target)
 
 " Actions for specific files
 autocmd BufEnter,BufNew */ansible/hosts/* set filetype=dosini
-
-" Ansible Vault
-let g:ansible_vault_password_file = $ANSIBLE_VAULT_PASSWORD_FILE
 
 " Remember line in file
 if has("autocmd")
