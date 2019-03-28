@@ -1,6 +1,7 @@
 brews:
   - coreutils
   - moreutils
+  - findutils
   - midnight-commander
   - mtr
   - tree
