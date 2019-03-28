@@ -144,8 +144,12 @@ autocmd FileType yaml let b:syntastic_yaml_yamllint_args =
 autocmd VimEnter * command! -nargs=* AgWithoutIgnore
       \ call fzf#vim#ag(<q-args>, '-U', 0)
 
+autocmd VimEnter * command! -bang -nargs=* AgOnlyContent
+      \ call fzf#vim#ag(<q-args>, {'options': '--delimiter : --nth 4..'}, <bang>0)
+
 " Custom key bindings
 map <leader>g :Ag<CR>
+map <leader>g :AgOnlyContent<CR>
 map <leader>G :AgWithoutIgnore<CR>
 map <Leader>f :FZF<CR>
 map <Leader>d :AnsibleVaultDecrypt<CR>
