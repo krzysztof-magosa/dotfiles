@@ -1,4 +1,5 @@
 /.zsh/zplug
+/.zsh/local.zsh
 /.zsh/dns.d/*
 /.zsh/hosts/*
 /.zsh/999.local.zsh

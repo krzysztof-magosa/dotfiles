@@ -24,3 +24,6 @@ if [ $? -eq 0 ] ; then
   source ${wrapper}
 fi
 
+fpath=( ~/.zsh/functions $fpath )
+autoload -U ~/.zsh/functions/*(:t)
+

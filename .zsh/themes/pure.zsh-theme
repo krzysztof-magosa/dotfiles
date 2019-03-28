@@ -1,1 +1,0 @@
-../../zsh-themes/pure/pure.zsh
