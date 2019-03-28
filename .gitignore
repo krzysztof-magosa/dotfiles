@@ -10,3 +10,5 @@
 /.vim/bundle/*
 !/.vim/bundle/Vundle.vim
 /.vim/undo-dir/*
+/.config/asciinema/install-id
+
