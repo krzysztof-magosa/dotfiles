@@ -19,6 +19,7 @@ Plugin 'lepture/vim-jinja'                    " Support for jinja files
 Plugin 'Raimondi/delimitMate'                 " Close parens etc.
 Plugin 'tpope/vim-commentary'                 " (Un)Comment code
 Plugin 'tpope/vim-fugitive'                   " Git utilities
+Plugin 'tpope/vim-surround'                   " Surround
 Plugin 'nathanaelkane/vim-indent-guides'      " Show indentations
 Plugin 'terryma/vim-multiple-cursors'         " Multiple cursors, like in Sublime
 Plugin 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespaces
