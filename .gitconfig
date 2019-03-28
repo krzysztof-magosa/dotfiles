@@ -10,6 +10,7 @@
   su = submodule update --recursive
   co = checkout
   rwm = !sh -c 'git fetch && git rebase origin/master'
+  cfu = !sh -c 'git commit -m 'fix' --fixup HEAD && GIT_SEQUENCE_EDITOR=true git rebase -i HEAD~2 --autosquash'
 
 [core]
   excludesfile = ~/.gitexclude
