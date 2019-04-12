@@ -7,8 +7,7 @@
 /.config/mc/ini
 /.config/asciinema/config
 /.config/fish/functions/fish_prompt.fish
-/.vim/bundle/*
-!/.vim/bundle/Vundle.vim
 /.vim/undo-dir/*
+/.vim/plugged/
 /.config/asciinema/install-id
 

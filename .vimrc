@@ -1,42 +1,32 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'junegunn/fzf'                         " Fuzzy Search (Engine)
-Plugin 'junegunn/fzf.vim'                     " Fuzzy Search (Plugin)
-Plugin 'editorconfig/editorconfig-vim'        " Support for .editorconfig files
-Plugin 'NLKNguyen/papercolor-theme'
-Plugin 'airblade/vim-gitgutter'               " Mark git changes in rail
-Plugin 'itchyny/lightline.vim'                " Light Line
-Plugin 'vim-syntastic/syntastic'              " Syntax checker
-Plugin 'lepture/vim-jinja'                    " Support for jinja files
-Plugin 'Raimondi/delimitMate'                 " Close parens etc.
-Plugin 'tpope/vim-commentary'                 " (Un)Comment code
-Plugin 'tpope/vim-fugitive'                   " Git utilities
-Plugin 'tpope/vim-surround'                   " Surround
-Plugin 'nathanaelkane/vim-indent-guides'      " Show indentations
-Plugin 'terryma/vim-multiple-cursors'         " Multiple cursors, like in Sublime
-Plugin 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespaces
-Plugin 'EESchneider/vim-rebase-mode'          " Git rebase helper
-Plugin 'b4b4r07/vim-ansible-vault'            " Ansible Vault support
-Plugin 'pbrisbin/vim-mkdir'                   " Create missing dirs on save
-Plugin 'kshenoy/vim-signature'                " Vim marks gutter
-Plugin 'apple/swift', {'rtp': 'utils/vim/'}
-Plugin 'mitsuse/autocomplete-swift'
-Plugin 'Shougo/neosnippet.vim'
-Plugin 'Shougo/neosnippet-snippets'
-Plugin 'dylon/vim-antlr'
-Plugin 'michaeljsmith/vim-indent-object'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/fzf'                         " Fuzzy Search (Engine)
+Plug 'junegunn/fzf.vim'                     " Fuzzy Search (Plug)
+Plug 'editorconfig/editorconfig-vim'        " Support for .editorconfig files
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'airblade/vim-gitgutter'               " Mark git changes in rail
+Plug 'itchyny/lightline.vim'                " Light Line
+Plug 'vim-syntastic/syntastic'              " Syntax checker
+Plug 'lepture/vim-jinja'                    " Support for jinja files
+Plug 'Raimondi/delimitMate'                 " Close parens etc.
+Plug 'tpope/vim-commentary'                 " (Un)Comment code
+Plug 'tpope/vim-fugitive'                   " Git utilities
+Plug 'tpope/vim-surround'                   " Surround
+Plug 'nathanaelkane/vim-indent-guides'      " Show indentations
+Plug 'terryma/vim-multiple-cursors'         " Multiple cursors, like in Sublime
+Plug 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespaces
+Plug 'EESchneider/vim-rebase-mode'          " Git rebase helper
+Plug 'b4b4r07/vim-ansible-vault'            " Ansible Vault support
+Plug 'pbrisbin/vim-mkdir'                   " Create missing dirs on save
+Plug 'kshenoy/vim-signature'                " Vim marks gutter
+Plug 'apple/swift', {'rtp': 'utils/vim/'}
+Plug 'mitsuse/autocomplete-swift'
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
+Plug 'dylon/vim-antlr'
+Plug 'michaeljsmith/vim-indent-object'
+call plug#end()
 
 " Appearance
 if !has('gui_running')
@@ -143,7 +133,7 @@ let g:syntastic_yaml_checkers = ['yamllint']
 autocmd FileType yaml let b:syntastic_yaml_yamllint_args =
       \ get(g:, 'syntastic_syntastic_yaml_yamllint_args', '') .
       \ FindConfig('-c', '.yamllint', expand('<afile>:p:h', 1))
-
+   
 " Custom fzf commands
 autocmd VimEnter * command! -nargs=* AgWithoutIgnore
       \ call fzf#vim#ag(<q-args>, '-U', 0)
