@@ -6,7 +6,6 @@ Plug 'junegunn/fzf.vim'                     " Fuzzy Search (Plug)
 Plug 'editorconfig/editorconfig-vim'        " Support for .editorconfig files
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'airblade/vim-gitgutter'               " Mark git changes in rail
-Plug 'itchyny/lightline.vim'                " Light Line
 Plug 'vim-syntastic/syntastic'              " Syntax checker
 Plug 'lepture/vim-jinja'                    " Support for jinja files
 Plug 'Raimondi/delimitMate'                 " Close parens etc.
@@ -26,6 +25,8 @@ Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'dylon/vim-antlr'
 Plug 'michaeljsmith/vim-indent-object'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " Appearance
@@ -37,23 +38,6 @@ syntax on
 set background=dark
 colorscheme PaperColor
 
-let g:lightline = {
-  \ 'colorscheme': 'powerline',
-  \ 'active': {
-  \   'left': [ [ 'mode', 'paste' ], [ 'gitbranch' ],
-  \             [ 'readonly', 'filename', 'modified'] ],
-  \   'right': [ [ 'syntastic', 'lineinfo' ], [ 'percent' ], [ 'fileformat', 'fileencoding', 'filetype' ] ]
-  \ },
-  \ 'component_function': {
-  \   'gitbranch': 'fugitive#head'
-  \ },
-  \ 'component_expand': {
-  \   'syntastic': 'SyntasticStatuslineFlag'
-  \ },
-  \ 'component_type': {
-  \   'syntastic': 'error'
-  \ }
-  \ }
 
 " Better whitespace
 let g:better_whitespace_enabled = 1
@@ -88,7 +72,7 @@ set foldmethod=indent                         " Folding by indentation
 set foldnestmax=3                             " Max 3 levels
 set nofoldenable                              " Do not use it by default
 set colorcolumn=100
-set noshowmode                                " Lightline displays mode
+set noshowmode                                " Airline displays mode
 highlight colorcolumn ctermbg=DarkGray
 
 " Split more naturally
