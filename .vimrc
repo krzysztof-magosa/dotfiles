@@ -6,7 +6,7 @@ Plug 'junegunn/fzf.vim'                     " Fuzzy Search (Plug)
 Plug 'editorconfig/editorconfig-vim'        " Support for .editorconfig files
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'airblade/vim-gitgutter'               " Mark git changes in rail
-Plug 'vim-syntastic/syntastic'              " Syntax checker
+Plug 'w0rp/ale'                             " Async Linting Engine
 Plug 'lepture/vim-jinja'                    " Support for jinja files
 Plug 'Raimondi/delimitMate'                 " Close parens etc.
 Plug 'tpope/vim-commentary'                 " (Un)Comment code
@@ -38,6 +38,11 @@ syntax on
 set background=dark
 colorscheme PaperColor
 
+" Helpers
+function! FindConfig(prefix, what, where)
+  let cfg = findfile(a:what, escape(a:where, ' ') . ';')
+  return cfg !=# '' ? ' ' . a:prefix . ' ' . shellescape(cfg) : ''
+endfunction
 
 " Better whitespace
 let g:better_whitespace_enabled = 1
@@ -48,6 +53,15 @@ let g:strip_whitespace_confirm = 0
 
 let g:deoplete#sources#swift#daemon_autostart = 1
 let g:deoplete#enable_at_startup = 1
+
+" ALE
+let g:ale_sign_column_always = 1
+let g:ale_open_list = 1
+let g:airline#extensions#ale#enabled = 1
+autocmd FileType yaml let b:ale_yaml_yamllint_options =
+      \ get(g:, 'ale_yaml_yamllint_options', '') .
+      \ FindConfig('-c', '.yamllint', expand('<afile>:p:h', 1))
+
 " Various options
 set lazyredraw                                " Do not refresh screen during macros/scripts
 set cursorline                                " Highlight current line
@@ -101,21 +115,6 @@ set smarttab
 set shiftround
 set autoindent
 let g:indent_guides_enable_on_vim_startup = 1
-
-" Syntastic
-function! FindConfig(prefix, what, where)
-  let cfg = findfile(a:what, escape(a:where, ' ') . ';')
-  return cfg !=# '' ? ' ' . a:prefix . ' ' . shellescape(cfg) : ''
-endfunction
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_yaml_checkers = ['yamllint']
-autocmd FileType yaml let b:syntastic_yaml_yamllint_args =
-      \ get(g:, 'syntastic_syntastic_yaml_yamllint_args', '') .
-      \ FindConfig('-c', '.yamllint', expand('<afile>:p:h', 1))
    
 " Custom fzf commands
 autocmd VimEnter * command! -nargs=* AgWithoutIgnore
