@@ -1,7 +1,17 @@
-export BREW_PREFIX="$(brew --prefix)"
+# Initialize zplugin
+source ${ZSH_HOME}/zplugin/zplugin.zsh
+autoload -Uz _zplugin
+(( ${+_comps} )) && _comps[zplugin]=_zplugin
 
-source <(antibody init)
-antibody bundle < ~/.zsh/plugins.txt
+# Load plugins
+zplugin light zsh-users/zsh-completions
+zplugin light zsh-users/zsh-autosuggestions
+zplugin light rupa/z
+zplugin light caarlos0/zsh-mkc
+zplugin light mafredri/zsh-async
+zplugin light sindresorhus/pure
+zplugin light zdharma/fast-syntax-highlighting
+zplugin light zsh-users/zsh-history-substring-search
 
 source ~/.zsh/config.zsh
 source ~/.zsh/aliases.zsh

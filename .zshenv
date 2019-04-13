@@ -1,6 +1,8 @@
 # macOS calls path helper which overrides our PATH settings.
 setopt no_global_rcs
 
+export ZSH_HOME="$HOME/.zsh"
+
 export EDITOR="vim"
 export VISUAL="vim"
 export LANG="en_US.UTF-8"

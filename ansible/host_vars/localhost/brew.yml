@@ -25,4 +25,3 @@ brews:
   - swiftformat
   - nodejs
   - llvm
-  - getantibody/tap/antibody

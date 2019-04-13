@@ -13,3 +13,6 @@
 [submodule "assets/vim-plug"]
 	path = assets/vim-plug
 	url = https://github.com/junegunn/vim-plug.git
+[submodule ".zsh/zplugin"]
+	path = .zsh/zplugin
+	url = https://github.com/zdharma/zplugin.git

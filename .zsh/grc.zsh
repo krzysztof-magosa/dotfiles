@@ -1,4 +1,4 @@
-GRC_ZSH="${BREW_PREFIX}/etc/grc.zsh"
+GRC_ZSH=$(brew --prefix)/etc/grc.zsh"
 
 if [ -f ${GRC_ZSH} ] ; then
   source ${GRC_ZSH}
