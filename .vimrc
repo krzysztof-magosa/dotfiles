@@ -115,6 +115,7 @@ set expandtab
 set smarttab
 set shiftround
 set autoindent
+set smartindent
 let g:indent_guides_enable_on_vim_startup = 1
 
 " Custom fzf commands
