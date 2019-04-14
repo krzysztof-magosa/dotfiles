@@ -86,6 +86,7 @@ set foldnestmax=3                             " Max 3 levels
 set nofoldenable                              " Do not use it by default
 set colorcolumn=100
 set noshowmode                                " Airline displays mode
+set showmatch                                 " Highlight closing parens etc
 highlight colorcolumn ctermbg=DarkGray
 
 " Split more naturally
