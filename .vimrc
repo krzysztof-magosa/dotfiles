@@ -127,8 +127,8 @@ autocmd VimEnter * command! -bang -nargs=* AgOnlyContent
 map <leader>g :AgOnlyContent<CR>
 map <leader>G :AgWithoutIgnore<CR>
 map <Leader>f :FZF<CR>
-map <Esc>[1;9A :m -2<CR>
-map <Esc>[1;9B :m +1<CR>
+map <Esc>[A :m -2<CR>
+map <Esc>[B :m +1<CR>
 
 nmap <Leader>b :Buffers<CR>
 vmap <leader>y :w !pbcopy<CR><CR>
