@@ -27,6 +27,8 @@ Plug 'dylon/vim-antlr'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'ajh17/VimCompletesMe'
 call plug#end()
 
 " Appearance
