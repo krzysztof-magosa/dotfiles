@@ -19,4 +19,7 @@ source ~/.zsh/grc.zsh
 source ~/.zsh/fzf.zsh
 source ~/.zsh/completion.zsh
 source ~/.zsh/keyboard.zsh
-source ~/.zsh/local.zsh
+
+if [ -f ~/.zsh/local.zsh ] ; then
+  source ~/.zsh/local.zsh
+fi
