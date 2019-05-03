@@ -42,6 +42,14 @@ fi
 # Show external IP
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
+# Use GNU ls if available
+if command -v gls &>/dev/null ; then
+  alias gls="gls --color=auto"
+  alias ls="gls"
+  alias ll="ls -lhF"
+  alias la="ls -lhFa"
+  alias l="ll"
+fi
 
 function ansible-vault-encrypt-oneline-string {
   read x
