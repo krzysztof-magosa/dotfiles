@@ -1,5 +1,4 @@
 
-alias cd..="cd .."
 alias mc="mc -u"
 alias mkdir="mkdir -p"
 alias akamai="curl -H 'Pragma: akamai-x-cache-on, akamai-x-cache-remote-on, akamai-x-check-cacheable, akamai-x-get-cache-key, akamai-x-get-extracted-values, akamai-x-get-nonces, akamai-x-get-ssl-client-session-id, akamai-x-get-true-cache-key, akamai-x-serial-no' -IXGET "
@@ -48,6 +47,7 @@ if command -v gls &>/dev/null ; then
 fi
 
 # Handy cd..
+alias cd..="cd .."
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
