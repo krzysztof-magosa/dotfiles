@@ -23,7 +23,8 @@ if  [ -f ~/.ssh/id_rsa.pub ] && is_osx ; then
    alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo 'Public key has been copied to clipboard.'"
 fi
 
-if type "htop" >/dev/null ; then
+# Use htop if available
+if command -v htop &>/dev/null ; then
     alias top="htop"
 fi
 
