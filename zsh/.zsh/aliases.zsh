@@ -36,7 +36,9 @@ if type "htop" >/dev/null ; then
 fi
 
 # Go to projects repos dir
-[ -d ~/projects ] && alias p="cd ~/projects"
+if [ -d ~/projects ] ; then
+  alias p="cd ~/projects"
+fi
 [ -f "${ORGMODE_DIR}/todo.org" ] && alias todo="emacs ${ORGMODE_DIR}/todo.org"
 
 # Show external IP
