@@ -49,8 +49,3 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-
-function ansible-vault-encrypt-oneline-string {
-  read x
-  echo -n $x | ansible-vault encrypt_string | sed -E 's/^[ \t]+//g' 2>/dev/null
-}
