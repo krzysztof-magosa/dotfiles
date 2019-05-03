@@ -19,6 +19,7 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+# Handy alias to copy public key
 if  [ -f ~/.ssh/id_rsa.pub ] && is_osx ; then
    alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo 'Public key has been copied to clipboard.'"
 fi
