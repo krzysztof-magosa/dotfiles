@@ -19,8 +19,8 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-if  [ -f ~/.ssh/id_rsa.pub ] ; then
-   is_osx && alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo 'Public key has been copied to clipboard.'"
+if  [ -f ~/.ssh/id_rsa.pub ] && is_osx ; then
+   alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo 'Public key has been copied to clipboard.'"
 fi
 
 if type "htop" >/dev/null ; then
