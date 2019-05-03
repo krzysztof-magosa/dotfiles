@@ -6,9 +6,6 @@ alias cd..="cd .."
 alias mc="mc -u"
 alias tigs="tig status"
 alias mkdir="mkdir -p"
-alias e='echo "Use vim"'
-alias e.='echo "Use vim"'
-alias emacs='echo "Use vim"'
 alias akamai="curl -H 'Pragma: akamai-x-cache-on, akamai-x-cache-remote-on, akamai-x-check-cacheable, akamai-x-get-cache-key, akamai-x-get-extracted-values, akamai-x-get-nonces, akamai-x-get-ssl-client-session-id, akamai-x-get-true-cache-key, akamai-x-serial-no' -IXGET "
 alias avv="$HOME/.bin/ansible-inline-vault-view"
 alias ave="ansible-vault-encrypt-oneline-string"
@@ -39,7 +36,6 @@ fi
 if [ -d ~/projects ] ; then
   alias p="cd ~/projects"
 fi
-[ -f "${ORGMODE_DIR}/todo.org" ] && alias todo="emacs ${ORGMODE_DIR}/todo.org"
 
 # Show external IP
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
