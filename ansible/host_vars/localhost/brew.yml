@@ -13,7 +13,6 @@ brews:
   - ag
   - tmux
   - git
-  - grc
   - telnet
   - hub
   - cmake

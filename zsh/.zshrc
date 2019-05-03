@@ -15,7 +15,6 @@ zplugin light zsh-users/zsh-history-substring-search
 
 source ~/.zsh/config.zsh
 source ~/.zsh/aliases.zsh
-source ~/.zsh/grc.zsh
 source ~/.zsh/fzf.zsh
 source ~/.zsh/completion.zsh
 source ~/.zsh/keyboard.zsh
