@@ -1,13 +1,9 @@
-/.zsh/zplug
-/.zsh/local.zsh
-/.zsh/dns.d/*
-/.zsh/hosts/*
-/.zsh/999.local.zsh
-!/.zsh/hosts/.gitkeep
-/.config/mc/ini
-/.config/asciinema/config
-/.config/fish/functions/fish_prompt.fish
-/.vim/undo-dir/*
-/.vim/plugged/
-/.config/asciinema/install-id
+# Zsh
+/zsh/.zsh/local.zsh
 
+# Vim
+/vim/.vim/undo-dir/
+/vim/.vim/plugged/
+
+# Git
+/git/.gitconfig-local

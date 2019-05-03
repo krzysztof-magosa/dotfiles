@@ -1,9 +1,6 @@
 [submodule "iterm/material-iterm"]
 	path = iterm/material-iterm
 	url = https://github.com/stoeffel/material-iterm.git
-[submodule "LS_COLORS"]
-	path = LS_COLORS
-	url = https://github.com/trapd00r/LS_COLORS.git
 [submodule "assets/vim-plug"]
 	path = assets/vim-plug
 	url = https://github.com/junegunn/vim-plug.git
