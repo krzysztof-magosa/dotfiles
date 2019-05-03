@@ -9,7 +9,6 @@ brews:
   - tig
   - jq
   - fzf
-  - global
   - ncftp
   - ag
   - tmux
@@ -20,7 +19,7 @@ brews:
   - cmake
   - python3
   - sourcekitten
-  - ctags
+  - universal-ctags/universal-ctags/universal-ctags
   - swiftlint
   - swiftformat
   - nodejs
