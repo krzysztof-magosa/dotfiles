@@ -1,7 +1,13 @@
-
+# Do not use subshell in mc
 alias mc="mc -u"
+
+# Create parent when needed
 alias mkdir="mkdir -p"
+
+# Show akamai info for url
 alias akamai="curl -H 'Pragma: akamai-x-cache-on, akamai-x-cache-remote-on, akamai-x-check-cacheable, akamai-x-get-cache-key, akamai-x-get-extracted-values, akamai-x-get-nonces, akamai-x-get-ssl-client-session-id, akamai-x-get-true-cache-key, akamai-x-serial-no' -IXGET "
+
+# Ansible
 alias avv="$HOME/.bin/ansible-inline-vault-view"
 alias ave="ansible-vault-encrypt-oneline-string"
 alias avec="ansible-vault-encrypt-oneline-string | pbcopy"
