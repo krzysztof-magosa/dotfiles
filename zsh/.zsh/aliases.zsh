@@ -9,6 +9,7 @@ alias avec="ansible-vault-encrypt-oneline-string | pbcopy"
 alias avd="sed -E 's/^[ \t]+//g' | ansible-vault decrypt 2>/dev/null"
 alias aves="ansible-vault encrypt_string"
 
+# Use colors for grep
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
