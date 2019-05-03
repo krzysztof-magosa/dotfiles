@@ -19,11 +19,6 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-if [ -d ~/.dotvm ] ; then
-   alias vm="(cd ~/.dotvm && vagrant ssh)"
-   alias vmup="(cd ~/.dotvm && vagrant up)"
-fi
-
 if  [ -f ~/.ssh/id_rsa.pub ] ; then
    is_osx && alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo 'Public key has been copied to clipboard.'"
 fi
