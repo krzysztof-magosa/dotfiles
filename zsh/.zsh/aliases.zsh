@@ -45,7 +45,7 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # Use GNU ls if available
 if command -v gls &>/dev/null ; then
-  alias gls="gls --color=auto"
+  alias gls="gls --color=auto --group-directories-first"
   alias ls="gls"
   alias ll="ls -lhF"
   alias la="ls -lhFa"
