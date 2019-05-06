@@ -4,6 +4,8 @@
 <dict>
 	<key>AdaptiveFrameRateThroughputThreshold</key>
 	<integer>10000</integer>
+	<key>AllowClipboardAccess</key>
+	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>AppleScrollAnimationEnabled</key>
@@ -168,7 +170,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>306 202 796 486 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 87 1440 790 0 0 1440 877 </string>
+	<string>0 64 1440 813 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 425 650 452 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_3338A89F-86AD-4FA7-8A0A-0BB5946E6E9A</key>
@@ -743,7 +745,7 @@
 			<key>Minimum Contrast</key>
 			<real>0.0</real>
 			<key>Mouse Reporting</key>
-			<false/>
+			<true/>
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
@@ -838,7 +840,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>18D8CD18-99AF-4D29-8762-7706C0F17785</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>3</integer>
+	<integer>7</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1478,7 +1480,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-04-05T12:49:03Z</date>
+	<date>2019-04-25T07:08:41Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowMetalFPSmeter</key>
