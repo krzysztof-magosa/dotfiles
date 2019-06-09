@@ -4,6 +4,7 @@
 # Vim
 /vim/.vim/undo-dir/
 /vim/.vim/plugged/
+/vim/.vim/.netrwhist
 
 # Git
 /git/.gitconfig-local
