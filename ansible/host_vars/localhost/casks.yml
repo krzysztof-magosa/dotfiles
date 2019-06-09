@@ -4,3 +4,5 @@ casks:
   - iterm2
   - spectacle
   - virtualbox
+  - enpass
+  - nextcloud
