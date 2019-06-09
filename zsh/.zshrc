@@ -19,6 +19,11 @@ source ~/.zsh/fzf.zsh
 source ~/.zsh/completion.zsh
 source ~/.zsh/keyboard.zsh
 
+# Things not eligible to be in git but shared between my computers
+if [ -f ~/Nextcloud/Dotfiles/shared.zsh ] ; then
+  source ~/Nextcloud/Dotfiles/shared.zsh
+fi
+
 if [ -f ~/.zsh/local.zsh ] ; then
   source ~/.zsh/local.zsh
 fi
