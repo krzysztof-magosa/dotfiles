@@ -53,3 +53,9 @@
         extra_args: "--user"
       tags:
         - pip
+
+    - name: Configure dock icons
+      command: "dockutil --{{ item.state }} {{ item.icon }}"
+      loop: "{{ dock_icons }}"
+      tags:
+        - dock_icons
