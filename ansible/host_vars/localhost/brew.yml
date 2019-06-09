@@ -23,5 +23,6 @@ brews:
   - swiftformat
   - nodejs
   - llvm
+  - stow
   - yamllint
   - dockutil
