@@ -2,10 +2,23 @@
     - localhost
   connection: local
   tasks:
+    - name: Create directory for homebrew
+      file:
+        path: "{{ lookup('env', 'HOME') }}/.brew"
+        state: directory
+      tags:
+        - brew_install
+
+    - name: Install homebrew
+      shell: "curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C {{ lookup('env', 'HOME') }}/.brew"
+      tags:
+        - brew_install
+
     - name: Install casks
       homebrew_cask:
         name: "{{ casks }}"
         state: upgraded
+        path: "{{ lookup('env', 'HOME') }}/.brew/bin"
       tags:
         - cask
 
@@ -14,6 +27,7 @@
         name: "{{ brews }}"
         state: latest
         update_homebrew: true
+        path: "{{ lookup('env', 'HOME') }}/.brew/bin"
       tags:
         - brew
 
