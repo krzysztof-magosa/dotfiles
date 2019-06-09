@@ -13,8 +13,8 @@ export GOPATH=~/.go
 
 export WORKON_HOME="$HOME/.venvs"
 
-export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
-export PATH="/opt/homebrew/share/git-core/contrib/diff-highlight:$PATH"
+export PATH="$HOME/.brew/bin:$HOME/.brew/sbin:$PATH"
+export PATH="$HOME/.brew/share/git-core/contrib/diff-highlight:$PATH"
 export PATH="$HOME/Library/Python/2.7/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
