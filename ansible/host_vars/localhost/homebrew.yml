@@ -1,0 +1,42 @@
+homebrew_prefix: "{{ lookup('env', 'HOME') }}/.brew"
+homebrew_group: "{{ ansible_user_gid }}"
+homebrew_mode: "0755"
+
+homebrew_brews:
+  - name: coreutils
+  - name: moreutils
+  - name: findutils
+  - name: midnight-commander
+  - name: mtr
+  - name: tree
+  - name: wget
+  - name: tig
+  - name: jq
+  - name: fzf
+  - name: ncftp
+  - name: ag
+  - name: tmux
+  - name: git
+  - name: telnet
+  - name: hub
+  - name: cmake
+  - name: python3
+  - name: sourcekitten
+  - name: universal-ctags/universal-ctags/universal-ctags
+  - name: swiftlint
+  - name: swiftformat
+  - name: nodejs
+  - name: llvm
+  - name: stow
+  - name: yamllint
+  - name: dockutil
+  - name: cookiecutter
+
+homebrew_casks:
+  - name: google-chrome
+  - name: spotify
+  - name: iterm2
+  - name: spectacle
+  - name: virtualbox
+  - name: enpass
+  - name: nextcloud
