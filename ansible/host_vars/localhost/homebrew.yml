@@ -22,7 +22,6 @@ homebrew_brews:
   - name: cmake
   - name: python3
   - name: sourcekitten
-  - name: universal-ctags/universal-ctags/universal-ctags
   - name: swiftlint
   - name: swiftformat
   - name: nodejs
