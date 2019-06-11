@@ -2,6 +2,9 @@ homebrew_prefix: "{{ lookup('env', 'HOME') }}/.brew"
 homebrew_group: "{{ ansible_user_gid }}"
 homebrew_mode: "0755"
 
+homebrew_taps:
+  - name: universal-ctags/universal-ctags
+
 homebrew_brews:
   - name: coreutils
   - name: moreutils
@@ -31,7 +34,8 @@ homebrew_brews:
   - name: dockutil
   - name: cookiecutter
   - name: htop
-  - name: ctags-exuberant
+  - name: universal-ctags/universal-ctags/universal-ctags
+    options: "HEAD"
 
 homebrew_casks:
   - name: google-chrome
