@@ -31,6 +31,7 @@ homebrew_brews:
   - name: dockutil
   - name: cookiecutter
   - name: htop
+  - name: ctags-exuberant
 
 homebrew_casks:
   - name: google-chrome
