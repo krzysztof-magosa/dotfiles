@@ -30,6 +30,7 @@ homebrew_brews:
   - name: yamllint
   - name: dockutil
   - name: cookiecutter
+  - name: htop
 
 homebrew_casks:
   - name: google-chrome
