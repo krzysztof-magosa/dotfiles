@@ -10,5 +10,6 @@ stow -t $HOME \
   git \
   tig \
   vim \
+  tmux \
   zsh
 
