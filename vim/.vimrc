@@ -28,6 +28,7 @@ Plug 'michaeljsmith/vim-indent-object'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'krzysztof-magosa/vim-ansibledict'
 call plug#end()
 
 " Appearance
@@ -158,3 +159,7 @@ function! ChangePaste(type, ...)
     silent exe "normal! `[v`]\"_c"
     silent exe "normal! p"
 endfunction
+
+" Ansible
+au BufRead,BufNewFile */ansible/*.yml LoadDefaultAnsibleDict
+set complete+=k
