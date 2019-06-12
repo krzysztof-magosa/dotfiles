@@ -4,6 +4,7 @@ autoload -Uz _zplugin
 (( ${+_comps} )) && _comps[zplugin]=_zplugin
 
 # Load plugins
+zplugin light zpm-zsh/autoenv
 zplugin light zsh-users/zsh-completions
 zplugin light zsh-users/zsh-autosuggestions
 zplugin light rupa/z

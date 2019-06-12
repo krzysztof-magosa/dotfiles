@@ -8,3 +8,5 @@ GRTAGS
 GTAGS
 \#*\#
 /.ignore
+/.autoenv.in
+/.autoenv.out
