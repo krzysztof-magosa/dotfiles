@@ -34,6 +34,7 @@ homebrew_brews:
   - name: dockutil
   - name: cookiecutter
   - name: htop
+  - name: wakeonlan
   - name: universal-ctags/universal-ctags/universal-ctags
     options: "HEAD"
 
