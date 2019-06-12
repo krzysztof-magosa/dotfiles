@@ -35,6 +35,8 @@ homebrew_brews:
   - name: cookiecutter
   - name: htop
   - name: wakeonlan
+  - name: terraform
+  - name: git-crypt
   - name: universal-ctags/universal-ctags/universal-ctags
     options: "HEAD"
 
