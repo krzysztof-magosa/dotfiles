@@ -28,6 +28,8 @@ Plug 'michaeljsmith/vim-indent-object'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'tpope/vim-unimpaired'                 " [] actions
+Plug 'tpope/vim-repeat'                     " Support . for plugins actions
 Plug 'krzysztof-magosa/vim-ansibledict'
 call plug#end()
 
