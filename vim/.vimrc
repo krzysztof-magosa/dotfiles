@@ -91,6 +91,7 @@ set nofoldenable                              " Do not use it by default
 set colorcolumn=100
 set noshowmode                                " Airline displays mode
 set showmatch                                 " Highlight closing parens etc
+set nomodeline                                " Do not parse modelines
 highlight colorcolumn ctermbg=DarkGray
 
 " Split more naturally
