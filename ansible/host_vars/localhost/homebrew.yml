@@ -37,6 +37,7 @@ homebrew_brews:
   - name: wakeonlan
   - name: terraform
   - name: git-crypt
+  - name: pwgen
   - name: universal-ctags/universal-ctags/universal-ctags
     options: "HEAD"
 
