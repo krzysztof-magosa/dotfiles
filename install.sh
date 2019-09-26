@@ -11,5 +11,6 @@ stow -t $HOME \
   tig \
   vim \
   tmux \
-  zsh
+  zsh \
+  misc
 
