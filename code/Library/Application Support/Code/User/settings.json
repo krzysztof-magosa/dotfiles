@@ -1,0 +1,8 @@
+{
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "An Old Hope",
+    "projectManager.git.maxDepthRecursion": 3,
+    "projectManager.git.baseFolders": [
+        "$home/projects/"
+    ]
+}

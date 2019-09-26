@@ -12,5 +12,6 @@ stow -t $HOME \
   vim \
   tmux \
   zsh \
-  misc
+  misc \
+  code
 
