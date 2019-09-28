@@ -17,5 +17,6 @@
     "terraform.languageServer": {
         "enabled": true,
         "args": []
-    }
+    },
+    "workbench.iconTheme": "vscode-icons"
 }

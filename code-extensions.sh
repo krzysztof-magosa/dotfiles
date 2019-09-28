@@ -7,6 +7,7 @@ extensions=(
   mauve.terraform
   ms-azuretools.vscode-docker
   ms-python.python
+  vscode-icons-team.vscode-icons
 )
 
 for ext in ${extensions[@]} ; do
