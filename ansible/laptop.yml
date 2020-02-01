@@ -11,17 +11,6 @@
       tags:
         - known_hosts
 
-    - name: Clone dotfiles
-      git:
-        repo: git@github.com:krzysztof-magosa/dotfiles.git
-        dest: "{{ lookup('env', 'HOME') }}/projects/dotfiles"
-      tags:
-        - dotfiles
-    - name: Install dotfiles
-      shell: "{{ lookup('env', 'HOME') }}/projects/dotfiles/install.sh --force"
-      tags:
-        - dotfiles
-
     - name: Set osx defaults
       osx_defaults:
         domain: "{{ item.domain | default(omit) }}"

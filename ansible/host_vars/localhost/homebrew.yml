@@ -23,10 +23,10 @@ homebrew_brews:
   - name: telnet
   - name: hub
   - name: cmake
-  - name: python3
-  - name: sourcekitten
-  - name: swiftlint
-  - name: swiftformat
+  - name: python
+  #- name: sourcekitten
+  #- name: swiftlint
+  #- name: swiftformat
   - name: nodejs
   - name: llvm
   - name: stow
@@ -39,6 +39,7 @@ homebrew_brews:
   - name: git-crypt
   - name: pwgen
   - name: travis
+  - name: neovim
   - name: universal-ctags/universal-ctags/universal-ctags
     options: "HEAD"
 
@@ -47,5 +48,10 @@ homebrew_casks:
   - name: spotify
   - name: iterm2
   - name: spectacle
-  - name: virtualbox
+  #- name: virtualbox
   - name: nextcloud
+  - name: docker
+  - name: slack
+  - name: forklift
+  - name: vlc
+  - name: balenaetcher

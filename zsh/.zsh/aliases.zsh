@@ -52,6 +52,12 @@ if command -v gls &>/dev/null ; then
   alias l="ll"
 fi
 
+# Use NeoVIM if available
+if command -v nvim &>/dev/null ; then
+  alias vi="nvim"
+  alias vim="nvim"
+fi
+
 # Handy cd..
 alias cd..="cd .."
 alias ..="cd .."

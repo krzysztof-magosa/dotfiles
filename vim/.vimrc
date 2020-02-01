@@ -16,7 +16,7 @@ Plug 'nathanaelkane/vim-indent-guides'      " Show indentations
 Plug 'terryma/vim-multiple-cursors'         " Multiple cursors, like in Sublime
 Plug 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespaces
 Plug 'EESchneider/vim-rebase-mode'          " Git rebase helper
-Plug 'b4b4r07/vim-ansible-vault'            " Ansible Vault support
+" Plug 'b4b4r07/vim-ansible-vault'            " Ansible Vault support
 Plug 'pbrisbin/vim-mkdir'                   " Create missing dirs on save
 Plug 'kshenoy/vim-signature'                " Vim marks gutter
 Plug 'apple/swift', {'rtp': 'utils/vim/'}
@@ -154,7 +154,7 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
-nnoremap <expr> Q getline(".") =~ "<!--" ? ':norm ^5x$F d$' : ':norm I<!-- A -->'
+" nnoremap <expr> Q getline(".") =~ "<!--" ? ':norm ^5x$F d$' : ':norm I<!-- A -->'
 
 "This allows for change paste motion cp{motion}
 nmap <silent> cp :set opfunc=ChangePaste<CR>g@
