@@ -54,3 +54,5 @@ homebrew_casks:
   - name: forklift
   - name: vlc
   - name: balenaetcher
+  - name: telegram
+  - name: coconutbattery
