@@ -25,7 +25,6 @@ homebrew_brews:
   - name: telnet
   - name: hub
   - name: cmake
-  - name: python3
   - name: sourcekitten
   - name: swiftlint
   - name: swiftformat
