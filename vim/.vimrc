@@ -87,6 +87,8 @@ set colorcolumn=100
 set noshowmode                                " Airline displays mode
 set showmatch                                 " Highlight closing parens etc
 set nomodeline                                " Do not parse modelines
+set updatetime=100                            " Run async tasks every 100ms
+
 highlight colorcolumn ctermbg=DarkGray
 
 " Split more naturally
