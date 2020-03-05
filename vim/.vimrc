@@ -11,9 +11,7 @@ Plug 'lepture/vim-jinja'                    " Support for jinja files
 Plug 'Raimondi/delimitMate'                 " Close parens etc.
 Plug 'tpope/vim-commentary'                 " (Un)Comment code
 Plug 'tpope/vim-fugitive'                   " Git utilities
-Plug 'tpope/vim-surround'                   " Surround
 Plug 'nathanaelkane/vim-indent-guides'      " Show indentations
-Plug 'terryma/vim-multiple-cursors'         " Multiple cursors, like in Sublime
 Plug 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespaces
 Plug 'EESchneider/vim-rebase-mode'          " Git rebase helper
 Plug 'b4b4r07/vim-ansible-vault'            " Ansible Vault support
@@ -21,14 +19,11 @@ Plug 'pbrisbin/vim-mkdir'                   " Create missing dirs on save
 Plug 'kshenoy/vim-signature'                " Vim marks gutter
 Plug 'apple/swift', {'rtp': 'utils/vim/'}
 Plug 'mitsuse/autocomplete-swift'
-Plug 'Shougo/neosnippet.vim'
-Plug 'Shougo/neosnippet-snippets'
 Plug 'dylon/vim-antlr'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'tpope/vim-unimpaired'                 " [] actions
 Plug 'tpope/vim-repeat'                     " Support . for plugins actions
 Plug 'krzysztof-magosa/vim-ansibledict'
 call plug#end()
