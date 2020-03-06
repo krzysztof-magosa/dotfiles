@@ -4,6 +4,8 @@ homebrew_mode: "0755"
 
 homebrew_taps:
   - name: universal-ctags/universal-ctags
+  - name: homebrew/homebrew-cask-versions
+  - name: amar1729/formulae
 
 homebrew_brews:
   - name: coreutils
@@ -39,6 +41,13 @@ homebrew_brews:
   - name: git-crypt
   - name: pwgen
   - name: travis
+  - name: tox
+  - name: packer
+  - name: awscli
+  - name: gnu-sed
+  - name: dpkg
+  - name: rpm
+  - name: pass
   - name: universal-ctags/universal-ctags/universal-ctags
     options: "HEAD"
 
@@ -49,3 +58,6 @@ homebrew_casks:
   - name: spectacle
   - name: virtualbox
   - name: nextcloud
+  - name: docker-edge
+  - name: visual-studio-code
+  - name: vagrant
