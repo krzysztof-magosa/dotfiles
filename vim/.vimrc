@@ -60,6 +60,8 @@ let g:deoplete#enable_at_startup = 1
 let g:ale_sign_column_always = 1
 let g:ale_open_list = 1
 let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
 autocmd FileType yaml let b:ale_yaml_yamllint_options =
       \ get(g:, 'ale_yaml_yamllint_options', '') .
       \ FindConfig('-c', '.yamllint', expand('<afile>:p:h', 1))
