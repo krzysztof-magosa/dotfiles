@@ -48,6 +48,7 @@ homebrew_brews:
   - name: dpkg
   - name: rpm
   - name: pass
+  - name: neovim
   - name: universal-ctags/universal-ctags/universal-ctags
     options: "HEAD"
 
@@ -61,3 +62,7 @@ homebrew_casks:
   - name: docker-edge
   - name: visual-studio-code
   - name: vagrant
+  - name: slack
+  - name: forklift
+  - name: vlc
+  - name: balenaetcher
