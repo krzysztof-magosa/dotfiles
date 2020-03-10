@@ -27,6 +27,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'tpope/vim-repeat'                     " Support . for plugins actions
 Plug 'krzysztof-magosa/vim-ansibledict'
 Plug 'hashivim/vim-terraform'               " Terraform support
+Plug 'chr4/nginx.vim'                       " Nginx support
 call plug#end()
 
 " Appearance
@@ -146,6 +147,7 @@ xmap <C-k>     <Plug>(neosnippet_expand_target)
 
 " Actions for specific files
 autocmd BufEnter,BufNew */ansible/hosts/* set filetype=dosini
+autocmd BufEnter,BufNew */nginx/* set filetype=nginx
 
 " Remember line in file
 if has("autocmd")
