@@ -28,6 +28,7 @@ Plug 'tpope/vim-repeat'                     " Support . for plugins actions
 Plug 'krzysztof-magosa/vim-ansibledict'
 Plug 'hashivim/vim-terraform'               " Terraform support
 Plug 'chr4/nginx.vim'                       " Nginx support
+Plug 'fgsch/vim-varnish'                    " Varnish support
 call plug#end()
 
 " Appearance
