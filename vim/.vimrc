@@ -91,6 +91,7 @@ set noshowmode                                " Airline displays mode
 set showmatch                                 " Highlight closing parens etc
 set nomodeline                                " Do not parse modelines
 set updatetime=100                            " Run async tasks every 100ms
+set clipboard^=unnamed,unnamedplus            " Share clipboard with system
 
 highlight colorcolumn ctermbg=DarkGray
 
