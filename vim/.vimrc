@@ -26,6 +26,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'tpope/vim-repeat'                     " Support . for plugins actions
 Plug 'krzysztof-magosa/vim-ansibledict'
+Plug 'hashivim/vim-terraform'               " Terraform support
 call plug#end()
 
 " Appearance
@@ -163,3 +164,5 @@ endfunction
 " Ansible
 au BufRead,BufNewFile */ansible/*.yml LoadDefaultAnsibleDict
 set complete+=k
+" Terraform
+let g:terraform_fmt_on_save=1
