@@ -11,6 +11,7 @@
   co = checkout
   rwm = !sh -c 'git fetch && git rebase origin/master'
   cfu = !sh -c 'git commit -m 'fix' --fixup HEAD && GIT_SEQUENCE_EDITOR=true git rebase -i HEAD~2 --autosquash'
+  m = !sh -c 'git checkout master && git pull --rebase'
 
 [core]
   excludesfile = ~/.gitexclude
