@@ -1,18 +1,20 @@
 # Initialize zplugin
-source ${ZSH_HOME}/zplugin/zplugin.zsh
-autoload -Uz _zplugin
-(( ${+_comps} )) && _comps[zplugin]=_zplugin
+#source ${ZSH_HOME}/zplugin/zplugin.zsh
+source ~/.zinit/bin/zinit.zsh
+
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
 
 # Load plugins
-zplugin light zpm-zsh/autoenv
-zplugin light zsh-users/zsh-completions
-zplugin light zsh-users/zsh-autosuggestions
-zplugin light rupa/z
-zplugin light caarlos0/zsh-mkc
-zplugin light mafredri/zsh-async
-zplugin light sindresorhus/pure
-zplugin light zdharma/fast-syntax-highlighting
-zplugin light zsh-users/zsh-history-substring-search
+zinit light zpm-zsh/autoenv
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+zinit light rupa/z
+zinit light caarlos0/zsh-mkc
+zinit light mafredri/zsh-async
+zinit light sindresorhus/pure
+zinit light zdharma/fast-syntax-highlighting
+zinit light zsh-users/zsh-history-substring-search
 
 source ~/.zsh/config.zsh
 source ~/.zsh/aliases.zsh

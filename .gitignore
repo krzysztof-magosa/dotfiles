@@ -1,5 +1,7 @@
 # Zsh
 /zsh/.zsh/local.zsh
+/zsh/.zinit/*
+!/zsh/.zinit/bin
 
 # Vim
 /vim/.vim/undo-dir/

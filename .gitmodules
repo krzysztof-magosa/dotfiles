@@ -4,6 +4,6 @@
 [submodule "assets/vim-plug"]
 	path = assets/vim-plug
 	url = https://github.com/junegunn/vim-plug.git
-[submodule "assets/zplugin"]
-	path = assets/zplugin
-	url = https://github.com/zdharma/zplugin.git
+[submodule "assets/zinit"]
+	path = assets/zinit
+	url = https://github.com/zdharma/zinit.git
