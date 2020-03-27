@@ -13,5 +13,6 @@ stow -t $HOME \
   tmux \
   zsh \
   misc \
-  code
+  code \
+  kitty
 
