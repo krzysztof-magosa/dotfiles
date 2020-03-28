@@ -1,6 +1,3 @@
-[submodule "iterm/material-iterm"]
-	path = iterm/material-iterm
-	url = https://github.com/stoeffel/material-iterm.git
 [submodule "assets/vim-plug"]
 	path = assets/vim-plug
 	url = https://github.com/junegunn/vim-plug.git
