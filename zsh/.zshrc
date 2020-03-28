@@ -10,7 +10,6 @@ zinit light zpm-zsh/autoenv
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light rupa/z
-zinit light caarlos0/zsh-mkc
 zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-history-substring-search
 
