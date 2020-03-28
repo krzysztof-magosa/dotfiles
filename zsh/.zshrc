@@ -11,10 +11,11 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light rupa/z
 zinit light caarlos0/zsh-mkc
-zinit light mafredri/zsh-async
-zinit light sindresorhus/pure
 zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-history-substring-search
+
+zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
+zinit light sindresorhus/pure
 
 source ~/.zsh/config.zsh
 source ~/.zsh/aliases.zsh
