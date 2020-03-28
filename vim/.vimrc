@@ -17,9 +17,9 @@ Plug 'EESchneider/vim-rebase-mode'          " Git rebase helper
 Plug 'b4b4r07/vim-ansible-vault'            " Ansible Vault support
 Plug 'pbrisbin/vim-mkdir'                   " Create missing dirs on save
 Plug 'kshenoy/vim-signature'                " Vim marks gutter
-Plug 'apple/swift', {'rtp': 'utils/vim/'}
-Plug 'mitsuse/autocomplete-swift'
-Plug 'dylon/vim-antlr'
+"Plug 'apple/swift', {'rtp': 'utils/vim/'}
+"Plug 'mitsuse/autocomplete-swift'
+"Plug 'dylon/vim-antlr'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
