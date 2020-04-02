@@ -66,3 +66,4 @@ homebrew_casks:
   - name: balenaetcher
   - name: telegram
   - name: coconutbattery
+  - name: font-hack
