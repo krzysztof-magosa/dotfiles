@@ -4,7 +4,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf'                         " Fuzzy Search (Engine)
 Plug 'junegunn/fzf.vim'                     " Fuzzy Search (Plug)
 Plug 'editorconfig/editorconfig-vim'        " Support for .editorconfig files
-Plug 'NLKNguyen/papercolor-theme'
+Plug 'morhetz/gruvbox'
 Plug 'airblade/vim-gitgutter'               " Mark git changes in rail
 Plug 'w0rp/ale'                             " Async Linting Engine
 Plug 'lepture/vim-jinja'                    " Support for jinja files
@@ -38,7 +38,7 @@ endif
 
 syntax on
 set background=dark
-colorscheme PaperColor
+colorscheme gruvbox
 
 " Helpers
 function! FindConfig(prefix, what, where)
