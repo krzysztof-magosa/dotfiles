@@ -100,9 +100,6 @@ highlight colorcolumn ctermbg=DarkGray
 set splitbelow
 set splitright
 
-" Python
-let g:python2_host_prog = "/opt/homebrew/bin/python2"
-let g:python3_host_prog = "/opt/homebrew/bin/python3"
 " Temporary files (swap etc.)
 set directory=~/.vim/tmp
 if !isdirectory(&directory)
