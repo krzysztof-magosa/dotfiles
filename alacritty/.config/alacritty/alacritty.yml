@@ -12,6 +12,8 @@ font:
     style: Regular
   size: 14.0
 
+dynamic_title: false
+
 colors:
   primary:
     background: '#1c1c1c'
