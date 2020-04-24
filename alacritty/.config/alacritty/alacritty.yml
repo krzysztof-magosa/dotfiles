@@ -2,6 +2,9 @@ window:
   dimensions:
     columns: 80
     lines: 25
+  padding:
+    x: 3
+    y: 3
 
 font:
   normal:
