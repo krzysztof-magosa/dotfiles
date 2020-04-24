@@ -1,0 +1,39 @@
+window:
+  dimensions:
+    columns: 80
+    lines: 25
+
+font:
+  normal:
+    family: Hack
+    style: Regular
+  size: 14.0
+
+colors:
+  primary:
+    background: '#1c1c1c'
+    foreground: '#c7c7c7'
+
+  cursor:
+    text: '#feffff'
+    cursor: '#c7c7c7'
+
+  normal:
+    black: '#2c2c2c'
+    red: '#c62727'
+    green: '#558b2e'
+    yellow: '#f9a824'
+    blue: '#1564bf'
+    magenta: '#8a1e99'
+    cyan: '#00828e'
+    white: '#f2f2f2'
+
+  bright:
+    black: '#535353'
+    red: '#ef524f'
+    green: '#8bc249'
+    yellow: '#ffea3a'
+    blue: '#64b5f6'
+    magenta: '#ba67c8'
+    cyan: '#26c6da'
+    white: '#e0e0e0'
