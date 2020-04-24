@@ -14,6 +14,9 @@ font:
 
 dynamic_title: false
 
+scrolling:
+  history: 5000
+
 colors:
   primary:
     background: '#1c1c1c'
