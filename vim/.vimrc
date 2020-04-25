@@ -81,7 +81,6 @@ set history=1000                              " Bigger list of used commands
 set virtualedit=onemore                       " Allow cursor to go beyond last character
 set undofile                                  " Allow to undo even after vim restart
 set hidden                                    " Allow opening another buffers before save
-set timeoutlen=1000 ttimeoutlen=0             " Resolve problem with slow ESC
 set laststatus=2                              " Always show status line
 set foldmethod=indent                         " Folding by indentation
 set foldnestmax=3                             " Max 3 levels
