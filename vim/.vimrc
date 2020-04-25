@@ -14,7 +14,6 @@ Plug 'tpope/vim-fugitive'                   " Git utilities
 Plug 'nathanaelkane/vim-indent-guides'      " Show indentations
 Plug 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespaces
 Plug 'EESchneider/vim-rebase-mode'          " Git rebase helper
-Plug 'b4b4r07/vim-ansible-vault'            " Ansible Vault support
 Plug 'pbrisbin/vim-mkdir'                   " Create missing dirs on save
 "Plug 'apple/swift', {'rtp': 'utils/vim/'}
 "Plug 'mitsuse/autocomplete-swift'
