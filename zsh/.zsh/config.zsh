@@ -1,6 +1,6 @@
 HISTFILE=~/.zsh_history
-HISTSIZE=1000
-SAVEHIST=1000000
+HISTSIZE=100000
+SAVEHIST=100000
 
 # Change directory without cd
 setopt AUTO_CD
