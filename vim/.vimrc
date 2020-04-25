@@ -88,13 +88,10 @@ set laststatus=2                              " Always show status line
 set foldmethod=indent                         " Folding by indentation
 set foldnestmax=3                             " Max 3 levels
 set nofoldenable                              " Do not use it by default
-set colorcolumn=100
 set noshowmode                                " Airline displays mode
 set showmatch                                 " Highlight closing parens etc
 set nomodeline                                " Do not parse modelines
 set updatetime=100                            " Run async tasks every 100ms
-
-highlight colorcolumn ctermbg=DarkGray
 
 " Split more naturally
 set splitbelow
