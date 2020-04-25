@@ -78,7 +78,7 @@ set ignorecase                                " Ignore case during search
 set smartcase                                 " Be case sensitive when needed
 set wildmenu                                  " Command line autcompletion as menu
 set wildmode=list:longest                     " Better wildmenu
-set showcmd                                   " Show incomplete commands
+set noshowcmd                                 " Do not show incomplete commands
 set history=1000                              " Bigger list of used commands
 set virtualedit=onemore                       " Allow cursor to go beyond last character
 set undofile                                  " Allow to undo even after vim restart
