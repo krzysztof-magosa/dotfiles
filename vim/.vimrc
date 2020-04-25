@@ -8,7 +8,7 @@ Plug 'morhetz/gruvbox'
 Plug 'airblade/vim-gitgutter'               " Mark git changes in rail
 Plug 'w0rp/ale'                             " Async Linting Engine
 Plug 'lepture/vim-jinja'                    " Support for jinja files
-Plug 'Raimondi/delimitMate'                 " Close parens etc.
+Plug 'jiangmiao/auto-pairs'                 " Close parens etc.
 Plug 'tpope/vim-commentary'                 " (Un)Comment code
 Plug 'tpope/vim-fugitive'                   " Git utilities
 Plug 'nathanaelkane/vim-indent-guides'      " Show indentations
