@@ -14,4 +14,5 @@ stow -t $HOME \
   zsh \
   misc \
   code \
-  alacritty
+  alacritty \
+  iterm

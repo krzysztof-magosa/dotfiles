@@ -122,3 +122,59 @@ osx_defaults:
     key: DateFormat
     value: EEE HH:mm
     type: string
+
+  # iTerm2
+
+  - name: Show tab bar even when there is only one tab
+    domain: ~/Library/Preferences/com.googlecode.iterm2
+    key: HideTab
+    value: 0
+    type: integer
+
+  - name: Compact theme
+    domain: ~/Library/Preferences/com.googlecode.iterm2
+    key: TabStyleWithAutomaticOption
+    value: 5
+    type: integer
+
+  - name: Do not disable GPU rendered when disconnected from power
+    domain: ~/Library/Preferences/com.googlecode.iterm2
+    key: disableMetalWhenUnplugged
+    value: 0
+    type: integer
+
+  - name: Do not show window number in title bar
+    domain: ~/Library/Preferences/com.googlecode.iterm2
+    key: WindowNumber
+    value: 0
+    type: integer
+
+  - name: Hide scrollbars
+    domain: ~/Library/Preferences/com.googlecode.iterm2
+    key: HideScrollbar
+    value: 1
+    type: integer
+
+  - name: Do not show tabs close button
+    domain: ~/Library/Preferences/com.googlecode.iterm2
+    key: TabsHaveCloseButton
+    value: 0
+    type: integer
+
+  - name: Disable session restoration
+    domain: ~/Library/Preferences/com.googlecode.iterm2
+    key: RunJobsInServers
+    value: 0
+    type: integer
+
+  - name: Automatic updates
+    domain: ~/Library/Preferences/com.googlecode.iterm2
+    key: SUEnableAutomaticChecks
+    value: 1
+    type: integer
+
+  - name: Use my profile from git as default
+    domain: ~/Library/Preferences/com.googlecode.iterm2
+    key: Default Bookmark Guid
+    value: 5E5ADF35-3E76-498C-A7A1-53DE3BCA8A12
+    type: string
