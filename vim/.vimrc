@@ -27,6 +27,7 @@ Plug 'krzysztof-magosa/vim-ansibledict'
 Plug 'hashivim/vim-terraform'               " Terraform support
 Plug 'chr4/nginx.vim'                       " Nginx support
 Plug 'fgsch/vim-varnish'                    " Varnish support
+Plug 'preservim/nerdtree'
 call plug#end()
 
 " Appearance
@@ -128,6 +129,7 @@ autocmd VimEnter * command! -bang -nargs=* AgOnlyContent
 map <leader>g :AgOnlyContent<CR>
 map <leader>G :AgWithoutIgnore<CR>
 map <Leader>f :FZF<CR>
+map <Leader>t :NERDTreeToggle<CR>
 map <Esc>[A :m -2<CR>
 map <Esc>[B :m +1<CR>
 
