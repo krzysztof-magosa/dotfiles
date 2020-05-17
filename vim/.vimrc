@@ -116,7 +116,6 @@ set smarttab
 set shiftround
 set autoindent
 set smartindent
-let g:indent_guides_enable_on_vim_startup = 1
 
 " Custom fzf commands
 autocmd VimEnter * command! -nargs=* AgWithoutIgnore
@@ -130,6 +129,7 @@ map <leader>g :AgOnlyContent<CR>
 map <leader>G :AgWithoutIgnore<CR>
 map <Leader>f :FZF<CR>
 map <Leader>t :NERDTreeToggle<CR>
+map <Leader>i :IndentGuidesToggle<CR>
 map <Esc>[A :m -2<CR>
 map <Esc>[B :m +1<CR>
 
