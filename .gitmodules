@@ -1,6 +1,12 @@
 [submodule "assets/vim-plug"]
 	path = assets/vim-plug
 	url = https://github.com/junegunn/vim-plug.git
-[submodule "assets/zinit"]
-	path = assets/zinit
-	url = https://github.com/zdharma/zinit.git
+[submodule "zsh/.zsh/plugins/pure"]
+	path = zsh/.zsh/plugins/pure
+	url = https://github.com/sindresorhus/pure.git
+[submodule "zsh/.zsh/plugins/zsh-autosuggestions"]
+	path = zsh/.zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "zsh/.zsh/plugins/z"]
+	path = zsh/.zsh/plugins/z
+	url = https://github.com/rupa/z.git
