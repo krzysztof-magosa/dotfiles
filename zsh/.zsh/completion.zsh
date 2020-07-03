@@ -9,11 +9,17 @@
 # - '.' matches "regular files"
 # - 'mh+24' matches files (or directories or whatever) that are older than 24 hours.
 autoload -Uz compinit
-if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
-	compinit;
-else
-	compinit -C;
-fi;
+function init_compinit() {
+  set -o localoptions
+  set -o extendedglob
+
+  if [[ -n ${HOME}/.zcompdump(#qN.mh+24) ]]; then
+    compinit;
+  else
+    compinit -C;
+  fi
+}
+init_compinit()
 
 # Completion from the middle of filename
 zstyle ':completion:*' completer _complete
