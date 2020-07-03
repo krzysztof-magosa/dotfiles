@@ -1,5 +1,5 @@
 # profiling
-zmodload zsh/zprof
+#zmodload zsh/zprof
 
 # customs
 source ~/.zsh/config.zsh
