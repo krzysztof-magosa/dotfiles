@@ -55,7 +55,7 @@ homebrew_casks:
   - name: google-chrome
   - name: spotify
   - name: iterm2
-  - name: spectacle
+  - name: rectangle
   - name: virtualbox
   - name: docker-edge
   - name: visual-studio-code
