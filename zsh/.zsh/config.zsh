@@ -19,7 +19,3 @@ setopt HIST_IGNORE_SPACE
 
 # Do not run command by !! without verification
 setopt HIST_VERIFY
-
-# Autoenv
-export AUTOENV_IN_FILE=".autoenv.in"
-export AUTOENV_OUT_FILE=".autoenv.out"
