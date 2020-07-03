@@ -37,9 +37,7 @@ if command -v htop &>/dev/null ; then
 fi
 
 # Go to projects repos dir
-if [ -d ~/projects ] ; then
-  alias p="cd ~/projects"
-fi
+alias p="mkdir -p ${PROJECTS_DIR}; cd ${PROJECTS_DIR}"
 
 # Show external IP
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"

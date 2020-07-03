@@ -26,3 +26,6 @@ source "${ZSH_HOME}/plugins/z/z.sh"
 fpath+="${ZSH_HOME}/plugins/pure"
 autoload -U promptinit; promptinit
 prompt pure
+
+# go to projects
+p
