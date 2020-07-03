@@ -64,6 +64,6 @@ homebrew_casks:
   - name: forklift
   - name: vlc
   - name: balenaetcher
-  - name: telegram
+  - name: telegram-desktop
   - name: coconutbattery
   - name: font-hack
