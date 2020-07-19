@@ -29,6 +29,7 @@ Plug 'chr4/nginx.vim'                       " Nginx support
 Plug 'fgsch/vim-varnish'                    " Varnish support
 Plug 'preservim/nerdtree'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'chiel92/vim-autoformat'
 call plug#end()
 
 " Appearance
