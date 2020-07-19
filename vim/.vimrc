@@ -48,7 +48,7 @@ endfunction
 
 " Better whitespace
 let g:better_whitespace_enabled = 1
-let g:strip_whitespace_on_save = 0 " Disable it until mac vim has trim()
+let g:strip_whitespace_on_save = 1
 let g:strip_whitelines_at_eof = 1
 let g:strip_only_modified_lines = 1
 let g:strip_whitespace_confirm = 0
