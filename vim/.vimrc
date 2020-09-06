@@ -30,6 +30,7 @@ Plug 'fgsch/vim-varnish'                    " Varnish support
 Plug 'preservim/nerdtree'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'chiel92/vim-autoformat'
+Plug 'godlygeek/tabular'
 call plug#end()
 
 " Appearance
@@ -167,6 +168,7 @@ au BufRead,BufNewFile */ansible/*.yml LoadDefaultAnsibleDict
 set complete+=k
 " Terraform
 let g:terraform_fmt_on_save=1
+let g:terraform_align=1
 
 " Completion
 " au FileType * execute 'setlocal dictionary+=~/.vim/dictionaries/'.&filetype.'.txt'
