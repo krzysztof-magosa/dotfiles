@@ -25,3 +25,9 @@ dock_icons:
     state: remove
   - icon: Maps
     state: remove
+  - icon: Music
+    state: remove
+  - icon: Podcasts
+    state: remove
+  - icon: TV
+    state: remove
