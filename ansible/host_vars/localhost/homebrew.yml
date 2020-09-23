@@ -11,25 +11,19 @@ homebrew_brews:
   - name: coreutils
   - name: moreutils
   - name: findutils
-  - name: midnight-commander
   - name: mtr
   - name: tree
   - name: wget
   - name: tig
   - name: jq
   - name: fzf
-  - name: ncftp
   - name: ag
   - name: tmux
   - name: git
   - name: telnet
   - name: hub
   - name: cmake
-  - name: sourcekitten
-  - name: swiftlint
-  - name: swiftformat
   - name: nodejs
-  - name: llvm
   - name: stow
   - name: yamllint
   - name: dockutil
@@ -42,28 +36,23 @@ homebrew_brews:
   - name: travis
   - name: tox
   - name: packer
-  - name: awscli
   - name: gnu-sed
   - name: dpkg
   - name: rpm
   - name: pass
   - name: neovim
-  - name: universal-ctags/universal-ctags/universal-ctags
-    options: "HEAD"
 
 homebrew_casks:
   - name: google-chrome
   - name: spotify
   - name: iterm2
   - name: rectangle
-  - name: virtualbox
-  - name: docker-edge
+  - name: docker
   - name: visual-studio-code
-  - name: vagrant
   - name: slack
   - name: forklift
   - name: vlc
   - name: balenaetcher
   - name: telegram-desktop
   - name: coconutbattery
-  - name: font-hack
+  - name: double-commander
