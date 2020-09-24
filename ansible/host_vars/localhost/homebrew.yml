@@ -56,3 +56,4 @@ homebrew_casks:
   - name: telegram-desktop
   - name: coconutbattery
   - name: double-commander
+  - name: homebrew/cask-fonts/font-hack
