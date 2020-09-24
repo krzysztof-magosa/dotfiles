@@ -64,6 +64,7 @@ let g:ale_open_list = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
+let g:ale_terraform_tflint_options = '--config ~/projects/pe/standards/tf/linter/tflint.hcl'
 autocmd FileType yaml let b:ale_yaml_yamllint_options =
       \ get(g:, 'ale_yaml_yamllint_options', '') .
       \ FindConfig('-c', '.yamllint', expand('<afile>:p:h', 1))
