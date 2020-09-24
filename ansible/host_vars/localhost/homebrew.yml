@@ -29,17 +29,9 @@ homebrew_brews:
   - name: dockutil
   - name: cookiecutter
   - name: htop
-  - name: wakeonlan
   - name: terraform
-  - name: git-crypt
   - name: pwgen
-  - name: travis
-  - name: tox
-  - name: packer
   - name: gnu-sed
-  - name: dpkg
-  - name: rpm
-  - name: pass
   - name: neovim
 
 homebrew_casks:
@@ -52,9 +44,7 @@ homebrew_casks:
   - name: slack
   - name: forklift
   - name: vlc
-  - name: balenaetcher
   - name: telegram-desktop
-  - name: coconutbattery
   - name: double-commander
   - name: homebrew/cask-fonts/font-hack
   - name: xquartz
