@@ -57,3 +57,5 @@ homebrew_casks:
   - name: coconutbattery
   - name: double-commander
   - name: homebrew/cask-fonts/font-hack
+  - name: xquartz
+  - name: wine-stable
