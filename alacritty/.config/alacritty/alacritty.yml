@@ -53,6 +53,54 @@ shell:
     - "tmux attach || tmux"
 
 key_bindings:
+  - key: D
+    mods: Command
+    chars: "\x01\x25"
+  - key: D
+    mods: Command|Shift
+    chars: "\x01\x22"
+  - key: W
+    mods: Command
+    chars: "\x01\x78"
   - key: H
     mods: Command
-    action: None
+    chars: "\x01\x68"
+  - key: J
+    mods: Command
+    chars: "\x01\x6a"
+  - key: K
+    mods: Command
+    chars: "\x01\x6b"
+  - key: L
+    mods: Command
+    chars: "\x01\x6c"
+  - key: T
+    mods: Command
+    chars: "\x01\x63"
+  - key: Key1
+    mods: Command
+    chars: "\x01\x31"
+  - key: Key2
+    mods: Command
+    chars: "\x01\x32"
+  - key: Key3
+    mods: Command
+    chars: "\x01\x33"
+  - key: Key4
+    mods: Command
+    chars: "\x01\x34"
+  - key: Key5
+    mods: Command
+    chars: "\x01\x35"
+  - key: Key6
+    mods: Command
+    chars: "\x01\x36"
+  - key: Key7
+    mods: Command
+    chars: "\x01\x37"
+  - key: Key8
+    mods: Command
+    chars: "\x01\x38"
+  - key: Key9
+    mods: Command
+    chars: "\x01\x39"
