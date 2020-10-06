@@ -41,6 +41,7 @@ endif
 syntax on
 set background=dark
 colorscheme gruvbox
+highlight Comment cterm=italic gui=italic
 
 " Helpers
 function! FindConfig(prefix, what, where)
@@ -95,6 +96,7 @@ set showmatch                                 " Highlight closing parens etc
 set nomodeline                                " Do not parse modelines
 set updatetime=250                            " Run async tasks every 100ms
 set signcolumn=yes                            " Keep sign (gutter) column always visible
+set termguicolors                             " Better colors
 
 " Split more naturally
 set splitbelow
