@@ -1,4 +1,5 @@
 window:
+  dynamic_title: false
   dimensions:
     columns: 100
     lines: 30
@@ -11,8 +12,6 @@ font:
     family: Hack
     style: Regular
   size: 14.0
-
-dynamic_title: false
 
 scrolling:
   history: 5000
