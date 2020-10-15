@@ -172,7 +172,7 @@ au BufRead,BufNewFile */ansible/*.yml LoadDefaultAnsibleDict
 set complete+=k
 " Terraform
 let g:terraform_fmt_on_save=1
-let g:terraform_align=1
+"let g:terraform_align=1
 
 " Completion
 " au FileType * execute 'setlocal dictionary+=~/.vim/dictionaries/'.&filetype.'.txt'
