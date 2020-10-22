@@ -19,8 +19,10 @@ function init_compinit() {
     compinit -C;
   fi
 }
-init_compinit()
+
 
 # Completion from the middle of filename
 zstyle ':completion:*' completer _complete
 zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+l:|=* r:|=*'
+
+init_compinit
