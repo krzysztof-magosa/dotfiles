@@ -147,8 +147,8 @@ map <leader>G :AgWithoutIgnore<CR>
 map <Leader>f :FZF<CR>
 map <Leader>t :NERDTreeToggle<CR>
 map <Leader>i :IndentGuidesToggle<CR>
-map <Esc>[A :m -2<CR>
-map <Esc>[B :m +1<CR>
+map <A-up> :m -2<CR>
+map <A-down> :m +1<CR>
 
 nmap <Leader>b :Buffers<CR>
 vmap <leader>y :w !pbcopy<CR><CR>
