@@ -16,7 +16,13 @@ export WORKON_HOME="$HOME/.venvs"
 
 export PATH="$HOME/.brew/bin:$HOME/.brew/sbin:$PATH"
 export PATH="$HOME/.brew/share/git-core/contrib/diff-highlight:$PATH"
-export PATH="$HOME/Library/Python/3.8/bin:$PATH"
+
+for py in $HOME/Library/Python/{2..3}.{0..9}/bin ; do
+  if [ -d $py ] ; then
+    export PATH="$py:$PATH"
+  fi
+done
+
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
