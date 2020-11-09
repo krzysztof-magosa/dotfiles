@@ -25,3 +25,5 @@ export PATH="$GOPATH/bin:$PATH"
 fpath=( ~/.zsh/functions $fpath )
 autoload -U ~/.zsh/functions/*(:t)
 
+# ensure path is not duplicated when run in tmux
+typeset -U PATH path
