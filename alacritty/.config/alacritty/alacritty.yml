@@ -49,9 +49,9 @@ colors:
 shell:
   program: /bin/zsh
   args:
-    - -l
+    - --no-rcs
     - -c
-    - "tmux attach || tmux"
+    - "$HOME/.brew/bin/tmux attach || $HOME/.brew/bin/tmux"
 
 key_bindings:
   - key: D
