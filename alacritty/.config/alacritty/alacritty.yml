@@ -14,6 +14,9 @@ font:
 scrolling:
   history: 0
 
+selection:
+  save_to_clipboard: true
+
 colors:
   primary:
     background: '#1c1c1c'
