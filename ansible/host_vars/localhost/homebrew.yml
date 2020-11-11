@@ -37,7 +37,6 @@ homebrew_brews:
 homebrew_casks:
   - name: google-chrome
   - name: spotify
-  - name: iterm2
   - name: rectangle
   - name: docker
   - name: visual-studio-code
