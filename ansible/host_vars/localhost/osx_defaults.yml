@@ -123,6 +123,12 @@ osx_defaults:
     value: EEE HH:mm
     type: string
 
+  - name: Use dedicated directory for screenshots
+    domain: com.apple.screencapture
+    key: location
+    value: "~/Pictures/Screenshots"
+    type: string
+
   # iTerm2
 
   - name: Show tab bar even when there is only one tab
