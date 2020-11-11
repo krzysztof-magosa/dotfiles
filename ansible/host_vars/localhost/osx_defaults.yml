@@ -111,10 +111,10 @@ osx_defaults:
     value: false
     type: boolean
 
-  - name: Use scale minimise effect
+  - name: Set minimise effect
     domain: com.apple.dock
     key: mineffect
-    value: scale
+    value: genie
     type: string
 
   - name: Set time format
