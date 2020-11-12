@@ -1,5 +1,5 @@
 window:
-  decorations: buttonless
+  decorations: full
   dynamic_title: false
   dimensions:
     columns: 100
