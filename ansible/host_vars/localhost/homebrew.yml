@@ -33,6 +33,7 @@ homebrew_brews:
   - name: pwgen
   - name: gnu-sed
   - name: neovim
+  - name: iam-policy-json-to-terraform
 
 homebrew_casks:
   - name: google-chrome
