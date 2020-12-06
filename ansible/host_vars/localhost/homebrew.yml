@@ -50,3 +50,4 @@ homebrew_casks:
   - name: xquartz
   - name: wine-stable
   - name: messenger
+  - name: alacritty
