@@ -12,10 +12,6 @@
 # Git
 /git/.gitconfig-local
 
-# Code
-/code/Library/Application Support/Code/User/globalStorage/
-/code/Library/Application Support/Code/User/workspaceStorage/
-
 # iTerm
 iterm/Library/Application Support/iTerm2/parsers/
 iterm/Library/Application Support/iTerm2/version.txt
