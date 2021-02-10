@@ -13,4 +13,6 @@ stow -t $HOME \
   tmux \
   zsh \
   misc \
-  alacritty
+  code \
+  alacritty \
+  iterm
