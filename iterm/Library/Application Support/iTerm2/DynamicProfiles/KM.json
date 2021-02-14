@@ -13,7 +13,7 @@
         "Green Component" : 0.70980392156862748
       },
       "Transparency" : 0,
-      "Normal Font" : "Hack-Regular 14",
+      "Normal Font" : "Hack-Regular 16",
       "Bold Color" : {
         "Green Component" : 1,
         "Red Component" : 1,
@@ -34,7 +34,7 @@
         "Green Component" : 0.6588235294117647
       },
       "Right Option Key Sends" : 0,
-      "Rows" : 28,
+      "Rows" : 35,
       "Default Bookmark" : "No",
       "Non-ASCII Anti Aliased" : true,
       "Use Bright Bold" : false,
@@ -86,7 +86,7 @@
         "Alpha Component" : 1,
         "Green Component" : 0.51764705882352946
       },
-      "Columns" : 100,
+      "Columns" : 130,
       "Idle Code" : 0,
       "Ansi 13 Color" : {
         "Red Component" : 0.72941176470588232,
