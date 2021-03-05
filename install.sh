@@ -15,5 +15,4 @@ stow -t $HOME \
   misc \
   code \
   alacritty \
-  iterm \
   fish
