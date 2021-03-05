@@ -75,7 +75,7 @@
       "Prompt Before Closing 2" : false,
       "BM Growl" : true,
       "Mouse Reporting" : false,
-      "Command" : "\/Users\/km\/.brew\/bin\/fish",
+      "Command" : "",
       "Description" : "Default",
       "Disable Window Resizing" : true,
       "Screen" : -1,
@@ -96,7 +96,7 @@
         "Green Component" : 0.40392156862745099
       },
       "Brighten Bold Text" : false,
-      "Custom Command" : "Custom Shell",
+      "Custom Command" : "No",
       "ASCII Anti Aliased" : true,
       "Non Ascii Font" : "Monaco 12",
       "Vertical Spacing" : 1,
