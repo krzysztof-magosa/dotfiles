@@ -4,9 +4,9 @@
 [submodule "zsh/.zsh/plugins/pure"]
 	path = zsh/.zsh/plugins/pure
 	url = https://github.com/sindresorhus/pure.git
-[submodule "zsh/.zsh/plugins/zsh-autosuggestions"]
-	path = zsh/.zsh/plugins/zsh-autosuggestions
+[submodule "zsh/.zsh/omz"]
+	path = zsh/.zsh/omz
+	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule "zsh/.zsh/custom/plugins/zsh-autosuggestions"]
+	path = zsh/.zsh/custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
-[submodule "zsh/.zsh/plugins/z"]
-	path = zsh/.zsh/plugins/z
-	url = https://github.com/rupa/z.git

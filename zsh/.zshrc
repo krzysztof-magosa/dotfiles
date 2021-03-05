@@ -1,31 +1,18 @@
-# profiling
-#zmodload zsh/zprof
+export ZSH=$HOME/.zsh/omz
 
-# customs
-source ~/.zsh/config.zsh
-source ~/.zsh/aliases.zsh
-source ~/.zsh/fzf.zsh
-source ~/.zsh/completion.zsh
-source ~/.zsh/keyboard.zsh
+ZSH_THEME=""
+CASE_SENSITIVE="true"
+HIST_STAMPS="dd.mm.yyyy"
+ZSH_CUSTOM="$HOME/.zsh/custom"
 
-# local
-if [ -f ~/.zsh/local.zsh ] ; then
-  source ~/.zsh/local.zsh
-fi
+plugins=(
+  fzf
+  zsh-autosuggestions
+)
 
-# autosuggestions
-export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
-export ZSH_AUTOSUGGEST_USE_ASYNC=1
-export ZSH_AUTOSUGGEST_MANUAL_REBIND=1
-source "${ZSH_HOME}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source $ZSH/oh-my-zsh.sh
 
-# z
-source "${ZSH_HOME}/plugins/z/z.sh"
+fpath+=($HOME/.zsh/plugins/pure)
+source $HOME/.zsh/plugins/pure/pure.zsh
 
-# prompt
-fpath+="${ZSH_HOME}/plugins/pure"
-autoload -U promptinit; promptinit
-prompt pure
-
-# go to projects
 p
