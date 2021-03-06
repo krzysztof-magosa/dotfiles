@@ -13,6 +13,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 fpath+=($HOME/.zsh/plugins/pure)
+zstyle :prompt:pure:path color green
 source $HOME/.zsh/plugins/pure/pure.zsh
 
 p
