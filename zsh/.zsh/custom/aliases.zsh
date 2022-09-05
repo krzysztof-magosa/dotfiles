@@ -23,7 +23,7 @@ alias egrep='egrep --color=auto'
 alias g="git"
 alias grb="comm -13 <(git branch -r | sed 's@origin/@@'g | awk '{print \$1}' | sort) <(git branch -l | sed 's/*//g' |  awk '{print \$1}')"
 alias gr="cd \$(git rev-parse --show-toplevel)"
-alias hpr="hub pull-request"
+alias hpr="hub pull-request --push"
 alias tigs="tig status"
 
 # Handy alias to copy public key
