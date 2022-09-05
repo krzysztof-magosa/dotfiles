@@ -1,5 +1,5 @@
 # Zsh
-/zsh/.zsh/local.zsh
+/zsh/.zsh/custom/local.zsh
 /zsh/.zinit/*
 !/zsh/.zinit/bin
 
