@@ -28,5 +28,7 @@ export PATH="$HOME/.bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
 
+export HOMEBREW_NO_AUTO_UPDATE=1
+
 fpath=( ~/.zsh/functions $fpath )
 autoload -U ~/.zsh/functions/*(:t)
