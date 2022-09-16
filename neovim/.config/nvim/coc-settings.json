@@ -1,0 +1,24 @@
+{
+  "coc.preferences.colorSupport": true,
+  "suggest.noselect": true,
+  "suggest.enablePreselect": false,
+  "suggest.floatConfig.border": true,
+  "signature.floatConfig.border": true,
+  "hover.floatConfig.border": true,
+  "diagnostic.enable": true,
+  "diagnostic.messageTarget": "echo",
+  "diagnostic.checkCurrentLine": true,
+  "diagnostic.refreshOnInsertMode": true,
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "diagnostic.virtualTextPrefix": " ► ",
+  "languageserver": {
+    "terraform": {
+      "command": "terraform-ls",
+      "args": ["serve"],
+      "filetypes": ["terraform", "tf"],
+      "initializationOptions": {}
+    }
+  }
+}
+

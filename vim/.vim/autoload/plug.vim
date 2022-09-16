@@ -1,1 +1,0 @@
-../../../assets/vim-plug/plug.vim

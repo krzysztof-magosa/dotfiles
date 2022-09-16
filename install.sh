@@ -9,7 +9,7 @@ stow -t $HOME \
   ansiweather \
   git \
   tig \
-  vim \
+  neovim \
   tmux \
   zsh \
   misc \
