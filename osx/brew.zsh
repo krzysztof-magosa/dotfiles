@@ -8,7 +8,7 @@ brew install \
     neovim \
     stow \
     tig \
-    dockutil \
+    hpedrorodrigues/tools/dockutil \
     font-hack \
     iterm2 \
     vlc
