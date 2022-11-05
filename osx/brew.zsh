@@ -12,4 +12,5 @@ brew install \
     homebrew/cask-fonts/font-hack \
     iterm2 \
     vlc \
-    homebrew/cask-drivers/logi-options-plus
+    homebrew/cask-drivers/logi-options-plus \
+    rectangle
