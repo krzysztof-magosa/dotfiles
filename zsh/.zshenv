@@ -2,7 +2,7 @@
 setopt no_global_rcs
 
 export ZSH_HOME="$HOME/.zsh"
-export PROJECTS_DIR="$HOME/projects"
+export PROJECTS_DIR="$HOME/Projects"
 
 export EDITOR="vim"
 export VISUAL="vim"
