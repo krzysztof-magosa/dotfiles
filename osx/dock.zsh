@@ -1,12 +1,22 @@
 #!/bin/zsh
 
+
+function add_icon() {
+    if [ -d "$1" ] ; then
+        dockutil --no-restart --add "$1"
+    fi
+}
+
+
 dockutil --no-restart --remove all
-dockutil --no-restart --add "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
-dockutil --no-restart --add "/Applications/iTerm.app"
-dockutil --no-restart --add "/System/Applications/Reminders.app"
-dockutil --no-restart --add "/System/Applications/Notes.app"
-dockutil --no-restart --add "/Applications/Enpass.app"
-dockutil --no-restart --add "/System/Applications/System Settings.app"
+add_icon "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
+add_icon "/Applications/iTerm.app"
+add_icon "/System/Applications/Reminders.app"
+add_icon "/System/Applications/Notes.app"
+add_icon "/Applications/Enpass.app"
+add_icon "/Applications/Microsoft Outlook.app"
+add_icon "/Applications/Microsoft Teams.app"
+add_icon "/System/Applications/System Settings.app"
 
 killall Dock
 
