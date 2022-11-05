@@ -381,11 +381,11 @@
 		<key>0xf702-0x300000-0x0</key>
 		<dict>
 			<key>Action</key>
-			<integer>11</integer>
+			<integer>10</integer>
 			<key>Label</key>
 			<string></string>
 			<key>Text</key>
-			<string>0x01</string>
+			<string>OH</string>
 			<key>Version</key>
 			<integer>0</integer>
 		</dict>
@@ -399,11 +399,11 @@
 		<key>0xf703-0x300000-0x7c</key>
 		<dict>
 			<key>Action</key>
-			<integer>11</integer>
+			<integer>10</integer>
 			<key>Label</key>
 			<string></string>
 			<key>Text</key>
-			<string>0x05</string>
+			<string>OF</string>
 			<key>Version</key>
 			<integer>0</integer>
 		</dict>
