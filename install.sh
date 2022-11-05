@@ -6,12 +6,8 @@ if [ ! -f git/.gitconfig-local ] ; then
 fi
 
 stow -t $HOME \
-  ansiweather \
   git \
   tig \
   neovim \
-  tmux \
   zsh \
-  misc \
-  alacritty \
-  fish
+  misc
