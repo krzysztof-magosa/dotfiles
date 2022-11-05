@@ -11,4 +11,5 @@ brew install \
     hpedrorodrigues/tools/dockutil \
     homebrew/cask-fonts/font-hack \
     iterm2 \
-    vlc
+    vlc \
+    homebrew/cask-drivers/logi-options-plus
