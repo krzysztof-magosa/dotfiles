@@ -15,7 +15,7 @@
 
 [core]
   excludesfile = ~/.gitexclude
-  pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+  pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
   editor = nvim
 
 [pull]
