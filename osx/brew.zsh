@@ -9,6 +9,6 @@ brew install \
     stow \
     tig \
     hpedrorodrigues/tools/dockutil \
-    font-hack \
+    homebrew/cask-fonts/font-hack \
     iterm2 \
     vlc
