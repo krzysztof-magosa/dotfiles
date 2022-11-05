@@ -13,9 +13,9 @@ add_icon "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
 add_icon "/Applications/iTerm.app"
 add_icon "/System/Applications/Reminders.app"
 add_icon "/System/Applications/Notes.app"
-add_icon "/Applications/Enpass.app"
 add_icon "/Applications/Microsoft Outlook.app"
 add_icon "/Applications/Microsoft Teams.app"
+add_icon "/Applications/Enpass.app"
 add_icon "/System/Applications/System Settings.app"
 
 killall Dock
