@@ -15,4 +15,6 @@ brew install \
     homebrew/cask-drivers/logi-options-plus \
     rectangle \
     ripgrep \
-    microsoft-edge
+    microsoft-edge \
+    tfenv \
+    gh
