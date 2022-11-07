@@ -14,4 +14,5 @@ brew install \
     vlc \
     homebrew/cask-drivers/logi-options-plus \
     rectangle \
-    ripgrep
+    ripgrep \
+    microsoft-edge

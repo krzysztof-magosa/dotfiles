@@ -9,7 +9,7 @@ function add_icon() {
 
 
 dockutil --no-restart --remove all
-add_icon "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
+add_icon "/Applications/Microsoft Edge.app"
 add_icon "/Applications/iTerm.app"
 add_icon "/System/Applications/Reminders.app"
 add_icon "/System/Applications/Calendar.app"
