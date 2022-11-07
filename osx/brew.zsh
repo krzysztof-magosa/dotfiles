@@ -13,4 +13,5 @@ brew install \
     iterm2 \
     vlc \
     homebrew/cask-drivers/logi-options-plus \
-    rectangle
+    rectangle \
+    ripgrep
