@@ -18,4 +18,5 @@ brew install \
     microsoft-edge \
     tfenv \
     gh \
-    monitorcontrol
+    monitorcontrol \
+    node
