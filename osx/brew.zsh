@@ -17,6 +17,7 @@ brew install \
     ripgrep \
     microsoft-edge \
     tfenv \
+    terraform-ls \
     gh \
     monitorcontrol \
     node
