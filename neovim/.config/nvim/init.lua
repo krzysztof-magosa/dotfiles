@@ -117,8 +117,8 @@ vim.wo.signcolumn = 'yes'
 --Enable background buffers
 vim.opt.hidden = true
 
---Keep last 5 lines visible at the end of buffer
-vim.opt.scrolloff = 5
+--Keep last 10 lines visible at the end of buffer
+vim.opt.scrolloff = 10
 
 --Use global status line
 vim.opt.laststatus = 3
