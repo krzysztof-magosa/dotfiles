@@ -17,4 +17,5 @@ brew install \
     ripgrep \
     microsoft-edge \
     tfenv \
-    gh
+    gh \
+    monitorcontrol
