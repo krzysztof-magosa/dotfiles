@@ -15,6 +15,7 @@ brew install \
     homebrew/cask-drivers/logi-options-plus \
     rectangle \
     ripgrep \
+    fd \
     microsoft-edge \
     tfenv \
     terraform-ls \
