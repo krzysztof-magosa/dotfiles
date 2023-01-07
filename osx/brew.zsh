@@ -21,4 +21,5 @@ brew install \
     terraform-ls \
     gh \
     monitorcontrol \
-    node
+    node \
+    starship
