@@ -71,8 +71,7 @@ require('packer').startup(function(use)
   -- Terraform
   use { 'hashivim/vim-terraform' }
 
-  use { 'ellisonleao/gruvbox.nvim' }
-  -- use { 'projekt0n/github-nvim-theme' }
+  use { 'phanviet/vim-monokai-pro' }
 
   use { 'ntpeters/vim-better-whitespace' }
 end)
@@ -124,21 +123,8 @@ vim.opt.scrolloff = 10
 vim.opt.laststatus = 3
 
 --Set colorscheme
---vim.o.termguicolors = true
---vim.g.vscode_style = "dark"
---vim.cmd [[colorscheme vscode]]
-
-require("gruvbox").setup({
-  contrast = "hard"
-})
-
-vim.o.background = "dark"
-vim.cmd [[colorscheme gruvbox]]
-
---require("github-theme").setup({
---  theme_style = "dimmed"
---})
-
+vim.o.termguicolors = true
+vim.cmd [[colorscheme monokai_pro]]
 
 -- Coc.nvim
 vim.cmd [[
