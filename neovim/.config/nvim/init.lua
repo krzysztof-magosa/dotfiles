@@ -71,7 +71,9 @@ require('packer').startup(function(use)
   -- Terraform
   use { 'hashivim/vim-terraform' }
 
-  use { 'phanviet/vim-monokai-pro' }
+--  use { 'phanviet/vim-monokai-pro' }
+
+  use { 'NLKNguyen/papercolor-theme' }
 
   use { 'ntpeters/vim-better-whitespace' }
 end)
@@ -124,7 +126,8 @@ vim.opt.laststatus = 3
 
 --Set colorscheme
 vim.o.termguicolors = true
-vim.cmd [[colorscheme monokai_pro]]
+vim.o.background = light
+vim.cmd [[colorscheme PaperColor]]
 
 -- Coc.nvim
 vim.cmd [[
