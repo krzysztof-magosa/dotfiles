@@ -10,6 +10,7 @@ brew install \
     tig \
     hpedrorodrigues/tools/dockutil \
     homebrew/cask-fonts/font-hack \
+    font-roboto-mono-nerd-font \
     iterm2 \
     vlc \
     homebrew/cask-drivers/logi-options-plus \
@@ -22,4 +23,5 @@ brew install \
     gh \
     monitorcontrol \
     node \
-    starship
+    starship \
+    gsed
