@@ -23,4 +23,5 @@ brew install \
     monitorcontrol \
     node \
     starship \
-    gsed
+    gsed \
+    telegram
