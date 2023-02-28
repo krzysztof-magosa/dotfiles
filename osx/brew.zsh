@@ -17,7 +17,6 @@ brew install \
     rectangle \
     ripgrep \
     fd \
-    microsoft-edge \
     tfenv \
     terraform-ls \
     gh \
