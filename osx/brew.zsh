@@ -24,4 +24,5 @@ brew install \
     node \
     starship \
     gsed \
-    telegram
+    telegram \
+    pwgen
