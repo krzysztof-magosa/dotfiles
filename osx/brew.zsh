@@ -22,7 +22,6 @@ brew install \
     gh \
     monitorcontrol \
     node \
-    starship \
     gsed \
     telegram \
     pwgen
