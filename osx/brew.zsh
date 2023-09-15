@@ -24,4 +24,5 @@ brew install \
     node \
     gsed \
     telegram \
-    pwgen
+    pwgen \
+    font-meslo-lg-nerd-font
