@@ -7,7 +7,7 @@ fi
 
 export ZSH=$HOME/.zsh/omz
 
-ZSH_THEME=""
+ZSH_THEME="powerlevel10k/powerlevel10k"
 CASE_SENSITIVE="true"
 HIST_STAMPS="dd.mm.yyyy"
 ZSH_CUSTOM="$HOME/.zsh/custom"
@@ -17,10 +17,10 @@ plugins=(
   zsh-autosuggestions
 )
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
 source $ZSH/oh-my-zsh.sh
-
-p
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Go to projects
+p
