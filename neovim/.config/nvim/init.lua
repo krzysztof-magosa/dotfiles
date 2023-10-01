@@ -73,7 +73,13 @@ require('packer').startup(function(use)
 
 --  use { 'phanviet/vim-monokai-pro' }
 
-  use { 'NLKNguyen/papercolor-theme' }
+
+  use {
+  "loctvl842/monokai-pro.nvim",
+  config = function()
+    require("monokai-pro").setup()
+  end
+}
 
   use { 'ntpeters/vim-better-whitespace' }
 end)
@@ -126,8 +132,7 @@ vim.opt.laststatus = 3
 
 --Set colorscheme
 vim.o.termguicolors = true
-vim.o.background = light
-vim.cmd [[colorscheme PaperColor]]
+vim.cmd [[colorscheme monokai-pro]]
 
 -- Coc.nvim
 vim.cmd [[
