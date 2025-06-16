@@ -25,4 +25,6 @@ brew install \
     gsed \
     telegram \
     pwgen \
-    font-meslo-lg-nerd-font
+    font-meslo-lg-nerd-font \
+    gnupg \
+    pinentry-mac

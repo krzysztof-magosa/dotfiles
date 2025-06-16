@@ -10,4 +10,5 @@ stow -t $HOME \
   tig \
   neovim \
   zsh \
-  misc
+  misc \
+  gnupg
