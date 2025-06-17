@@ -29,6 +29,7 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
 
 export HOMEBREW_NO_AUTO_UPDATE=1
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 
 fpath=( ~/.zsh/functions $fpath )
 autoload -U ~/.zsh/functions/*(:t)
