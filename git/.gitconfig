@@ -9,7 +9,8 @@
   p = !git pull --rebase && git submodule update --recursive --init
   su = submodule update --recursive
   co = checkout
-  rwm = !sh -c 'git fetch && git rebase origin/master'
+  com = !sh -c 'git checkout $(git symbolic-ref refs/remotes/origin/HEAD --short)'
+  rwm = !sh -c 'git fetch && git rebase $(git symbolic-ref refs/remotes/origin/HEAD --short)'
   cfu = !sh -c 'git commit -m 'fix' --fixup HEAD && GIT_SEQUENCE_EDITOR=true git rebase -i HEAD~2 --autosquash'
   m = !sh -c 'git checkout main && git pull --rebase'
 
