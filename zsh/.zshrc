@@ -15,6 +15,7 @@ ZSH_CUSTOM="$HOME/.zsh/custom"
 plugins=(
   fzf
   zsh-autosuggestions
+  kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
