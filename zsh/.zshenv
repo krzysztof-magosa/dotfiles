@@ -14,8 +14,8 @@ export GOPATH=~/.go
 
 export WORKON_HOME="$HOME/.venvs"
 
-export PATH="$HOME/.brew/bin:$HOME/.brew/sbin:$PATH"
-export PATH="$HOME/.brew/share/git-core/contrib/diff-highlight:$PATH"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+export PATH="/opt/homebrew/share/git-core/contrib/diff-highlight:$PATH"
 
 for py in $HOME/Library/Python/{2..3}.{0..9}/bin ; do
   if [ -d $py ] ; then
