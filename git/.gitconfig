@@ -39,3 +39,12 @@
   autosetupmerge = true
 [init]
   defaultBranch = main
+
+# [gpg]
+# 	format = ssh
+# [gpg "ssh"]
+# 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+# [commit]
+# 	gpgsign = true
+# [user]
+# 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINXCUzzD828nkTViLEV0arFeCFVl/ps9SbM0z7NbkqS/
