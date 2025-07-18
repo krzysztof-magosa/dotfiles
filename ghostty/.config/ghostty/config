@@ -1,0 +1,15 @@
+font-family = Sometype Mono
+font-size = 14
+theme = light:BlulocoLight,dark:BlulocoDark
+window-theme = dark
+bold-is-bright = true
+macos-titlebar-style = tabs
+window-height = 25
+window-width = 100
+mouse-hide-while-typing = true
+background-opacity = 0.80
+background-blur = 20
+scrollback-limit = 10000
+window-inherit-working-directory = true
+window-step-resize = true
+

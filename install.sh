@@ -11,4 +11,5 @@ stow -t $HOME \
   neovim \
   zsh \
   misc \
-  gnupg
+  gnupg \
+  ghostty
