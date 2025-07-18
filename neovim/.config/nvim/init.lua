@@ -75,11 +75,9 @@ require('packer').startup(function(use)
 
 
   use {
-  "loctvl842/monokai-pro.nvim",
-  config = function()
-    require("monokai-pro").setup()
-  end
-}
+    'uloco/bluloco.nvim',
+    requires = { 'rktjmp/lush.nvim' }
+  }
 
   use { 'ntpeters/vim-better-whitespace' }
 end)
@@ -131,8 +129,9 @@ vim.opt.scrolloff = 10
 vim.opt.laststatus = 3
 
 --Set colorscheme
-vim.o.termguicolors = true
-vim.cmd [[colorscheme monokai-pro]]
+vim.opt.termguicolors = true
+
+vim.cmd('colorscheme bluloco')
 
 -- Coc.nvim
 vim.cmd [[
