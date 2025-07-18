@@ -23,8 +23,17 @@ cask "logi-options+"
 cask "rectangle-pro"
 cask "monitorcontrol"
 cask "telegram"
-cask "font-sometype-mono"
+cask "forklift"
+cask "google-chrome"
+cask "microsoft-edge"
+cask "scroll-reverser"
+cask "spotify"
+cask "visual-studio-code"
 
 # podman
 brew "podman"
 cask "podman-desktop"
+
+# fonts
+tap "homebrew/cask-fonts"
+cask "font-sometype-mono"
