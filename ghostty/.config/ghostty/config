@@ -13,3 +13,6 @@ scrollback-limit = 10000
 window-inherit-working-directory = true
 window-step-resize = true
 
+keybind = cmd+left=csi:H
+keybind = cmd+right=csi:F
+
