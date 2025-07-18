@@ -11,7 +11,7 @@ brew install \
     hpedrorodrigues/tools/dockutil \
     homebrew/cask-fonts/font-hack \
     font-roboto-mono-nerd-font \
-    iterm2 \
+    ghostty \
     vlc \
     homebrew/cask-drivers/logi-options-plus \
     rectangle \

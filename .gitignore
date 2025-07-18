@@ -11,7 +11,3 @@
 
 # Git
 /git/.gitconfig-local
-
-# iTerm
-iterm/Library/Application Support/iTerm2/parsers/
-iterm/Library/Application Support/iTerm2/version.txt
