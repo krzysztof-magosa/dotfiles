@@ -25,3 +25,6 @@ cask "monitorcontrol"
 cask "telegram"
 cask "font-sometype-mono"
 
+# podman
+brew "podman"
+cask "podman-desktop"
