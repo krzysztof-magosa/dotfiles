@@ -12,4 +12,5 @@ stow -t $HOME \
   zsh \
   misc \
   gnupg \
-  ghostty
+  ghostty \
+  brew
