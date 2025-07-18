@@ -3,11 +3,5 @@
 /zsh/.zinit/*
 !/zsh/.zinit/bin
 
-# Vim
-/vim/.vim/undo-dir/
-/vim/.vim/plugged/
-/vim/.vim/tmp/
-/vim/.vim/.netrwhist
-
 # Git
 /git/.gitconfig-local
