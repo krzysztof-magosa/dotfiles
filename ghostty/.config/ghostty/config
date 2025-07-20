@@ -16,3 +16,8 @@ window-step-resize = true
 keybind = cmd+left=csi:H
 keybind = cmd+right=csi:F
 
+keybind = global:ctrl+option+cmd+escape=toggle_quick_terminal
+quick-terminal-position = center
+quick-terminal-animation-duration = 0
+quick-terminal-autohide = false
+
