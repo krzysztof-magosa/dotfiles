@@ -38,3 +38,6 @@ cask "podman-desktop"
 # fonts
 tap "homebrew/cask-fonts"
 cask "font-sometype-mono"
+
+# anti flickering
+cask "stillcolor"
