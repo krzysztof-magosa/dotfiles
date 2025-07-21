@@ -16,6 +16,7 @@ brew "gsed"
 brew "pwgen"
 brew "gnupg"
 brew "pinentry-mac"
+brew "opa"
 
 cask "ghostty"
 cask "vlc"
