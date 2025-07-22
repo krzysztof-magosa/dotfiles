@@ -1,5 +1,6 @@
 brew "fzf"
 brew "git"
+brew "btop"
 brew "htop"
 brew "midnight-commander"
 brew "neovim"
