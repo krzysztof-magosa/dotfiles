@@ -32,8 +32,11 @@ cask "microsoft-edge"
 cask "scroll-reverser"
 cask "spotify"
 cask "visual-studio-code"
+
+# security
 cask "1password"
 cask "yubico-authenticator"
+cask "yubico-yubikey-manager"
 
 # podman
 brew "podman"
