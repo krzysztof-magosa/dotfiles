@@ -17,6 +17,7 @@ brew "pwgen"
 brew "gnupg"
 brew "pinentry-mac"
 brew "opa"
+brew "pure" # zsh prompt
 
 cask "ghostty"
 cask "vlc"
