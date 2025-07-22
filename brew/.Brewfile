@@ -33,6 +33,7 @@ cask "scroll-reverser"
 cask "spotify"
 cask "visual-studio-code"
 cask "1password"
+cask "yubico-authenticator"
 
 # podman
 brew "podman"
