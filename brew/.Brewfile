@@ -32,6 +32,7 @@ cask "microsoft-edge"
 cask "scroll-reverser"
 cask "spotify"
 cask "visual-studio-code"
+cask "1password"
 
 # podman
 brew "podman"
