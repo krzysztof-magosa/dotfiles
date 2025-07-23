@@ -48,3 +48,7 @@ cask "font-sometype-mono"
 
 # anti flickering
 cask "stillcolor"
+
+# Azure login to k8s
+tap "azure/kubelogin"
+brew "kubelogin"
