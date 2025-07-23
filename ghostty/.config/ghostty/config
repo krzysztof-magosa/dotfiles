@@ -4,6 +4,7 @@ theme = light:BlulocoLight,dark:BlulocoDark
 window-theme = dark
 bold-is-bright = true
 macos-titlebar-style = tabs
+macos-window-shadow = false
 window-height = 25
 window-width = 100
 mouse-hide-while-typing = true
@@ -21,3 +22,5 @@ quick-terminal-position = center
 quick-terminal-animation-duration = 0
 quick-terminal-autohide = false
 quick-terminal-screen = mouse
+
+auto-update = off
