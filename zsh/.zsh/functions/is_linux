@@ -1,2 +1,0 @@
-[[ "$OSTYPE" =~ ^linux ]] || return 1
-
