@@ -34,6 +34,7 @@ cask "scroll-reverser"
 cask "spotify"
 cask "visual-studio-code"
 cask "monitorcontrol"
+cask "maccy" # clipboard manager
 
 # security
 cask "1password"
