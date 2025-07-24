@@ -76,6 +76,7 @@ setopt hist_find_no_dups
 # Integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+gpgconf --launch gpg-agent
 
 # Execute deferred autocompletions
 zinit cdreplay -q
