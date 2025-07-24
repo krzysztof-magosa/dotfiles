@@ -13,6 +13,9 @@ zinit light Aloxaf/fzf-tab
 zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
 zinit light sindresorhus/pure
 
+# Initialize completions
+autoload -Uz compinit && compinit
+
 # Pure prompt
 PURE_PROMPT_SYMBOL="➤"
 zstyle :prompt:pure:path color '#51AEF8'
@@ -56,9 +59,6 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-# Initialize completions
-autoload -Uz compinit && compinit
-
 # History
 HISTSIZE=10000
 SAVEHIST=${HISTSIZE}
@@ -76,3 +76,6 @@ setopt hist_find_no_dups
 # Integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+# Execute deferred autocompletions
+zinit cdreplay -q
