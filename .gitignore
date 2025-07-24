@@ -8,3 +8,7 @@
 
 # NeoVim
 /neovim/.config/nvim/plugin/packer_compiled.lua
+
+# GNUPG
+/gnupg/.gnupg/*
+!/gnupg/.gnupg/gpg-agent.conf
