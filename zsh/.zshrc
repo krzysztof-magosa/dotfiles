@@ -39,7 +39,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza --color=always -1 $real
 
 # Aliases
 alias mc="mc -u" # do not use subshell, as it's slow
-alias l="eza"
+alias l="eza --classify --long --header"
 alias ls="ls --color"
 alias mkdir="mkdir -p"
 alias grep='grep --color=auto'
