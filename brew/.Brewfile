@@ -33,6 +33,7 @@ cask "microsoft-edge"
 cask "scroll-reverser"
 cask "spotify"
 cask "visual-studio-code"
+cask "monitorcontrol"
 
 # security
 cask "1password"
