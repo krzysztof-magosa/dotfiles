@@ -19,6 +19,7 @@ brew "gnupg"
 brew "pinentry-mac"
 brew "opa"
 brew "pure" # zsh prompt
+brew "mas" # to be able to install things from App Store
 
 cask "ghostty"
 cask "vlc"
@@ -35,6 +36,7 @@ cask "visual-studio-code"
 
 # security
 cask "1password"
+mas "1Password for Safari", id: 1569813296
 cask "yubico-authenticator"
 cask "yubico-yubikey-manager"
 
