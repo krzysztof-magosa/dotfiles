@@ -58,6 +58,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+alias k="kubectl"
 
 # History
 HISTSIZE=10000
