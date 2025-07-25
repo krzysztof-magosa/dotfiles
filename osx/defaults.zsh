@@ -49,6 +49,9 @@ defaults write -g NSAutomaticPeriodSubstitutionEnabled -bool false
 # linear mouse
 defaults write .GlobalPreferences com.apple.mouse.scaling -1
 
+# do not use moving animations
+defaults write com.apple.universalaccess reduceMotion -bool true
+
 # Do not use relative dates
 /usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.finder.plist" -c 'Delete "StandardViewSettings:ExtendedListViewSettings:useRelativeDates" bool' 2>/dev/null
 /usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.finder.plist" -c 'Add "StandardViewSettings:ExtendedListViewSettings:useRelativeDates" bool false'
