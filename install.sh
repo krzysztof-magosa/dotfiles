@@ -13,4 +13,5 @@ stow -t $HOME \
   misc \
   gnupg \
   ghostty \
-  brew
+  brew \
+  bin
