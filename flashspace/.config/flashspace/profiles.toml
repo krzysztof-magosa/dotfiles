@@ -1,0 +1,75 @@
+[[profiles]]
+id = '5ED1DC38-F71E-4862-BF9C-D5AC11BE8613'
+name = 'Default'
+
+[[profiles.workspaces]]
+assignAppShortcut = 'opt+shift+1'
+display = 'PHL 40B1U6903'
+id = '586F0408-E720-4C0D-AF62-7295F3666B17'
+name = 'Work'
+shortcut = 'opt+1'
+symbolIconName = 'briefcase'
+
+[[profiles.workspaces.apps]]
+bundleIdentifier = 'com.microsoft.VSCode'
+iconPath = '/Applications/Visual Studio Code.app/Contents/Resources/Code.icns'
+name = 'Code'
+
+[[profiles.workspaces.apps]]
+bundleIdentifier = 'com.mitchellh.ghostty'
+iconPath = '/Applications/Ghostty.app/Contents/Resources/AppIcon.icns'
+name = 'Ghostty'
+
+[[profiles.workspaces]]
+assignAppShortcut = 'opt+shift+2'
+display = 'PHL 40B1U6903'
+id = '43530F55-DB43-42C0-9C11-BADA99FB973F'
+name = 'Comms'
+shortcut = 'opt+2'
+symbolIconName = 'message'
+
+[[profiles.workspaces.apps]]
+bundleIdentifier = 'ru.keepcoder.Telegram'
+iconPath = '/Applications/Telegram.app/Contents/Resources/AppIcon.icns'
+name = 'Telegram'
+
+[[profiles.workspaces.apps]]
+bundleIdentifier = 'com.apple.Safari'
+iconPath = '/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app/Contents/Resources/AppIcon.icns'
+name = 'Safari'
+
+[[profiles.workspaces]]
+assignAppShortcut = 'opt+shift+3'
+display = 'PHL 40B1U6903'
+id = '89EC2FE8-8792-490C-AD8B-956990C963FE'
+name = 'Media'
+shortcut = 'opt+3'
+symbolIconName = 'music.note'
+
+[[profiles.workspaces.apps]]
+bundleIdentifier = 'com.spotify.client'
+iconPath = '/Applications/Spotify.app/Contents/Resources/Icon.icns'
+name = 'Spotify'
+
+[[profiles.workspaces]]
+assignAppShortcut = 'opt+shift+4'
+display = 'PHL 40B1U6903'
+id = '5237DC7F-1686-496D-A14B-C8A673CF4F9E'
+name = 'Other'
+shortcut = 'opt+4'
+symbolIconName = 'folder.badge.questionmark'
+
+[[profiles.workspaces.apps]]
+bundleIdentifier = 'com.1password.1password'
+iconPath = '/Applications/1Password.app/Contents/Resources/icon.icns'
+name = '1Password'
+
+[[profiles.workspaces.apps]]
+bundleIdentifier = 'com.yubico.ykman'
+iconPath = '/Applications/YubiKey Manager.app/Contents/Resources/ykman.icns'
+name = 'YubiKey Manager'
+
+[[profiles.workspaces.apps]]
+bundleIdentifier = 'com.yubico.yubioath'
+iconPath = '/Applications/Yubico Authenticator.app/Contents/Resources/AppIcon.icns'
+name = 'Yubico Authenticator'

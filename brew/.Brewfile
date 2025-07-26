@@ -38,6 +38,7 @@ cask "spotify"
 cask "visual-studio-code"
 cask "monitorcontrol"
 cask "maccy" # clipboard manager
+cask "flashspace"
 
 # security
 cask "1password"

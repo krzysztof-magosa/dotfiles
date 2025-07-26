@@ -14,4 +14,5 @@ stow -t $HOME \
   gnupg \
   ghostty \
   brew \
-  bin
+  bin \
+  flashspace
