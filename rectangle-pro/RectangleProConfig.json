@@ -41,10 +41,10 @@
       "int" : 0
     },
     "appSpecs" : {
-      "string" : "[{\"loc\":0,\"isGroup\":true,\"id\":151,\"name\":\"Layout 1\"}]"
+      "string" : "[{\"bringToFront\":true,\"loc\":0,\"launchApps\":true,\"isGroup\":true,\"id\":211,\"name\":\"Work\",\"children\":[{\"windowAction\":16,\"display\":0,\"loc\":9,\"w\":\"1271\",\"y\":\"6\",\"x\":\"1283\",\"title\":\"DZts+BSI5gRm4VK1lS0ZbjZc6uBscNMTligTGyo=\",\"displayFrame\":[[0,0],[2560,1080]],\"bundleId\":\"com.mitchellh.ghostty\",\"h\":\"518\",\"id\":203},{\"windowAction\":0,\"display\":0,\"loc\":9,\"w\":\"1271\",\"y\":\"6\",\"x\":\"6\",\"title\":\"8ChB5pu5BZOlrFdAP9PczuU\\\/Ma6uwWCYf\\\/pJj+TV\\\/VppyS0IVCx+lhplXGadHynELsHSv2S8\",\"displayFrame\":[[0,0],[2560,1080]],\"bundleId\":\"com.microsoft.VSCode\",\"h\":\"1043\",\"id\":207}]},{\"loc\":0,\"launchApps\":true,\"bringToFront\":true,\"id\":218,\"name\":\"Comms\",\"isGroup\":true,\"children\":[{\"windowAction\":0,\"display\":0,\"loc\":9,\"w\":\"1271\",\"y\":\"6\",\"x\":\"6\",\"title\":\"W8cGGIylnKvqX+lz2v6fBDvkchyKuc80eIK8a9jgC60nPpLCZUlBDH\\\/WXcM90oTeIW6FVXC6HpTBqZBjMFAQVA==\",\"displayFrame\":[[0,0],[2560,1080]],\"bundleId\":\"com.apple.Safari\",\"h\":\"1043\",\"id\":233},{\"windowAction\":1,\"display\":0,\"loc\":9,\"w\":\"1271\",\"y\":\"6\",\"x\":\"1283\",\"title\":\"hVUe0jSWG9tmg9HLQ0ezM8IGPIh\\\/kXxXzfbSa1j7Cp0iNpuN\",\"displayFrame\":[[0,0],[2560,1080]],\"bundleId\":\"ru.keepcoder.Telegram\",\"h\":\"1043\",\"id\":239}]},{\"loc\":0,\"launchApps\":true,\"bringToFront\":true,\"id\":245,\"name\":\"Media\",\"isGroup\":true,\"children\":[{\"bundleId\":\"com.spotify.client\",\"loc\":9,\"displayFrame\":[[0,0],[2560,1080]],\"title\":\"Gi1umRMWJbud8Wou7aQ\\\/N3iVBO+9Gho+KDl4S0VxdnmBD7poIVSF7OVYb+e+Ej8RsQObJz1G6yhpms4n3+rfc\\\/9H5m+b+PkywT1YKHhpVf4=\",\"w\":\"1268\",\"id\":248,\"display\":0,\"y\":\"66\",\"h\":\"981\",\"x\":\"8\",\"windowAction\":0}]},{\"loc\":0,\"launchApps\":true,\"bringToFront\":true,\"id\":250,\"name\":\"Other\",\"isGroup\":true,\"children\":[{\"bundleId\":\"com.1password.1password\",\"loc\":9,\"displayFrame\":[[0,0],[2560,1080]],\"title\":\"DAk0X1Rpt8JTlZSqleFc3z4j3Sn8CH21udEMg8Krykv3o17snXvLsc7g8Ex\\\/Ut\\\/ITYW4V3yEIWn06VNI9U3rqbc=\",\"w\":\"1271\",\"id\":255,\"display\":0,\"y\":\"531\",\"h\":\"518\",\"x\":\"1283\",\"windowAction\":16},{\"bundleId\":\"com.yubico.yubioath\",\"loc\":9,\"displayFrame\":[[0,0],[2560,1080]],\"title\":\"c1HWOIXsLJiGYnFXjQbtVyPqdGSJEAHnWQipCOJnMnVBgKm7C1zanhr7BSdN962G\",\"w\":\"1271\",\"id\":259,\"display\":0,\"y\":\"6\",\"h\":\"518\",\"x\":\"1283\",\"windowAction\":14}]}]"
     },
     "applyGapToEdges" : {
-      "int" : 0
+      "int" : 2
     },
     "attemptMatchOnNextPrevDisplay" : {
       "int" : 0
@@ -143,10 +143,10 @@
       "int" : 0
     },
     "gapSize" : {
-      "double" : 0
+      "double" : 6
     },
     "gestures" : {
-
+      "string" : "[35,{\"trail\":0,\"flags\":0}]"
     },
     "hapticFeedbackOnSnap" : {
       "int" : 2
@@ -299,7 +299,7 @@
       "int" : 2
     },
     "reticleColor" : {
-      "string" : "{\"red\":0.8,\"blue\":0.2,\"alpha\":0.5,\"green\":0.3}"
+      "string" : "{\"red\":0.8,\"green\":0.3,\"blue\":0.2,\"alpha\":0.5}"
     },
     "reticleDisplayMinDist" : {
       "float" : 0
@@ -516,8 +516,23 @@
     }
   },
   "shortcuts" : {
-
+    "bottomRight" : {
+      "keyCode" : 125,
+      "modifierFlags" : 786432
+    },
+    "leftHalf" : {
+      "keyCode" : 123,
+      "modifierFlags" : 786432
+    },
+    "rightHalf" : {
+      "keyCode" : 124,
+      "modifierFlags" : 786432
+    },
+    "topRight" : {
+      "keyCode" : 126,
+      "modifierFlags" : 786432
+    }
   },
-  "timestamp" : 775076630.48426,
+  "timestamp" : 775223759.2228,
   "version" : "197"
 }
