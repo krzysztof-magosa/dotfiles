@@ -12,7 +12,7 @@ background-opacity = 0.90
 background-blur = 20
 scrollback-limit = 10000
 window-inherit-working-directory = true
-window-step-resize = false # to be able to fill whole half
+window-step-resize = false
 
 keybind = cmd+left=csi:H
 keybind = cmd+right=csi:F
