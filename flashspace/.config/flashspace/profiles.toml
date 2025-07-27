@@ -5,27 +5,9 @@ name = 'Default'
 [[profiles.workspaces]]
 assignAppShortcut = 'opt+shift+1'
 display = 'PHL 40B1U6903'
-id = '586F0408-E720-4C0D-AF62-7295F3666B17'
-name = 'Work'
-shortcut = 'opt+1'
-symbolIconName = 'briefcase'
-
-[[profiles.workspaces.apps]]
-bundleIdentifier = 'com.microsoft.VSCode'
-iconPath = '/Applications/Visual Studio Code.app/Contents/Resources/Code.icns'
-name = 'Code'
-
-[[profiles.workspaces.apps]]
-bundleIdentifier = 'com.mitchellh.ghostty'
-iconPath = '/Applications/Ghostty.app/Contents/Resources/AppIcon.icns'
-name = 'Ghostty'
-
-[[profiles.workspaces]]
-assignAppShortcut = 'opt+shift+2'
-display = 'PHL 40B1U6903'
 id = '43530F55-DB43-42C0-9C11-BADA99FB973F'
 name = 'Comms'
-shortcut = 'opt+2'
+shortcut = 'opt+1'
 symbolIconName = 'message'
 
 [[profiles.workspaces.apps]]
@@ -37,6 +19,24 @@ name = 'Telegram'
 bundleIdentifier = 'com.apple.Safari'
 iconPath = '/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app/Contents/Resources/AppIcon.icns'
 name = 'Safari'
+
+[[profiles.workspaces]]
+assignAppShortcut = 'opt+shift+2'
+display = 'PHL 40B1U6903'
+id = '586F0408-E720-4C0D-AF62-7295F3666B17'
+name = 'Work'
+shortcut = 'opt+2'
+symbolIconName = 'briefcase'
+
+[[profiles.workspaces.apps]]
+bundleIdentifier = 'com.microsoft.VSCode'
+iconPath = '/Applications/Visual Studio Code.app/Contents/Resources/Code.icns'
+name = 'Code'
+
+[[profiles.workspaces.apps]]
+bundleIdentifier = 'com.mitchellh.ghostty'
+iconPath = '/Applications/Ghostty.app/Contents/Resources/AppIcon.icns'
+name = 'Ghostty'
 
 [[profiles.workspaces]]
 assignAppShortcut = 'opt+shift+3'
