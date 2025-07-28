@@ -31,7 +31,7 @@ bindkey -e
 eval "$(gdircolors -b)"
 
 # Completion
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' # case insensitive
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:][:lower:]}' # case insensitive
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}" # match color with ls
 zstyle ':completion:*' menu no # avoids conflicts with fzf-tab
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza --color=always -1 $realpath'
