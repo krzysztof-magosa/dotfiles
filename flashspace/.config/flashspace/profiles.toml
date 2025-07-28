@@ -5,28 +5,10 @@ name = 'Default'
 [[profiles.workspaces]]
 assignAppShortcut = 'opt+shift+1'
 display = 'PHL 40B1U6903'
-id = '43530F55-DB43-42C0-9C11-BADA99FB973F'
-name = 'Comms'
-shortcut = 'opt+1'
-symbolIconName = 'message'
-
-[[profiles.workspaces.apps]]
-bundleIdentifier = 'ru.keepcoder.Telegram'
-iconPath = '/Applications/Telegram.app/Contents/Resources/AppIcon.icns'
-name = 'Telegram'
-
-[[profiles.workspaces.apps]]
-bundleIdentifier = 'com.apple.Safari'
-iconPath = '/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app/Contents/Resources/AppIcon.icns'
-name = 'Safari'
-
-[[profiles.workspaces]]
-assignAppShortcut = 'opt+shift+2'
-display = 'PHL 40B1U6903'
 id = '586F0408-E720-4C0D-AF62-7295F3666B17'
-name = 'Work'
-shortcut = 'opt+2'
-symbolIconName = 'briefcase'
+name = 'Coding'
+shortcut = 'opt+1'
+symbolIconName = 'apple.terminal'
 
 [[profiles.workspaces.apps]]
 bundleIdentifier = 'com.microsoft.VSCode'
@@ -39,11 +21,52 @@ iconPath = '/Applications/Ghostty.app/Contents/Resources/AppIcon.icns'
 name = 'Ghostty'
 
 [[profiles.workspaces]]
+assignAppShortcut = 'opt+shift+2'
+display = 'PHL 40B1U6903'
+id = 'BFD74FA5-238E-4E49-9630-40A468EF1C95'
+name = 'Browser'
+shortcut = 'opt+2'
+symbolIconName = 'globe'
+
+[[profiles.workspaces.apps]]
+bundleIdentifier = 'com.apple.Safari'
+iconPath = '/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app/Contents/Resources/AppIcon.icns'
+name = 'Safari'
+
+[[profiles.workspaces.apps]]
+bundleIdentifier = 'com.google.Chrome'
+iconPath = '/Applications/Google Chrome.app/Contents/Resources/app.icns'
+name = 'Google Chrome'
+
+[[profiles.workspaces.apps]]
+bundleIdentifier = 'com.microsoft.edgemac'
+iconPath = '/Applications/Microsoft Edge.app/Contents/Resources/app.icns'
+name = 'Microsoft Edge'
+
+[[profiles.workspaces]]
 assignAppShortcut = 'opt+shift+3'
+display = 'PHL 40B1U6903'
+id = '43530F55-DB43-42C0-9C11-BADA99FB973F'
+name = 'Comms'
+shortcut = 'opt+3'
+symbolIconName = 'message'
+
+[[profiles.workspaces.apps]]
+bundleIdentifier = 'com.microsoft.teams2'
+iconPath = '/Applications/Microsoft Teams.app/Contents/Resources/AppIcon.icns'
+name = 'Microsoft Teams'
+
+[[profiles.workspaces.apps]]
+bundleIdentifier = 'com.microsoft.Outlook'
+iconPath = '/Applications/Microsoft Outlook.app/Contents/Resources/Outlook.icns'
+name = 'Microsoft Outlook'
+
+[[profiles.workspaces]]
+assignAppShortcut = 'opt+shift+4'
 display = 'PHL 40B1U6903'
 id = '89EC2FE8-8792-490C-AD8B-956990C963FE'
 name = 'Media'
-shortcut = 'opt+3'
+shortcut = 'opt+4'
 symbolIconName = 'music.note'
 
 [[profiles.workspaces.apps]]
@@ -51,12 +74,17 @@ bundleIdentifier = 'com.spotify.client'
 iconPath = '/Applications/Spotify.app/Contents/Resources/Icon.icns'
 name = 'Spotify'
 
+[[profiles.workspaces.apps]]
+bundleIdentifier = 'ru.keepcoder.Telegram'
+iconPath = '/Applications/Telegram.app/Contents/Resources/AppIcon.icns'
+name = 'Telegram'
+
 [[profiles.workspaces]]
-assignAppShortcut = 'opt+shift+4'
+assignAppShortcut = 'opt+shift+5'
 display = 'PHL 40B1U6903'
 id = '5237DC7F-1686-496D-A14B-C8A673CF4F9E'
 name = 'Other'
-shortcut = 'opt+4'
+shortcut = 'opt+5'
 symbolIconName = 'folder.badge.questionmark'
 
 [[profiles.workspaces.apps]]
@@ -73,3 +101,8 @@ name = 'YubiKey Manager'
 bundleIdentifier = 'com.yubico.yubioath'
 iconPath = '/Applications/Yubico Authenticator.app/Contents/Resources/AppIcon.icns'
 name = 'Yubico Authenticator'
+
+[[profiles.workspaces.apps]]
+bundleIdentifier = 'com.apple.Notes'
+iconPath = '/System/Applications/Notes.app/Contents/Resources/AppIcon.icns'
+name = 'Notes'

@@ -41,7 +41,7 @@
       "int" : 0
     },
     "appSpecs" : {
-      "string" : "[{\"bringToFront\":true,\"loc\":0,\"launchApps\":true,\"isGroup\":true,\"id\":211,\"name\":\"Work\",\"children\":[{\"windowAction\":16,\"display\":0,\"loc\":9,\"w\":\"1271\",\"y\":\"6\",\"x\":\"1283\",\"title\":\"DZts+BSI5gRm4VK1lS0ZbjZc6uBscNMTligTGyo=\",\"displayFrame\":[[0,0],[2560,1080]],\"bundleId\":\"com.mitchellh.ghostty\",\"h\":\"518\",\"id\":203},{\"windowAction\":0,\"display\":0,\"loc\":9,\"w\":\"1271\",\"y\":\"6\",\"x\":\"6\",\"title\":\"8ChB5pu5BZOlrFdAP9PczuU\\\/Ma6uwWCYf\\\/pJj+TV\\\/VppyS0IVCx+lhplXGadHynELsHSv2S8\",\"displayFrame\":[[0,0],[2560,1080]],\"bundleId\":\"com.microsoft.VSCode\",\"h\":\"1043\",\"id\":207}]},{\"loc\":0,\"launchApps\":true,\"bringToFront\":true,\"id\":218,\"name\":\"Comms\",\"isGroup\":true,\"children\":[{\"windowAction\":0,\"display\":0,\"loc\":9,\"w\":\"1271\",\"y\":\"6\",\"x\":\"6\",\"title\":\"W8cGGIylnKvqX+lz2v6fBDvkchyKuc80eIK8a9jgC60nPpLCZUlBDH\\\/WXcM90oTeIW6FVXC6HpTBqZBjMFAQVA==\",\"displayFrame\":[[0,0],[2560,1080]],\"bundleId\":\"com.apple.Safari\",\"h\":\"1043\",\"id\":233},{\"windowAction\":1,\"display\":0,\"loc\":9,\"w\":\"1271\",\"y\":\"6\",\"x\":\"1283\",\"title\":\"hVUe0jSWG9tmg9HLQ0ezM8IGPIh\\\/kXxXzfbSa1j7Cp0iNpuN\",\"displayFrame\":[[0,0],[2560,1080]],\"bundleId\":\"ru.keepcoder.Telegram\",\"h\":\"1043\",\"id\":239}]},{\"loc\":0,\"launchApps\":true,\"bringToFront\":true,\"id\":245,\"name\":\"Media\",\"isGroup\":true,\"children\":[{\"bundleId\":\"com.spotify.client\",\"loc\":9,\"displayFrame\":[[0,0],[2560,1080]],\"title\":\"Gi1umRMWJbud8Wou7aQ\\\/N3iVBO+9Gho+KDl4S0VxdnmBD7poIVSF7OVYb+e+Ej8RsQObJz1G6yhpms4n3+rfc\\\/9H5m+b+PkywT1YKHhpVf4=\",\"w\":\"1268\",\"id\":248,\"display\":0,\"y\":\"66\",\"h\":\"981\",\"x\":\"8\",\"windowAction\":0}]},{\"loc\":0,\"launchApps\":true,\"bringToFront\":true,\"id\":250,\"name\":\"Other\",\"isGroup\":true,\"children\":[{\"bundleId\":\"com.1password.1password\",\"loc\":9,\"displayFrame\":[[0,0],[2560,1080]],\"title\":\"DAk0X1Rpt8JTlZSqleFc3z4j3Sn8CH21udEMg8Krykv3o17snXvLsc7g8Ex\\\/Ut\\\/ITYW4V3yEIWn06VNI9U3rqbc=\",\"w\":\"1271\",\"id\":255,\"display\":0,\"y\":\"531\",\"h\":\"518\",\"x\":\"1283\",\"windowAction\":16},{\"bundleId\":\"com.yubico.yubioath\",\"loc\":9,\"displayFrame\":[[0,0],[2560,1080]],\"title\":\"c1HWOIXsLJiGYnFXjQbtVyPqdGSJEAHnWQipCOJnMnVBgKm7C1zanhr7BSdN962G\",\"w\":\"1271\",\"id\":259,\"display\":0,\"y\":\"6\",\"h\":\"518\",\"x\":\"1283\",\"windowAction\":14}]}]"
+      "string" : "[{\"isGroup\":true,\"launchApps\":true,\"children\":[{\"title\":\"iKe+2CbOFiWQe\\\/n52pea90sFanyZcJjQu+tlrzIeIYitbrbAeWJa42vXxpvv+i59VC7DK56M\",\"otherAppOperation\":1,\"windowAction\":0,\"h\":\"1043\",\"id\":207,\"w\":\"1271\",\"display\":0,\"x\":\"6\",\"y\":\"6\",\"loc\":9,\"displayFrame\":[[0,0],[2560,1080]],\"bundleId\":\"com.microsoft.VSCode\"},{\"title\":\"nb\\\/x307nnxCn4uZzMZiExwmZdgHJ6xWr4seG1cw=\",\"otherAppOperation\":1,\"windowAction\":16,\"h\":\"518\",\"id\":203,\"w\":\"1271\",\"display\":0,\"x\":\"1283\",\"y\":\"6\",\"loc\":9,\"displayFrame\":[[0,0],[2560,1080]],\"bundleId\":\"com.mitchellh.ghostty\"}],\"loc\":0,\"name\":\"Coding\",\"id\":211,\"otherAppOperation\":1,\"bringToFront\":true},{\"id\":315,\"loc\":0,\"children\":[{\"otherAppOperation\":1,\"id\":326,\"w\":\"1277\",\"title\":\"DwYnG8opTEUQVGUHrijH7P4W5Aew35aDYhkj\\\/13w5vZkehyRk5fBjyXs2wI4fLsinrlTguk2HwjxknOmxvaLTH3W4uv1QXlvpL8Gade9WwmviAo=\",\"loc\":9,\"h\":\"1055\",\"displayFrame\":[[0,0],[2560,1080]],\"bundleId\":\"com.apple.Safari\",\"windowAction\":0,\"display\":0,\"x\":\"0\",\"y\":\"0\"}],\"name\":\"Browser\",\"launchApps\":true,\"isGroup\":true,\"bringToFront\":true,\"otherAppOperation\":1},{\"bringToFront\":true,\"otherAppOperation\":1,\"id\":218,\"loc\":0,\"children\":[{\"x\":\"1283\",\"display\":0,\"displayFrame\":[[0,0],[2560,1080]],\"windowAction\":0,\"id\":275,\"bundleId\":\"com.microsoft.teams2\",\"y\":\"60\",\"loc\":9,\"title\":\"Vxc5RpIE9YLK5WjkYuOGkScS0ohzfLKcbs8A7ATQbUYddTdm9lumtEVHuLynwcssLOHs1awNF4aP9cvKaQo=\",\"w\":\"1277\",\"otherAppOperation\":1,\"h\":\"995\"},{\"windowAction\":1,\"loc\":9,\"display\":0,\"id\":307,\"x\":\"1283\",\"w\":\"1277\",\"y\":\"0\",\"otherAppOperation\":1,\"h\":\"1055\",\"displayFrame\":[[0,0],[2560,1080]],\"bundleId\":\"com.microsoft.Outlook\",\"title\":\"0tGbyepkZDafB0XvDkgYdLBttRntON2bKfjXgR78CjJGx8pjAa38iMe4UbrDy6FHRPnmEhVThFdA2LjytnhkEJnreYaWrv3ADOQ=\"}],\"isGroup\":true,\"launchApps\":true,\"name\":\"Comms\"},{\"bringToFront\":true,\"otherAppOperation\":1,\"id\":245,\"loc\":0,\"children\":[{\"x\":\"8\",\"display\":0,\"displayFrame\":[[0,0],[2560,1080]],\"windowAction\":0,\"id\":248,\"bundleId\":\"com.spotify.client\",\"y\":\"66\",\"loc\":9,\"title\":\"uITXa3x8\\\/E9xGcdGKNRJ4rRhURZMyJeZLqh4PjzjfDBuVS23xddDRFXn6ukHDqTk+RbzHT9QMPbaB+J4fUJ4Wenovw9pihZMYCD1+h8OaIs=\",\"w\":\"1268\",\"otherAppOperation\":1,\"h\":\"981\"}],\"isGroup\":true,\"launchApps\":true,\"name\":\"Media\"},{\"bringToFront\":true,\"otherAppOperation\":1,\"id\":250,\"loc\":0,\"children\":[{\"windowAction\":16,\"loc\":9,\"display\":0,\"id\":255,\"x\":\"1283\",\"w\":\"1271\",\"y\":\"531\",\"otherAppOperation\":1,\"h\":\"518\",\"displayFrame\":[[0,0],[2560,1080]],\"bundleId\":\"com.1password.1password\",\"title\":\"FGN6qge9enkWvJEVMRXbV4X8cM0ggdur9Ctz\\\/9Die3ybUdFmqsX\\\/kTVtQDYr8vaVkyPbxcf9gC5u0NkBZ539Beo=\"},{\"windowAction\":14,\"loc\":9,\"display\":0,\"id\":259,\"x\":\"1283\",\"w\":\"1271\",\"y\":\"6\",\"otherAppOperation\":1,\"h\":\"518\",\"displayFrame\":[[0,0],[2560,1080]],\"bundleId\":\"com.yubico.yubioath\",\"title\":\"8FhpAoiuvFf4kJfc8XXvlDvvrA7NJwJCUJY74Kq8harCGbaqo8jgR86YLx\\\/UTx0O\"},{\"windowAction\":0,\"loc\":9,\"display\":0,\"id\":344,\"x\":\"0\",\"w\":\"1277\",\"y\":\"0\",\"otherAppOperation\":1,\"h\":\"1055\",\"displayFrame\":[[0,0],[2560,1080]],\"bundleId\":\"com.apple.Notes\",\"title\":\"XvfEu7Jzjvc+MSf\\\/ubBXPcOTjA9Vsw2Y\\\/8QmJzGBa2UE\"}],\"isGroup\":true,\"launchApps\":true,\"name\":\"Other\"}]"
     },
     "applyGapToEdges" : {
       "int" : 2
@@ -56,6 +56,9 @@
       "int" : 0
     },
     "cascadeWidth" : {
+      "int" : 0
+    },
+    "centerFixedDimensions" : {
       "int" : 0
     },
     "centerHalfCycles" : {
@@ -80,7 +83,7 @@
       "int" : 0
     },
     "contextMenuShortcut" : {
-
+      "string" : "null"
     },
     "cornerSnapAreaSize" : {
       "float" : 20
@@ -152,7 +155,7 @@
       "int" : 2
     },
     "helperRelaunch" : {
-      "int" : 3
+      "int" : 1
     },
     "hideMenubarIcon" : {
       "bool" : false
@@ -183,6 +186,9 @@
     },
     "launchOnLogin" : {
       "bool" : true
+    },
+    "layoutSaveType" : {
+      "int" : 2
     },
     "lockstepResizeOnScreenEdge" : {
       "int" : 0
@@ -299,7 +305,7 @@
       "int" : 2
     },
     "reticleColor" : {
-      "string" : "{\"red\":0.8,\"green\":0.3,\"blue\":0.2,\"alpha\":0.5}"
+      "string" : "{\"red\":0.8,\"green\":0.3,\"alpha\":0.5,\"blue\":0.2}"
     },
     "reticleDisplayMinDist" : {
       "float" : 0
@@ -433,6 +439,9 @@
     "stashTabs" : {
       "int" : 0
     },
+    "stashToCorner" : {
+      "int" : 0
+    },
     "stashVisibleWidth" : {
       "float" : 1
     },
@@ -467,10 +476,10 @@
       "int" : 1
     },
     "todoSidebarWidth" : {
-      "float" : 400
+      "double" : 400
     },
     "togggleTodoShortcut" : {
-
+      "string" : "null"
     },
     "toggleShortcutsShortcut" : {
 
@@ -533,6 +542,6 @@
       "modifierFlags" : 786432
     }
   },
-  "timestamp" : 775223759.2228,
-  "version" : "197"
+  "timestamp" : 775419784.25164,
+  "version" : "198"
 }
