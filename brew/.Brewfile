@@ -25,12 +25,10 @@ brew "eza" # better ls
 brew "zoxide" # better cd
 
 cask "ghostty"
-cask "vlc"
 cask "logi-options+"
 cask "rectangle-pro"
 cask "monitorcontrol"
 cask "telegram"
-cask "forklift"
 cask "google-chrome"
 cask "microsoft-edge"
 cask "scroll-reverser"
@@ -40,7 +38,6 @@ cask "monitorcontrol"
 cask "maccy" # clipboard manager
 cask "flashspace"
 cask "chatgpt"
-cask "iina"
 cask "signal"
 
 # security
@@ -63,3 +60,10 @@ cask "stillcolor"
 # Azure login to k8s
 tap "azure/kubelogin"
 brew "kubelogin"
+
+if `hostname`.strip == "mac.home"
+    cask "vlc"
+    cask "iina"
+    cask "forklift"
+end
+
