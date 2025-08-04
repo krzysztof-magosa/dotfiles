@@ -39,6 +39,7 @@ cask "visual-studio-code"
 cask "monitorcontrol"
 cask "maccy" # clipboard manager
 cask "flashspace"
+cask "chatgpt"
 
 # security
 cask "1password"
