@@ -41,6 +41,7 @@ cask "maccy" # clipboard manager
 cask "flashspace"
 cask "chatgpt"
 cask "iina"
+cask "signal"
 
 # security
 cask "1password"
