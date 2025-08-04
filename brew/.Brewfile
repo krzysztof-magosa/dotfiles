@@ -40,6 +40,7 @@ cask "monitorcontrol"
 cask "maccy" # clipboard manager
 cask "flashspace"
 cask "chatgpt"
+cask "iina"
 
 # security
 cask "1password"
