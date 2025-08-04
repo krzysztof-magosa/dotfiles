@@ -25,7 +25,6 @@ brew "eza" # better ls
 brew "zoxide" # better cd
 
 cask "ghostty"
-cask "logi-options+"
 cask "rectangle-pro"
 cask "monitorcontrol"
 cask "telegram"
