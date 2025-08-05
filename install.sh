@@ -15,4 +15,5 @@ stow -t $HOME \
   ghostty \
   brew \
   bin \
-  flashspace
+  flashspace \
+  linearmouse
