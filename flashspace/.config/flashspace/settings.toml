@@ -47,3 +47,18 @@ switchToRecentWorkspace = 'opt+`'
 switchWorkspaceWhenPipCloses = true
 workspaceTransitionDimming = 0.20000000000000001
 workspaceTransitionDuration = 0.10000000000000001
+
+[[floatingApps]]
+bundleIdentifier = 'com.apple.Notes'
+iconPath = '/System/Applications/Notes.app/Contents/Resources/AppIcon.icns'
+name = 'Notes'
+
+[[floatingApps]]
+bundleIdentifier = 'com.openai.chat'
+iconPath = '/Applications/ChatGPT.app/Contents/Resources/AppIcon.icns'
+name = 'ChatGPT'
+
+[[floatingApps]]
+bundleIdentifier = 'com.lujjjh.LinearMouse'
+iconPath = '/Applications/LinearMouse.app/Contents/Resources/AppIcon.icns'
+name = 'LinearMouse'
