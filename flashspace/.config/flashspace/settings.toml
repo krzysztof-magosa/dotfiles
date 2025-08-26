@@ -1,4 +1,4 @@
-activeWorkspaceOnFocusChange = true
+activeWorkspaceOnFocusChange = false
 alternativeDisplays = ''
 centerCursorOnFocusChange = false
 centerCursorOnWorkspaceChange = false
