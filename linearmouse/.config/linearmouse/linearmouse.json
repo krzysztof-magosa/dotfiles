@@ -1,53 +1,42 @@
 {
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.1",
   "schemes" : [
     {
       "if" : {
         "device" : {
-          "category" : "mouse",
-          "productID" : "0xb034",
+          "vendorID" : "0x46d",
           "productName" : "MX Master 3S",
           "serialNumber" : "6AFD2015",
-          "vendorID" : "0x46d"
+          "productID" : "0xb034",
+          "category" : "mouse"
         }
       },
       "pointer" : {
-        "acceleration" : 0,
         "disableAcceleration" : false,
-        "speed" : 0.0689655172413792768
+        "speed" : 0.0689655172413792768,
+        "acceleration" : 0
       },
       "scrolling" : {
+        "speed" : 0,
         "acceleration" : 1,
-        "distance" : 1,
-        "speed" : 0
+        "distance" : 1
       }
     },
     {
-      "buttons" : {
-        "universalBackForward" : false
-      },
       "if" : {
         "device" : {
-          "category" : "mouse",
+          "vendorID" : "0x1532",
           "productID" : "0xcd",
           "productName" : "Razer Basilisk V3 Pro 35K",
-          "serialNumber" : "000000000000",
-          "vendorID" : "0x1532"
+          "category" : "mouse",
+          "serialNumber" : "000000000000"
         }
       },
       "pointer" : {
-        "acceleration" : 0.6875,
         "disableAcceleration" : true,
-        "redirectsToScroll" : false,
+        "acceleration" : 0.6875,
         "speed" : 0.0689655172413792768
       },
       "scrolling" : {
-        "acceleration" : {
-          "vertical" : 1
-        },
-        "distance" : {
-          "vertical" : "auto"
-        },
         "modifiers" : {
           "vertical" : {
             "command" : {
@@ -56,20 +45,29 @@
           }
         },
         "reverse" : {
-          "vertical" : false
+          "vertical" : true
+        },
+        "distance" : {
+          "vertical" : "auto"
+        },
+        "acceleration" : {
+          "vertical" : 1
         },
         "speed" : {
           "vertical" : 0
         }
+      },
+      "buttons" : {
+        "universalBackForward" : false
       }
     },
     {
       "if" : {
         "device" : {
-          "category" : "trackpad",
-          "productID" : "0x0",
           "productName" : "Apple Internal Keyboard \/ Trackpad",
-          "vendorID" : "0x0"
+          "vendorID" : "0x0",
+          "category" : "trackpad",
+          "productID" : "0x0"
         }
       },
       "scrolling" : {
@@ -78,5 +76,6 @@
         }
       }
     }
-  ]
+  ],
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0"
 }
