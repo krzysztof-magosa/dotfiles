@@ -27,6 +27,9 @@ zstyle :prompt:pure:git:branch:cached color red
 # Use emacs style bindings
 bindkey -e
 
+bindkey  "^[[H" beginning-of-line
+bindkey  "^[[F" end-of-line
+
 # Load colors for ls
 eval "$(gdircolors -b)"
 
