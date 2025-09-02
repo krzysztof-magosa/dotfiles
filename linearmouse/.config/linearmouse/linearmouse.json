@@ -1,42 +1,45 @@
 {
   "schemes" : [
     {
+      "pointer" : {
+        "acceleration" : 0,
+        "speed" : 0.0689655172413792768,
+        "disableAcceleration" : false
+      },
       "if" : {
         "device" : {
           "vendorID" : "0x46d",
-          "productName" : "MX Master 3S",
           "serialNumber" : "6AFD2015",
           "productID" : "0xb034",
+          "productName" : "MX Master 3S",
           "category" : "mouse"
         }
       },
-      "pointer" : {
-        "disableAcceleration" : false,
-        "speed" : 0.0689655172413792768,
-        "acceleration" : 0
-      },
       "scrolling" : {
-        "speed" : 0,
         "acceleration" : 1,
+        "speed" : 0,
         "distance" : 1
       }
     },
     {
-      "if" : {
-        "device" : {
-          "vendorID" : "0x1532",
-          "productID" : "0xcd",
-          "productName" : "Razer Basilisk V3 Pro 35K",
-          "category" : "mouse",
-          "serialNumber" : "000000000000"
-        }
-      },
       "pointer" : {
         "disableAcceleration" : true,
         "acceleration" : 0.6875,
         "speed" : 0.0689655172413792768
       },
+      "if" : {
+        "device" : {
+          "serialNumber" : "000000000000",
+          "productID" : "0xcd",
+          "category" : "mouse",
+          "vendorID" : "0x1532",
+          "productName" : "Razer Basilisk V3 Pro 35K"
+        }
+      },
       "scrolling" : {
+        "distance" : {
+          "vertical" : "auto"
+        },
         "modifiers" : {
           "vertical" : {
             "command" : {
@@ -46,9 +49,6 @@
         },
         "reverse" : {
           "vertical" : true
-        },
-        "distance" : {
-          "vertical" : "auto"
         },
         "acceleration" : {
           "vertical" : 1
@@ -64,15 +64,33 @@
     {
       "if" : {
         "device" : {
-          "productName" : "Apple Internal Keyboard \/ Trackpad",
-          "vendorID" : "0x0",
+          "productID" : "0x0",
           "category" : "trackpad",
-          "productID" : "0x0"
+          "productName" : "Apple Internal Keyboard \/ Trackpad",
+          "vendorID" : "0x0"
         }
       },
       "scrolling" : {
         "reverse" : {
           "vertical" : false
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "productName" : "BSKV3P 35K",
+          "vendorID" : "0x68e",
+          "category" : "mouse",
+          "productID" : "0xce"
+        }
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        },
+        "acceleration" : {
+          "vertical" : 1
         }
       }
     }
