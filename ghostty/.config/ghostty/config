@@ -14,6 +14,8 @@ window-inherit-working-directory = true
 window-step-resize = false
 window-save-state = never
 quit-after-last-window-closed = true
+shell-integration = detect
+shell-integration-features = cursor,sudo,ssh-env,no-ssh-terminfo
 
 keybind = cmd+left=csi:H
 keybind = cmd+right=csi:F
