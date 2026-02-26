@@ -12,6 +12,7 @@ background-blur = 20
 scrollback-limit = 4194304
 window-inherit-working-directory = true
 window-step-resize = false
+window-save-state = never
 
 keybind = cmd+left=csi:H
 keybind = cmd+right=csi:F
