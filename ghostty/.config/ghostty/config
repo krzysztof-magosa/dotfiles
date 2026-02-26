@@ -9,7 +9,7 @@ window-width = 100
 mouse-hide-while-typing = true
 background-opacity = 0.90
 background-blur = 20
-scrollback-limit = 10000
+scrollback-limit = 4194304
 window-inherit-working-directory = true
 window-step-resize = false
 
