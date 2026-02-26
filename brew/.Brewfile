@@ -22,7 +22,6 @@ brew "pure" # zsh prompt
 brew "mas" # to be able to install things from App Store
 brew "coreutils"
 brew "eza" # better ls
-brew "zoxide" # better cd
 brew "uv"
 
 cask "ghostty"

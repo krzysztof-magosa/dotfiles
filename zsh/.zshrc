@@ -38,7 +38,6 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:][:lower:]}' '+l:|=*
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}" # match color with ls
 zstyle ':completion:*' menu no # avoids conflicts with fzf-tab
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza --color=always -1 $realpath'
-zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza --color=always -1 $realpath'
 
 # Aliases
 alias mc="mc -u" # do not use subshell, as it's slow
@@ -79,7 +78,6 @@ setopt hist_find_no_dups
 
 # Integrations
 eval "$(fzf --zsh)"
-eval "$(zoxide init --cmd cd zsh)"
 gpgconf --launch gpg-agent
 
 # Execute deferred autocompletions
