@@ -13,6 +13,7 @@ scrollback-limit = 4194304
 window-inherit-working-directory = true
 window-step-resize = false
 window-save-state = never
+quit-after-last-window-closed = true
 
 keybind = cmd+left=csi:H
 keybind = cmd+right=csi:F
