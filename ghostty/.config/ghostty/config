@@ -28,4 +28,5 @@ quick-terminal-animation-duration = 0
 quick-terminal-autohide = false
 quick-terminal-screen = mouse
 
-auto-update = off
+auto-update = download
+auto-update-channel = tip
