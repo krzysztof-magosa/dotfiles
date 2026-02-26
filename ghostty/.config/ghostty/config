@@ -2,7 +2,6 @@ font-family = Sometype Mono
 font-size = 14
 theme = light:Bluloco Light,dark:Bluloco Dark
 window-theme = dark
-bold-is-bright = true
 macos-titlebar-style = tabs
 macos-window-shadow = false
 window-height = 25
