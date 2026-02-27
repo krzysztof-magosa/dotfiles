@@ -1,3 +1,13 @@
+# Bail out early if running in automated/non-interactive context (e.g., Copilot, CI/CD)
+# This prevents custom configurations from interfering with automated tools
+if [[ -n "$VSCODE_GIT_IPC_HANDLE" ]] || \
+   [[ -n "$VSCODE_IPC_HOOK_CLI" ]] || \
+   [[ "$TERM" == "dumb" ]] || \
+   [[ -n "$CI" ]] || \
+   [[ -n "$GITHUB_ACTIONS" ]]; then
+    return
+fi
+
 # Initialize zinit
 ZINIT_HOME="${HOME}/.local/share/zinit"
 if [ ! -d "${ZINIT_HOME}" ] ; then
