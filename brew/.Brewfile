@@ -30,6 +30,10 @@ brew "bat" # better cat
 brew "git-delta" # better git diff
 brew "jq"
 brew "yq"
+brew "fx" # interactive JSON explorer
+brew "dust" # better du
+brew "duf" # better df
+brew "trivy" # security scanner for containers/IaC
 
 cask "ghostty"
 cask "rectangle-pro"
