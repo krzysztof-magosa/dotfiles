@@ -28,6 +28,8 @@ brew "zoxide" # frecency-based directory jumping
 brew "direnv" # per-directory env vars
 brew "bat" # better cat
 brew "git-delta" # better git diff
+brew "jq"
+brew "yq"
 
 cask "ghostty"
 cask "rectangle-pro"
