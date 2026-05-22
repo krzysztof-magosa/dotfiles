@@ -91,3 +91,4 @@ eval "$(fzf --zsh)"
 gpgconf --launch gpg-agent
 eval "$(atuin init zsh)"
 eval "$(direnv hook zsh)"
+eval "$(zoxide init zsh)"
