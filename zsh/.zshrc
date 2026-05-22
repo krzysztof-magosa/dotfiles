@@ -46,6 +46,7 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:][:lower:]}' '+l:|=*
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}" # match color with ls
 zstyle ':completion:*' menu no # avoids conflicts with fzf-tab
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza --color=always -1 $realpath'
+zstyle ':fzf-tab:complete:*:*' fzf-preview 'bat --color=always --style=numbers $realpath 2>/dev/null || eza --color=always -1 $realpath 2>/dev/null'
 
 # Aliases
 alias cat="bat"
@@ -85,10 +86,24 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_find_no_dups
 
+# fzf
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+export FZF_DEFAULT_OPTS="
+  --height 50% --layout=reverse --border rounded
+  --bind 'ctrl-/:toggle-preview'
+  --color=bg:#282c34,bg+:#2c323c,fg:#abb2bf,fg+:#ffffff
+  --color=hl:#4aa5f0,hl+:#4aa5f0,info:#d19a66,prompt:#4aa5f0
+  --color=pointer:#d19a66,marker:#98c379,spinner:#61afef,border:#3e4451
+  --color=header:#c678dd
+"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_CTRL_T_OPTS="--preview 'bat --color=always --style=numbers --line-range=:500 {}'"
+export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git'
+export FZF_ALT_C_OPTS="--preview 'eza --color=always -1 {}'"
+
 # Integrations
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 eval "$(fzf --zsh)"
 gpgconf --launch gpg-agent
-eval "$(atuin init zsh)"
 eval "$(direnv hook zsh)"
 eval "$(zoxide init zsh)"
