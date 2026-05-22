@@ -86,3 +86,4 @@ setopt hist_find_no_dups
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 eval "$(fzf --zsh)"
 gpgconf --launch gpg-agent
+eval "$(atuin init zsh)"
