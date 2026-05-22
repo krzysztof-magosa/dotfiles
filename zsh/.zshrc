@@ -3,14 +3,17 @@
 if [[ -n "$VSCODE_GIT_IPC_HANDLE" ]] || \
    [[ -n "$VSCODE_IPC_HOOK_CLI" ]] || \
    [[ "$TERM" == "dumb" ]] || \
-   [[ -n "$CI" ]] || \
-   [[ -n "$GITHUB_ACTIONS" ]]; then
+   [[ -n "$CI" ]]; then
     return
 fi
 
 # Plugins
 source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
-antidote load
+zsh_plugins=~/.zsh_plugins.zsh
+if [[ ! $zsh_plugins -nt ~/.zsh_plugins.txt ]]; then
+    antidote bundle <~/.zsh_plugins.txt >$zsh_plugins
+fi
+source $zsh_plugins
 
 # Initialize completions (cached for 24h)
 autoload -Uz compinit
@@ -21,7 +24,7 @@ else
 fi
 
 # Pure prompt (installed via brew)
-autoload -U promptinit; promptinit
+autoload -Uz promptinit; promptinit
 prompt pure
 PURE_PROMPT_SYMBOL="➤"
 zstyle :prompt:pure:path color '#51AEF8'
@@ -47,7 +50,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza --color=always -1 $realpath'
 # Aliases
 alias mc="mc -u" # do not use subshell, as it's slow
 alias l="eza --classify --long --header"
-alias ls="ls --color"
+alias ls="eza"
 alias mkdir="mkdir -p"
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'

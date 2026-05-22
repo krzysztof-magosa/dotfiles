@@ -3,8 +3,8 @@ setopt no_global_rcs
 
 export PROJECTS_DIR="$HOME/Projects"
 
-export EDITOR="vim"
-export VISUAL="vim"
+export EDITOR="nvim"
+export VISUAL="nvim"
 export LANG="en_GB.UTF-8"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
