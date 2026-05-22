@@ -24,6 +24,7 @@ else
 fi
 
 # Pure prompt (installed via brew)
+fpath=(/opt/homebrew/share/zsh/site-functions $fpath)
 autoload -Uz promptinit; promptinit
 prompt pure
 PURE_PROMPT_SYMBOL="➤"
