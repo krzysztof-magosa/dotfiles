@@ -24,6 +24,7 @@ brew "mas" # to be able to install things from App Store
 brew "coreutils"
 brew "eza" # better ls
 brew "uv"
+brew "git-delta" # better git diff
 
 cask "ghostty"
 cask "rectangle-pro"
