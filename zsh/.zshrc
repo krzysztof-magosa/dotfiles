@@ -117,3 +117,5 @@ eval "$(fzf --zsh)"
 gpgconf --launch gpg-agent
 eval "$(direnv hook zsh)"
 eval "$(zoxide init zsh)"
+source <(kubectl completion zsh)
+compdef k=kubectl
