@@ -8,25 +8,21 @@ if [[ -n "$VSCODE_GIT_IPC_HANDLE" ]] || \
     return
 fi
 
-# Initialize zinit
-ZINIT_HOME="${HOME}/.local/share/zinit"
-if [ ! -d "${ZINIT_HOME}" ] ; then
-    git clone https://github.com/zdharma-continuum/zinit.git ${ZINIT_HOME}
-fi
-source ${ZINIT_HOME}/zinit.zsh
-
 # Plugins
-zinit light zsh-users/zsh-syntax-highlighting
-zinit light zsh-users/zsh-completions
-zinit light zsh-users/zsh-autosuggestions
-zinit light Aloxaf/fzf-tab
-zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
-zinit light sindresorhus/pure
+source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
+antidote load
 
-# Initialize completions
-autoload -Uz compinit && compinit
+# Initialize completions (cached for 24h)
+autoload -Uz compinit
+if [[ -n ${ZDOTDIR:-$HOME}/.zcompdump(#qN.mh+24) ]]; then
+    compinit
+else
+    compinit -C
+fi
 
-# Pure prompt
+# Pure prompt (installed via brew)
+autoload -U promptinit; promptinit
+prompt pure
 PURE_PROMPT_SYMBOL="➤"
 zstyle :prompt:pure:path color '#51AEF8'
 zstyle :prompt:pure:prompt:error color red
@@ -36,12 +32,11 @@ zstyle :prompt:pure:git:branch:cached color red
 
 # Use emacs style bindings
 bindkey -e
-
-bindkey  "^[[H" beginning-of-line
-bindkey  "^[[F" end-of-line
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
 
 # Load colors for ls
-eval "$(gdircolors -b)"
+command -v gdircolors >/dev/null && eval "$(gdircolors -b)"
 
 # Completion
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:][:lower:]}' '+l:|=* r:|=*' # case insensitive + complete from the middle
@@ -62,7 +57,7 @@ alias gr="cd \$(git rev-parse --show-toplevel)"
 alias hpr="gh pr create --fill"
 alias tigs="tig status"
 alias top="htop"
-alias p="mkdir -p ${PROJECTS_DIR} && cd ${PROJECTS_DIR}"
+alias p='mkdir -p $PROJECTS_DIR && cd $PROJECTS_DIR'
 alias vi="nvim"
 alias vim="nvim"
 alias cd..="cd .."
@@ -76,19 +71,15 @@ alias k="kubectl"
 HISTSIZE=10000
 SAVEHIST=${HISTSIZE}
 HISTFILE=${HOME}/.zsh_history
-HISTDUP=erase
 setopt appendhistory
 setopt sharehistory
 setopt extended_history
 setopt hist_ignore_space
 setopt hist_ignore_all_dups
 setopt hist_save_no_dups
-setopt hist_ignore_dups
 setopt hist_find_no_dups
 
 # Integrations
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 eval "$(fzf --zsh)"
 gpgconf --launch gpg-agent
-
-# Execute deferred autocompletions
-zinit cdreplay -q

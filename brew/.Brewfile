@@ -19,6 +19,7 @@ brew "gnupg"
 brew "pinentry-mac"
 brew "opa"
 brew "pure" # zsh prompt
+brew "antidote" # zsh plugin manager
 brew "mas" # to be able to install things from App Store
 brew "coreutils"
 brew "eza" # better ls

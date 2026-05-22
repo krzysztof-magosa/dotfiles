@@ -14,4 +14,3 @@ export PATH="${PATH}:${HOME}/.local/bin"
 export PATH="${PATH}:/opt/podman/bin"
 
 export HOMEBREW_NO_AUTO_UPDATE=1
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
