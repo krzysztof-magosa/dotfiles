@@ -74,6 +74,15 @@ alias .....="cd ../../../.."
 alias k="kubectl"
 alias kx="kubectx"
 alias kn="kubens"
+alias kgp="kubectl get pods"
+alias kgn="kubectl get nodes"
+alias kgs="kubectl get services"
+alias kgd="kubectl get deployments"
+alias kge="kubectl get events --sort-by=.lastTimestamp"
+alias kdp="kubectl describe pod"
+alias kl="kubectl logs"
+alias klf="kubectl logs -f"
+alias kex="kubectl exec -it"
 
 # History
 HISTSIZE=10000
