@@ -43,9 +43,25 @@
 
 [diff]
   mnemonicprefix = true
+  algorithm = histogram
+
+[merge]
+  conflictstyle = zdiff3
+
+[rebase]
+  autosquash = true
+  autostash = true
+
+[rerere]
+  enabled = true
+
+[fetch]
+  prune = true
+  pruneTags = true
 
 [branch]
   autosetupmerge = true
+  sort = -committerdate
 [init]
   defaultBranch = main
 
