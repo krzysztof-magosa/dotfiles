@@ -64,6 +64,7 @@ cask "stillcolor"
 # Azure login to k8s
 tap "azure/kubelogin"
 brew "kubelogin"
+brew "kubectx" # kubectx + kubens
 
 if `hostname`.strip == "mac.home"
     cask "vlc"

@@ -70,6 +70,8 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias k="kubectl"
+alias kx="kubectx"
+alias kn="kubens"
 
 # History
 HISTSIZE=10000
