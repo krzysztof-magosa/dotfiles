@@ -25,6 +25,8 @@ brew "coreutils"
 brew "eza" # better ls
 brew "uv"
 brew "atuin" # shell history
+brew "direnv" # per-directory env vars
+brew "bat" # better cat
 brew "git-delta" # better git diff
 
 cask "ghostty"

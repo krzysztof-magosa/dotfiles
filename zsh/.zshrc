@@ -48,6 +48,7 @@ zstyle ':completion:*' menu no # avoids conflicts with fzf-tab
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza --color=always -1 $realpath'
 
 # Aliases
+alias cat="bat"
 alias mc="mc -u" # do not use subshell, as it's slow
 alias l="eza --classify --long --header"
 alias ls="eza"
@@ -87,3 +88,4 @@ export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 eval "$(fzf --zsh)"
 gpgconf --launch gpg-agent
 eval "$(atuin init zsh)"
+eval "$(direnv hook zsh)"
