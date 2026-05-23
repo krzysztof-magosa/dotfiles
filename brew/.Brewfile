@@ -73,6 +73,8 @@ brew "kubelogin"
 brew "kubectx" # kubectx + kubens
 brew "k9s"
 brew "stern"
+brew "shellcheck"
+brew "golangci-lint"
 
 if `hostname`.strip == "mac.home"
     cask "vlc"
