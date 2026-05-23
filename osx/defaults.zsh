@@ -73,6 +73,9 @@ defaults write .GlobalPreferences com.apple.mouse.scaling -1
 # do not use moving animations
 defaults write com.apple.universalaccess reduceMotion -bool true
 
+# Reduce transparency for cleaner UI
+defaults write com.apple.universalaccess reduceTransparency -bool true
+
 # Full keyboard access in dialogs (Tab between all controls)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
