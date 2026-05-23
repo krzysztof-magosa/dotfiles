@@ -86,6 +86,10 @@ alias kl="kubectl logs"
 alias klf="kubectl logs -f"
 alias kex="kubectl exec -it"
 
+# Report execution time for slow commands and notify on background job completion
+REPORTTIME=5
+setopt notify
+
 # History
 HISTSIZE=10000
 SAVEHIST=${HISTSIZE}
