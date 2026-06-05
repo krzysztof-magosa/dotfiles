@@ -7,8 +7,22 @@ if [[ -n "$VSCODE_GIT_IPC_HANDLE" ]] || \
     return
 fi
 
+# Resolve Homebrew prefix (handles macOS /opt/homebrew, Linux /home/linuxbrew/.linuxbrew, etc.)
+if [[ -z "$HOMEBREW_PREFIX" ]]; then
+    if [[ -x /opt/homebrew/bin/brew ]]; then
+        HOMEBREW_PREFIX=/opt/homebrew
+    elif [[ -x /home/linuxbrew/.linuxbrew/bin/brew ]]; then
+        HOMEBREW_PREFIX=/home/linuxbrew/.linuxbrew
+    elif [[ -x "$HOME/.linuxbrew/bin/brew" ]]; then
+        HOMEBREW_PREFIX="$HOME/.linuxbrew"
+    fi
+fi
+# Ensure brew-installed binaries are on PATH (needed on Linux where shellenv may not run)
+[[ -n "$HOMEBREW_PREFIX" && ":$PATH:" != *":$HOMEBREW_PREFIX/bin:"* ]] && \
+    export PATH="$HOMEBREW_PREFIX/bin:$HOMEBREW_PREFIX/sbin:$PATH"
+
 # Plugins
-source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
+source "$HOMEBREW_PREFIX/opt/antidote/share/antidote/antidote.zsh"
 zsh_plugins=~/.zsh_plugins.zsh
 if [[ ! $zsh_plugins -nt ~/.zsh_plugins.txt ]]; then
     antidote bundle <~/.zsh_plugins.txt >$zsh_plugins
@@ -24,7 +38,7 @@ else
 fi
 
 # Pure prompt (installed via brew)
-fpath=(/opt/homebrew/share/zsh/site-functions $fpath)
+fpath=("$HOMEBREW_PREFIX/share/zsh/site-functions" $fpath)
 autoload -Uz promptinit; promptinit
 prompt pure
 PURE_PROMPT_SYMBOL="➤"
@@ -39,8 +53,12 @@ bindkey -e
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 
-# Load colors for ls
-command -v gdircolors >/dev/null && eval "$(gdircolors -b)"
+# Load colors for ls (gdircolors on macOS with GNU coreutils, dircolors on Linux)
+if command -v gdircolors >/dev/null; then
+    eval "$(gdircolors -b)"
+elif command -v dircolors >/dev/null; then
+    eval "$(dircolors -b)"
+fi
 
 # Completion
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:][:lower:]}' '+l:|=* r:|=*' # case insensitive + complete from the middle
