@@ -7,7 +7,13 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export LANG="en_GB.UTF-8"
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+for _brew_prefix in /opt/homebrew /home/linuxbrew/.linuxbrew "$HOME/.linuxbrew" /usr/local; do
+    if [[ -x "$_brew_prefix/bin/brew" ]]; then
+        eval "$("$_brew_prefix/bin/brew" shellenv)"
+        break
+    fi
+done
+unset _brew_prefix
 
 export PATH="${PATH}:${HOME}/.bin"
 export PATH="${PATH}:${HOME}/.local/bin"
