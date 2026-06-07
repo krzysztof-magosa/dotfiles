@@ -8,6 +8,7 @@ fi
 stow -t $HOME \
   git \
   tig \
+  tmux \
   neovim \
   zsh \
   misc \
