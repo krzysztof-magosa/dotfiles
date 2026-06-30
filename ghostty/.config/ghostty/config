@@ -29,4 +29,4 @@ quick-terminal-autohide = false
 quick-terminal-screen = mouse
 
 auto-update = download
-auto-update-channel = tip
+auto-update-channel = stable
